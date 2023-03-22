@@ -15,7 +15,7 @@ function App() {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    Praxis Wentland
+                    Praxis Wentlandd
                 </a>
             </header>
         </div>
