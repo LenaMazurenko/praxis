@@ -22,7 +22,7 @@ export const Header = () => {
                     <Nav className="mr-auto bg-transparent">
                         <Nav.Link href="/">Home</Nav.Link>
                         <Nav.Link href="/salon">Salon</Nav.Link>
-                        <Nav.Link href="/service">Leistungen</Nav.Link>
+                        <Nav.Link href="/service">Service</Nav.Link>
                         <Nav.Link href="/about">Über uns</Nav.Link>
                         <Nav.Link href="/contacts">Kontakt</Nav.Link>
                     </Nav>

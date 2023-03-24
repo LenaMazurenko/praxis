@@ -1,5 +1,5 @@
 .heroSection {
-    height: 100%;
+    //height: 100%;
     background-color: wheit;
 }
 .heroImg {
@@ -31,3 +31,40 @@
     padding: 10px;
     color: rgba(0, 0, 0, 0.55);
 }
+
+/*---------------------*/
+.losungText {
+    display: block;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.55);
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+}
+.contactText {
+    background-color: rgba(0, 0, 0, 0.55);
+    color: rgba(0, 0, 0, 0.55);
+    font-size: 16px;
+}
+
+.mainFon {
+    background-image: url("../Static//fon2.jpg");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*.mainFon::before {
+    content: "";
+    position: absolute; 
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    background-image: url("../Static//fon.jpg");
+    filter: blur(1px);
+}
+*/
