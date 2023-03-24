@@ -1,6 +1,6 @@
 .heroSection {
     height: 100%;
-    background-color: red;
+    background-color: wheit;
 }
 .heroImg {
     background-image: url("../Static//1.jpg");
@@ -10,12 +10,24 @@
     background-size: cover;
     position: relative;
 }
+.heroLine {
+    padding: 0;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.55);
+}
 
 .heroText {
     text-align: center;
     position: absolute;
-    bottom: 20%;
+    bottom: 0;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: black;
+
+    color: rgba(0, 0, 0, 0.55);
+}
+.heroBtn {
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.55);
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.55);
 }
