@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/praxis/static/css/main.110790b9.css",
+    "main.js": "/praxis/static/js/main.845f81fa.js",
+    "static/media/salon.jpg": "/praxis/static/media/salon.067c1ce96b276752b14f.jpg",
+    "static/media/fon2.jpg": "/praxis/static/media/fon2.eaaaa5bd1d246006a314.jpg",
+    "static/media/1.jpg": "/praxis/static/media/1.ee0e7a19678cfdce27fb.jpg",
+    "index.html": "/praxis/index.html",
+    "main.110790b9.css.map": "/praxis/static/css/main.110790b9.css.map",
+    "main.845f81fa.js.map": "/praxis/static/js/main.845f81fa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.110790b9.css",
+    "static/js/main.845f81fa.js"
+  ]
+}
