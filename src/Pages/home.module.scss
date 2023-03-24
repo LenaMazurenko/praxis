@@ -1,0 +1,21 @@
+.heroSection {
+    height: 100%;
+    background-color: red;
+}
+.heroImg {
+    background-image: url("../Static//1.jpg");
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.heroText {
+    text-align: center;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
