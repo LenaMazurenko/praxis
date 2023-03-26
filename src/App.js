@@ -8,6 +8,7 @@ import { Service } from "./Pages/Service";
 import { Contacts } from "./Pages/Contacts";
 import { Header } from "./Components/Header";
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function App() {
     return (

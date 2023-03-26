@@ -1,6 +1,7 @@
 import React from "react";
 import { Nav, Navbar, Container } from "react-bootstrap";
 import NavbarCollapse from "react-bootstrap/esm/NavbarCollapse";
+import { Link } from "react-router-dom";
 import logo from "../logo.png";
 
 export const Header = () => {
@@ -20,11 +21,21 @@ export const Header = () => {
 
                 <NavbarCollapse id="responsive-navbar-nav">
                     <Nav className="mr-auto bg-transparent">
-                        <Nav.Link href="/">Home</Nav.Link>
-                        <Nav.Link href="/salon">Salon</Nav.Link>
-                        <Nav.Link href="/">Service</Nav.Link>
-                        <Nav.Link href="about">Über uns</Nav.Link>
-                        <Nav.Link href="/contacts">Kontakt</Nav.Link>
+                        <Nav.Link>
+                            <Link to="/">Home</Link>
+                        </Nav.Link>
+                        <Nav.Link>
+                            <Link to="/salon">Salon</Link>
+                        </Nav.Link>
+                        <Nav.Link>
+                            <Link to="/service">Service</Link>
+                        </Nav.Link>
+                        <Nav.Link>
+                            <Link to="/about">Über uns</Link>
+                        </Nav.Link>
+                        <Nav.Link>
+                            <Link to="/contacts">Kontakt</Link>
+                        </Nav.Link>
                     </Nav>
                 </NavbarCollapse>
             </Navbar>
