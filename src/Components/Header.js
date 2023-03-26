@@ -21,20 +21,20 @@ export const Header = () => {
 
                 <NavbarCollapse id="responsive-navbar-nav">
                     <Nav className="mr-auto bg-transparent">
-                        <Nav.Link>
-                            <Link to="/">Home</Link>
+                        <Nav.Link to="/" as={Link}>
+                            Home
                         </Nav.Link>
-                        <Nav.Link>
-                            <Link to="/salon">Salon</Link>
+                        <Nav.Link to="/salon" as={Link}>
+                            Salon
                         </Nav.Link>
-                        <Nav.Link>
-                            <Link to="/service">Service</Link>
+                        <Nav.Link to="/service" as={Link}>
+                            Service
                         </Nav.Link>
-                        <Nav.Link>
-                            <Link to="/about">Über uns</Link>
+                        <Nav.Link to="/about" as={Link}>
+                            Über uns
                         </Nav.Link>
-                        <Nav.Link>
-                            <Link to="/contacts">Kontakt</Link>
+                        <Nav.Link to="/contacts" as={Link}>
+                            Kontakt
                         </Nav.Link>
                     </Nav>
                 </NavbarCollapse>
