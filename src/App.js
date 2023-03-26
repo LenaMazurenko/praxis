@@ -2,7 +2,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { Home } from "./Pages/Home";
-import { About } from "./Pages/About";
+//import { About } from "./Pages/About";
 import { Salon } from "./Pages/Salon";
 import { Service } from "./Pages/Service";
 import { Contacts } from "./Pages/Contacts";
@@ -16,7 +16,7 @@ export default function App() {
             <hr />
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
+                <Route path="/about" element={<Home />} />
                 <Route path="/salon" element={<Salon />} />
                 <Route path="/service" element={<Service />} />
                 <Route path="/contacts" element={<Contacts />} />
