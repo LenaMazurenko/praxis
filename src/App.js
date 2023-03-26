@@ -9,6 +9,7 @@ import { Contacts } from "./Pages/Contacts";
 import { Header } from "./Components/Header";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Footer } from "./Components/Footer";
 
 export default function App() {
     return (
@@ -22,6 +23,7 @@ export default function App() {
                 <Route path="/service" element={<Service />} />
                 <Route path="/contacts" element={<Contacts />} />
             </Routes>
+            <Footer />
         </>
     );
 }

@@ -42,11 +42,6 @@
     text-align: center;
     align-items: center;
 }
-.contactText {
-    background-color: rgba(0, 0, 0, 0.55);
-    color: rgba(0, 0, 0, 0.55);
-    font-size: 16px;
-}
 
 .mainFon {
     background-image: url("../Images//fon2.jpg");

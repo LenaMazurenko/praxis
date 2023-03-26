@@ -90,12 +90,6 @@ export const Home = () => {
                     </div>
                 </Container>
             </div>
-
-            <div className={s.contactText}>
-                <Container>
-                    <p>2023</p>
-                </Container>
-            </div>
         </>
     );
 };
