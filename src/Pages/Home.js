@@ -1,6 +1,5 @@
 import React from "react";
 import { Button, Container } from "react-bootstrap";
-import { Header } from "../Components/Header";
 import salonImg from "../Images/salon.jpg";
 import serviceImg from "../Images/service.jpg";
 
@@ -12,8 +11,6 @@ export const Home = () => {
             <div className={s.heroSection}>
                 <div className={s.heroImg}>
                     <Container>
-                        <Header />
-                        <hr className={s.heroLine} />
                         <div className={s.heroText}>
                             <h1> Center Aestetik Medicine und Beauty</h1>
                             <p>Dr. Marina Wentland</p>
