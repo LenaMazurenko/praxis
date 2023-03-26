@@ -24,7 +24,7 @@ export const Header = () => {
                         <Nav.Link href="/salon">Salon</Nav.Link>
                         <Nav.Link href="/">Service</Nav.Link>
                         <Nav.Link href="about">Über uns</Nav.Link>
-                        <Nav.Link href="/1">Kontakt</Nav.Link>
+                        <Nav.Link href="/contacts">Kontakt</Nav.Link>
                     </Nav>
                 </NavbarCollapse>
             </Navbar>

@@ -16,10 +16,10 @@ export default function App() {
             <hr />
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="about" element={<About />} />
+                <Route path="/about" element={<About />} />
                 <Route path="/salon" element={<Salon />} />
                 <Route path="/service" element={<Service />} />
-                <Route path="/1" element={<Contacts />} />
+                <Route path="/contacts" element={<Contacts />} />
             </Routes>
         </>
     );
