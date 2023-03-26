@@ -4,7 +4,7 @@ import { Header } from "../Components/Header";
 import salonImg from "../Images/salon.jpg";
 import serviceImg from "../Images/service.jpg";
 
-import s from "./home.module.scss";
+import s from "./home.module.css";
 
 export const Home = () => {
     return (

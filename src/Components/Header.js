@@ -1,7 +1,7 @@
 import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import NavbarCollapse from "react-bootstrap/esm/NavbarCollapse";
-import logo from "./logo192.png";
+import logo from "../logo.png";
 
 export const Header = () => {
     return (
