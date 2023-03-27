@@ -68,24 +68,18 @@ export const Home = () => {
                     </div>
 
                     <hr />
-                    <div className="row mt-4 pt-4">
-                        <div className="col-4">
+                    <div className="row mt-4 pt-4 justify-content-center">
+                        <div className="col-sm-4">
                             <h3>ADRESSE</h3>
                             <p>Strasse 5</p>
                             <p>38100 Braunschweig</p>
                             <p>Tel: 0531 00 00 00 00</p>
                         </div>
-                        <div className="col-4">
+                        <div className="col-sm-4">
                             <h3>ÖFFNUNGSZEITEN</h3>
                             <p>Montag - Freitag</p>
                             <p>09:00 - 18:00</p>
                             <p>Samstags nach Terminvergabe</p>
-                        </div>
-                        <div className="col-4">
-                            <h3>QUICK LINKS</h3>
-                            <p>Impressum</p>
-                            <p>Datenschutz</p>
-                            <p>AGB</p>
                         </div>
                     </div>
                 </Container>
