@@ -1,14 +1,19 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-
+import map from "../Images/Map.png";
 import s from "./home.module.css";
 
 export const Contacts = () => {
     return (
         <>
-            <div className={s.heroSection}>
-                <Container>
+            <div className={s.mainFon}>
+                <Container className={s.coteinerPages}>
+                    <h1>Kontakts</h1>
                     <div className="row mt-4 pt-4">
+                        <div>
+                            {" "}
+                            <img src={map} alt="" />
+                        </div>
                         <div className="col-4">
                             <h3>ADRESSE</h3>
                             <p>Strasse 5</p>

@@ -20,19 +20,27 @@ export const Header = () => {
                 <NavbarCollapse id="responsive-navbar-nav ">
                     <Nav className=" ms-auto pe-5 bg-transparent">
                         <Nav.Link to="/" as={Link} className={s.textStyle}>
-                            HOME
+                            Home
                         </Nav.Link>
-                        <Nav.Link to="/salon" as={Link}>
-                            SALON
+                        <Nav.Link to="/salon" as={Link} className={s.textStyle}>
+                            Salon
                         </Nav.Link>
-                        <Nav.Link to="/service" as={Link}>
-                            SERVICE
+                        <Nav.Link
+                            to="/service"
+                            as={Link}
+                            className={s.textStyle}
+                        >
+                            Service
                         </Nav.Link>
-                        <Nav.Link to="/about" as={Link}>
-                            ÜBER UNS
+                        <Nav.Link to="/about" as={Link} className={s.textStyle}>
+                            Über uns
                         </Nav.Link>
-                        <Nav.Link to="/contacts" as={Link}>
-                            KONTAKT
+                        <Nav.Link
+                            to="/contacts"
+                            as={Link}
+                            className={s.textStyle}
+                        >
+                            Kontakt
                         </Nav.Link>
                     </Nav>
                 </NavbarCollapse>
