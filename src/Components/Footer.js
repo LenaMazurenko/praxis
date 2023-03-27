@@ -13,7 +13,7 @@ export const Footer = () => {
                         <div className="col-auto me-auto">&copy; 2023</div>
                         <Navbar className="col-auto my-auto ">
                             <Nav className=" bg-transparent">
-                                <Nav.Link to="/" as={Link}>
+                                <Nav.Link to="/impressum" as={Link}>
                                     Impressum
                                 </Nav.Link>
                                 <Nav.Link to="/" as={Link}>
