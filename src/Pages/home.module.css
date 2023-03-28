@@ -83,3 +83,18 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/*---Salon---*/
+.imgInGaleryBlock {
+    overflow: hidden;
+}
+.imgInGalery {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 1s;
+}
+.imgInGalery:hover {
+    transform: scale(1.35);
+}

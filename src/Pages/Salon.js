@@ -50,12 +50,13 @@ export const Salon = () => {
                     style={{
                         width: "100%",
                         height: "100vh",
-                        background: "black",
+                        background: "rgba(0, 0, 0, 0.9)",
                         position: "fixed",
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "center",
                         overflow: "hidden",
+                        zIndex: "1000",
                     }}
                 >
                     <button
@@ -111,17 +112,17 @@ export const Salon = () => {
                         >
                             <Masonry gutter="20px">
                                 {images.map((image, i) => (
-                                    <img
-                                        key={i}
-                                        src={image}
-                                        alt=""
-                                        style={{
-                                            width: "100%",
-                                            display: "block",
-                                            cursor: "pointer",
-                                        }}
+                                    <div
+                                        className={s.imgInGaleryBlock}
                                         onClick={() => viewImg(image, i)}
-                                    />
+                                    >
+                                        <img
+                                            key={i}
+                                            src={image}
+                                            alt=""
+                                            className={s.imgInGalery}
+                                        />
+                                    </div>
                                 ))}
                             </Masonry>
                         </ResponsiveMasonry>
