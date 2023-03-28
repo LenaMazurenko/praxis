@@ -5,8 +5,8 @@ import s from "./home.module.css";
 
 export const Impressum = () => {
     return (
-        <div className={s.mainFon}>
-            <Container className={s.coteinerPages}>
+        <div className={s.wrapperPage}>
+            <Container className={s.conteinerPages}>
                 <h1>Impressum</h1>
                 <p>Naturheilpraxis Wentland Straße 1 77777 Braunschweig</p>
                 <p>E-mail: info@studiobeuty.de</p>

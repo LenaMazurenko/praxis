@@ -24,11 +24,19 @@
 
     color: rgba(0, 0, 0, 0.55);
 }
-.heroBtn {
+.btn {
     background-color: transparent;
     border: 1px solid rgba(0, 0, 0, 0.55);
     padding: 10px;
+    margin-right: 10px;
     color: rgba(0, 0, 0, 0.55);
+}
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.55);
+    border: 1px solid rgba(0, 0, 0, 0.55);
+    padding: 10px;
+
+    color: white;
 }
 
 /*---------------------*/
@@ -43,14 +51,35 @@
     align-items: center;
 }
 
-.mainFon {
+.mainBg {
     background-image: url("../Images//fon2.jpg");
-
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.coteinerPages {
-    padding-top: 100px;
-    height: 100vw;
+.conteinerPages {
+    padding-top: 50px;
+    min-height: 100vh;
+}
+.textStyleBtnLink {
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.55);
+    padding: 10px;
+    margin-right: 10px;
+    color: rgba(0, 0, 0, 0.55);
+    text-decoration: none;
+}
+.textStyleBtnLink:hover {
+    background-color: rgba(0, 0, 0, 0.55);
+    border: 1px solid rgba(0, 0, 0, 0.55);
+    padding: 10px;
+    color: white;
+}
+
+.wrapperPage {
+    margin-top: 55px;
+    background-image: url("../Images//fon2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

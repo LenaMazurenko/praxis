@@ -1,5 +1,6 @@
 import React from "react";
-import { Button, Container } from "react-bootstrap";
+import { Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import salonImg from "../Images/salon.jpg";
 import serviceImg from "../Images/service.jpg";
 
@@ -14,7 +15,7 @@ export const Home = () => {
                         <div className={s.heroText}>
                             <h1> Center Aestetik Medicine und Beauty</h1>
                             <p>Dr. Marina Wentland</p>
-                            <button className={s.heroBtn}>
+                            <button className={s.btn}>
                                 TELEFONISCH TERMIN VEREINBAREN
                             </button>
                         </div>
@@ -24,46 +25,50 @@ export const Home = () => {
                     <Container>
                         <p>
                             "Lorem ipsum dolor sit amet consectetur, adipisicing
-                            elit.
-                        </p>
-                        <p>
-                            Ab voluptate corrupti totam necessitatibus iste
-                            natus, excepturi quasi, nobis vero eum voluptatum!
-                            Adipisci quod sequi dicta culpa blanditiis autem,
-                            rem excepturi.""
+                            elit.Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit."
                         </p>
                     </Container>
                 </div>
             </div>
 
-            <div className={s.mainFon}>
+            <div className={s.mainBg}>
                 <Container>
                     <div className="row pt-4">
                         <div className="col-6">
                             <h2>SALON</h2>
                             <hr />
                             <p>
-                                Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Ullam omnis eligendi, expedita
-                                ab, corrupti totam incidunt nam molestias ame...
+                                "Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Ullam omnis eligendi. Lorem
+                                ipsum, dolor sit amet consectetur adipisicing
+                                elit. Ullam omnis eligendi."
                             </p>
-                            <Button className={s.heroBtn}>ZUM SALON</Button>
+
+                            <Link to="/salon" className={s.textStyleBtnLink}>
+                                ZUM SALON
+                            </Link>
                         </div>
 
                         <img src={salonImg} alt="" className="col-6" />
                     </div>
 
                     <div className="row pt-4">
-                        <img src={serviceImg} alt="" className="col-6" />
+                        <img src={serviceImg} alt="Service" className="col-6" />
                         <div className="col-6">
                             <h2>SERVICE</h2>
                             <hr />
                             <p>
-                                Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Ullam omnis eligendi, expedita
-                                ab, corrupti totam incidunt nam molestias ame...
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Iure vero dolor adipisci quae
+                                cupiditate eaque cum. Impedit doloribus,
+                                perferendis exercitationem facere ex quas vitae
+                                porro deleniti, odio, aut fugiat esse.
                             </p>
-                            <Button className={s.heroBtn}>SERVICE</Button>
+
+                            <Link to="/service" className={s.textStyleBtnLink}>
+                                SERVICE
+                            </Link>
                         </div>
                     </div>
 
