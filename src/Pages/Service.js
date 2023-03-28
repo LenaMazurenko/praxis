@@ -1,8 +1,14 @@
 import React from "react";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { Container, Table } from "react-bootstrap";
 import s from "./home.module.css";
 
 export const Service = () => {
+    const { pathname } = useLocation();
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
     return (
         <div className={s.wrapperPage}>
             <Container className={s.conteinerPages}>

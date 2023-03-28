@@ -1,4 +1,6 @@
 import React from "react";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import salonImg from "../Images/salon.jpg";
@@ -7,6 +9,11 @@ import serviceImg from "../Images/service.jpg";
 import s from "./home.module.css";
 
 export const Home = () => {
+    const { pathname } = useLocation();
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
+
     return (
         <>
             <div className={s.heroSection}>
