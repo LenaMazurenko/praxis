@@ -1,23 +1,18 @@
 import React from "react";
 import { Nav, Navbar, Container } from "react-bootstrap";
-import NavbarCollapse from "react-bootstrap/esm/NavbarCollapse";
-import { Link } from "react-router-dom";
 import logo from "../logo.png";
 
 export const Header = () => {
     return (
-        <Container>
-            <Navbar
-                collapseOnSelect
-                expand="md"
-                fixed="top"
-                style={{
-                    backgroundColor: " gray",
-                    paddingRight: " 10px",
-                    paddingLeft: "10px",
-                }}
-            >
-                <a className="navbar-brand" href="/">
+        <Navbar
+            collapseOnSelect
+            expand="lg"
+            bg="dark"
+            variant="dark"
+            fixed="top"
+        >
+            <Container>
+                <Navbar.Brand href="/">
                     <img
                         src={logo}
                         width="30"
@@ -25,33 +20,45 @@ export const Header = () => {
                         class="d-inline-block align-top"
                         alt=""
                     />
-                    BeutyStudia
-                </a>
+                </Navbar.Brand>
+
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
 
-                <NavbarCollapse id="responsive-navbar-nav ">
-                    <Nav
-                        className=" ms-auto pe-5"
-                        style={{ fontWeight: "bold" }}
-                    >
-                        <Nav.Link to="/" as={Link}>
-                            Home
+                <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav className="ms-auto">
+                        <Nav.Link
+                            href="/"
+                            className="d-flex justify-content-center"
+                        >
+                            HOME
                         </Nav.Link>
-                        <Nav.Link to="/salon" as={Link}>
-                            Salon
+                        <Nav.Link
+                            href="/salon"
+                            className="d-flex justify-content-center"
+                        >
+                            SALON
                         </Nav.Link>
-                        <Nav.Link to="/service" as={Link}>
-                            Service
+                        <Nav.Link
+                            href="/service"
+                            className="d-flex justify-content-center"
+                        >
+                            SERVICE
                         </Nav.Link>
-                        <Nav.Link to="/about" as={Link}>
-                            Über uns
+                        <Nav.Link
+                            href="/about"
+                            className="d-flex justify-content-center"
+                        >
+                            ÜBER UNS
                         </Nav.Link>
-                        <Nav.Link to="/contacts" as={Link}>
-                            Kontakt
+                        <Nav.Link
+                            href="/contacts"
+                            className="d-flex justify-content-center"
+                        >
+                            KONTAKT
                         </Nav.Link>
                     </Nav>
-                </NavbarCollapse>
-            </Navbar>
-        </Container>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
     );
 };
