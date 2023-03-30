@@ -1,18 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { Nav, Navbar, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import logo from "../logo.png";
 
 export const Header = () => {
-    const handleCollapse = () => {
-        console.log("handleCollapse");
-        const nav = document.getElementById("navbarNav");
-        const btn = document.getElementById("navbarBtn");
-        nav.classList.remove("show");
-        btn.classList.add("collapsed");
-    };
+    const [expanded, setExpanded] = useState(false);
     return (
         <Navbar
+            expanded={expanded}
             collapseOnSelect
             expand="lg"
             bg="dark"
@@ -30,15 +25,17 @@ export const Header = () => {
                     />
                 </Navbar.Brand>
 
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Toggle
+                    aria-controls="responsive-navbar-nav"
+                    onClick={() => setExpanded(expanded ? false : "expanded")}
+                />
 
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="ms-auto">
+                    <Nav className="ms-auto" onClick={() => setExpanded(false)}>
                         <Nav.Link
                             to="/"
                             as={Link}
                             className="d-flex justify-content-center"
-                            onClick={() => handleCollapse()}
                         >
                             HOME
                         </Nav.Link>
