@@ -1,5 +1,6 @@
 import React from "react";
 import { Nav, Navbar, Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import logo from "../logo.png";
 
 export const Header = () => {
@@ -27,31 +28,36 @@ export const Header = () => {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ms-auto">
                         <Nav.Link
-                            href="/"
+                            to="/"
+                            as={Link}
                             className="d-flex justify-content-center"
                         >
                             HOME
                         </Nav.Link>
                         <Nav.Link
-                            href="/salon"
+                            to="/salon"
+                            as={Link}
                             className="d-flex justify-content-center"
                         >
                             SALON
                         </Nav.Link>
                         <Nav.Link
-                            href="/service"
+                            to="/service"
+                            as={Link}
                             className="d-flex justify-content-center"
                         >
                             SERVICE
                         </Nav.Link>
                         <Nav.Link
-                            href="/about"
+                            to="/about"
+                            as={Link}
                             className="d-flex justify-content-center"
                         >
                             ÜBER UNS
                         </Nav.Link>
                         <Nav.Link
-                            href="/contacts"
+                            to="/contacts"
+                            as={Link}
                             className="d-flex justify-content-center"
                         >
                             KONTAKT
