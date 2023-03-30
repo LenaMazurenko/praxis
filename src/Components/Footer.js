@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
     return (
@@ -9,9 +10,15 @@ export const Footer = () => {
 
                 <Navbar.Collapse className="justify-content-end">
                     <Nav>
-                        <Nav.Link href="/impressum">Impressum</Nav.Link>
-                        <Nav.Link href="/datenschutz">Datenschutz</Nav.Link>
-                        <Nav.Link href="/agb">AGB</Nav.Link>
+                        <Nav.Link to="/impressum" as={Link}>
+                            Impressum
+                        </Nav.Link>
+                        <Nav.Link to="/datenschutz" as={Link}>
+                            Datenschutz
+                        </Nav.Link>
+                        <Nav.Link to="/agb" as={Link}>
+                            AGB
+                        </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

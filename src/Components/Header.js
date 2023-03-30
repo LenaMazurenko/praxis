@@ -4,6 +4,13 @@ import { Link } from "react-router-dom";
 import logo from "../logo.png";
 
 export const Header = () => {
+    const handleCollapse = () => {
+        console.log("handleCollapse");
+        const nav = document.getElementById("navbarNav");
+        const btn = document.getElementById("navbarBtn");
+        nav.classList.remove("show");
+        btn.classList.add("collapsed");
+    };
     return (
         <Navbar
             collapseOnSelect
@@ -31,9 +38,11 @@ export const Header = () => {
                             to="/"
                             as={Link}
                             className="d-flex justify-content-center"
+                            onClick={() => handleCollapse()}
                         >
                             HOME
                         </Nav.Link>
+
                         <Nav.Link
                             to="/salon"
                             as={Link}
