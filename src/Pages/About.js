@@ -14,6 +14,7 @@ export const About = () => {
         <div className={s.wrapperPage}>
             <Container className={s.conteinerPages}>
                 <h1>ÜBER UNS</h1>
+                <hr />
                 <div>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Numquam aliquam tempore deserunt cumque repudiandae!
