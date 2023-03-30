@@ -2,8 +2,7 @@ import React from "react";
 import { Nav, Navbar, Container } from "react-bootstrap";
 import NavbarCollapse from "react-bootstrap/esm/NavbarCollapse";
 import { Link } from "react-router-dom";
-//import logo from "../logo.png";
-import s from "./header.module.css";
+import logo from "../logo.png";
 
 export const Header = () => {
     return (
@@ -11,35 +10,43 @@ export const Header = () => {
             <Navbar
                 collapseOnSelect
                 expand="md"
-                bg="light"
                 fixed="top"
-                className="opacity-75 border-bottom"
+                style={{
+                    backgroundColor: " gray",
+                    paddingRight: " 10px",
+                    paddingLeft: "10px",
+                }}
             >
+                <a className="navbar-brand" href="/">
+                    <img
+                        src={logo}
+                        width="30"
+                        height="30"
+                        class="d-inline-block align-top"
+                        alt=""
+                    />
+                    BeutyStudia
+                </a>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
 
                 <NavbarCollapse id="responsive-navbar-nav ">
-                    <Nav className=" ms-auto pe-5 bg-transparent">
-                        <Nav.Link to="/" as={Link} className={s.textStyle}>
+                    <Nav
+                        className=" ms-auto pe-5"
+                        style={{ fontWeight: "bold" }}
+                    >
+                        <Nav.Link to="/" as={Link}>
                             Home
                         </Nav.Link>
-                        <Nav.Link to="/salon" as={Link} className={s.textStyle}>
+                        <Nav.Link to="/salon" as={Link}>
                             Salon
                         </Nav.Link>
-                        <Nav.Link
-                            to="/service"
-                            as={Link}
-                            className={s.textStyle}
-                        >
+                        <Nav.Link to="/service" as={Link}>
                             Service
                         </Nav.Link>
-                        <Nav.Link to="/about" as={Link} className={s.textStyle}>
+                        <Nav.Link to="/about" as={Link}>
                             Über uns
                         </Nav.Link>
-                        <Nav.Link
-                            to="/contacts"
-                            as={Link}
-                            className={s.textStyle}
-                        >
+                        <Nav.Link to="/contacts" as={Link}>
                             Kontakt
                         </Nav.Link>
                     </Nav>
