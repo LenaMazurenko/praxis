@@ -22,9 +22,13 @@ export const Home = () => {
                         <div className={s.heroText}>
                             <h1> Center Aestetik Medicine und Beauty</h1>
                             <p>Dr. Marina Wentland</p>
-                            <button className={s.btn}>
+
+                            <a
+                                href="tel:12345678"
+                                className={s.textStyleBtnLink}
+                            >
                                 TELEFONISCH TERMIN VEREINBAREN
-                            </button>
+                            </a>
                         </div>
                     </Container>
                 </div>
