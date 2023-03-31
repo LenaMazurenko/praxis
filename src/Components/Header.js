@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Nav, Navbar, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import logo from "../logo.png";
+import logo from "../Images/logo.png";
 
 export const Header = () => {
     const [expanded, setExpanded] = useState(false);
@@ -18,8 +18,8 @@ export const Header = () => {
                 <Navbar.Brand href="/">
                     <img
                         src={logo}
-                        width="30"
-                        height="30"
+                        width="auto"
+                        height="50"
                         class="d-inline-block align-top"
                         alt=""
                     />

@@ -1,10 +1,15 @@
 import React from "react";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { Container } from "react-bootstrap";
 
 import s from "./home.module.css";
 
 export const Daten = (prop) => {
-    console.log(prop);
+    const { pathname } = useLocation();
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
 
     return (
         <>
