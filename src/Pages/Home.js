@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { Container } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import salonImg from "../Images/salon.jpg";
 import serviceImg from "../Images/service.jpg";
@@ -16,37 +16,36 @@ export const Home = () => {
 
     return (
         <>
-            <div className={s.heroSection}>
-                <div className={s.heroImg}>
-                    <Container>
-                        <div className={s.heroText}>
-                            <h1> Center Aestetik Medicine und Beauty</h1>
-                            <p>Dr. Marina Wentland</p>
-
-                            <a
-                                href="tel:12345678"
-                                className={s.textStyleBtnLink}
-                            >
-                                TELEFONISCH TERMIN VEREINBAREN
-                            </a>
-                        </div>
-                    </Container>
-                </div>
-                <div className={s.losungText}>
-                    <Container>
-                        <p>
-                            "Lorem ipsum dolor sit amet consectetur, adipisicing
-                            elit.Lorem ipsum dolor sit amet consectetur,
-                            adipisicing elit."
-                        </p>
-                    </Container>
-                </div>
-            </div>
-
-            <div className={s.mainBg}>
+            {/* Hero section */}
+            <section className={s.heroImg}>
                 <Container>
-                    <div className="row pt-4">
-                        <div className="col-6">
+                    <div className={s.heroText}>
+                        <h1> Center Aestetik Medicine und Beauty</h1>
+                        <p>Dr. Marina Wentland</p>
+
+                        <a href="tel:12345678" className={s.textStyleBtnLink}>
+                            TELEFONISCH TERMIN VEREINBAREN
+                        </a>
+                    </div>
+                </Container>
+            </section>
+
+            {/* Losung/About section. */}
+            <section className={s.losungText}>
+                <Container>
+                    <p>
+                        "Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit.Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit."
+                    </p>
+                </Container>
+            </section>
+
+            {/* Salon & Service & Adress section*/}
+            <section className={s.mainBg}>
+                <Container className="mb-4 pt-4">
+                    <Row className="g-0">
+                        <Col lg={6} className=" ps-4 pe-4 pt-4 pb-4">
                             <h2>SALON</h2>
                             <hr />
                             <p>
@@ -55,18 +54,22 @@ export const Home = () => {
                                 ipsum, dolor sit amet consectetur adipisicing
                                 elit. Ullam omnis eligendi."
                             </p>
-
                             <Link to="/salon" className={s.textStyleBtnLink}>
                                 ZUM SALON
                             </Link>
-                        </div>
+                        </Col>
+                        <Col lg={6}>
+                            <img
+                                src={salonImg}
+                                alt="Salon"
+                                Width="100%"
+                                height="auto"
+                            />
+                        </Col>
+                    </Row>
 
-                        <img src={salonImg} alt="" className="col-6" />
-                    </div>
-
-                    <div className="row pt-4">
-                        <img src={serviceImg} alt="Service" className="col-6" />
-                        <div className="col-6">
+                    <Row className="g-0">
+                        <Col lg={6} className="ps-4 pt-4 pb-4 order-lg-2">
                             <h2>SERVICE</h2>
                             <hr />
                             <p>
@@ -80,8 +83,16 @@ export const Home = () => {
                             <Link to="/service" className={s.textStyleBtnLink}>
                                 SERVICE
                             </Link>
-                        </div>
-                    </div>
+                        </Col>
+                        <Col lg={6} className="order-lg-1">
+                            <img
+                                src={serviceImg}
+                                alt="Service"
+                                Width="100%"
+                                height="auto"
+                            />
+                        </Col>
+                    </Row>
 
                     <hr />
                     <div className="row mt-4 pt-4 justify-content-center">
@@ -99,7 +110,7 @@ export const Home = () => {
                         </div>
                     </div>
                 </Container>
-            </div>
+            </section>
         </>
     );
 };

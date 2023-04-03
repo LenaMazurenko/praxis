@@ -11,7 +11,7 @@ export const Contacts = () => {
         window.scrollTo(0, 0);
     }, [pathname]);
     return (
-        <div className={s.wrapperPage}>
+        <section className={s.wrapperPage}>
             <Container className={s.conteinerPages}>
                 <h1>KONTAKTS</h1>
                 <hr />
@@ -45,6 +45,6 @@ export const Contacts = () => {
                     </Col>
                 </Row>
             </Container>
-        </div>
+        </section>
     );
 };

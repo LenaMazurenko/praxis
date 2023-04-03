@@ -21,7 +21,7 @@ export const Header = () => {
                         width="auto"
                         height="50"
                         class="d-inline-block align-top"
-                        alt=""
+                        alt="Brand"
                     />
                 </Navbar.Brand>
 

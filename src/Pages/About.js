@@ -11,7 +11,7 @@ export const About = () => {
     }, [pathname]);
 
     return (
-        <div className={s.wrapperPage}>
+        <section className={s.wrapperPage}>
             <Container className={s.conteinerPages}>
                 <h1>ÜBER UNS</h1>
                 <hr />
@@ -41,6 +41,6 @@ export const About = () => {
                     officia eum voluptatibus magni esse accusantium? Sint, ex!
                 </div>
             </Container>
-        </div>
+        </section>
     );
 };

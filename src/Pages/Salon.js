@@ -82,7 +82,7 @@ export const Salon = () => {
                     />
                 </div>
             )}
-            <div className={s.wrapperPage}>
+            <section className={s.wrapperPage}>
                 <Container className={s.conteinerPages}>
                     <h1>SALON</h1>
                     <hr />
@@ -128,7 +128,7 @@ export const Salon = () => {
                         </ResponsiveMasonry>
                     </Container>
                 </Container>
-            </div>
+            </section>
         </>
     );
 };
