@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { Container } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import salon from "../Images/salon.jpg";
 import salon2 from "../Images/salon2.jpg";
@@ -46,25 +46,9 @@ export const Salon = () => {
     return (
         <>
             {data.img && (
-                <div
-                    style={{
-                        width: "100%",
-                        height: "100vh",
-                        background: "rgba(0, 0, 0, 0.9)",
-                        position: "fixed",
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        overflow: "hidden",
-                        zIndex: "1000",
-                    }}
-                >
+                <div className={s.bgGaleryPopup}>
                     <button
-                        style={{
-                            position: "absolute",
-                            top: "10px",
-                            right: "10px",
-                        }}
+                        className={s.btnClose}
                         onClick={() => {
                             setData({ img: "", i: 0 });
                         }}
@@ -73,12 +57,8 @@ export const Salon = () => {
                     </button>
                     <img
                         src={data.img}
-                        alt=""
-                        style={{
-                            width: "auto",
-                            maxWidth: "90%",
-                            maxHeight: "90%",
-                        }}
+                        alt="Galery"
+                        className={s.imgGaleryPopup}
                     />
                 </div>
             )}
@@ -86,17 +66,24 @@ export const Salon = () => {
                 <Container className={s.conteinerPages}>
                     <h1>SALON</h1>
                     <hr />
-                    <div className="row">
-                        <div className="col-md-6">
+                    <Row>
+                        <Col md={6}>
                             Lorem ipsum dolor sit amet consectetur, adipisicing
                             elit. Perspiciatis veritatis vitae, pariatur quos
                             iusto dolor minus quaerat magni? Aut exercitationem
                             architecto dolorum velit corporis repellat vitae
                             sapiente esse pariatur dolore.
-                        </div>
+                        </Col>
 
-                        <img src={salon} alt="" className="col-6" />
-                    </div>
+                        <Col md={6}>
+                            <img
+                                src={salon}
+                                alt="Salon"
+                                Width="100%"
+                                height="auto"
+                            />
+                        </Col>
+                    </Row>
                     <hr />
                     <h3 className="d-flex justify-content-center">
                         BILDERGALERIE
@@ -108,9 +95,9 @@ export const Salon = () => {
                     </div>
                     <Container>
                         <ResponsiveMasonry
-                            columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
+                            columnsCountBreakPoints={{ 350: 1, 768: 2, 992: 3 }}
                         >
-                            <Masonry gutter="20px">
+                            <Masonry gutter="10px">
                                 {images.map((image, i) => (
                                     <div
                                         className={s.imgInGaleryBlock}
@@ -119,7 +106,7 @@ export const Salon = () => {
                                         <img
                                             key={i}
                                             src={image}
-                                            alt=""
+                                            alt="Galery"
                                             className={s.imgInGalery}
                                         />
                                     </div>

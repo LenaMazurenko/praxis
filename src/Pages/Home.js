@@ -42,7 +42,7 @@ export const Home = () => {
             </section>
 
             {/* Salon & Service & Adress section*/}
-            <section className={s.mainBg}>
+            <section className={s.wrapperPage}>
                 <Container className="mb-4 pt-4">
                     <Row className="g-0">
                         <Col lg={6} className=" ps-4 pe-4 pt-4 pb-4">
