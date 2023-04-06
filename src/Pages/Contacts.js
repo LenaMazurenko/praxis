@@ -27,7 +27,19 @@ export const Contacts = () => {
                                 <h3>ADRESSE</h3>
                                 <p>Strasse 5</p>
                                 <p>38100 Braunschweig</p>
-                                <p>Tel: 0531 00 00 00 00</p>
+                                <hr />
+                                <p>
+                                    <span> &#9743; </span>
+                                    <a href="tel:+14251234563">
+                                        +49-1520-000-00-00
+                                    </a>
+                                </p>
+                                <p>
+                                    <span>&#128231; </span>
+                                    <a href="mailto:example@mail.ru">
+                                        example@mail.ru
+                                    </a>
+                                </p>
                             </Col>
                             <Col>
                                 <h3>ÖFFNUNGSZEITEN</h3>
