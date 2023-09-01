@@ -31,7 +31,7 @@ const images = [
     salon,
     salon,
 ];
-export const Salon = () => {
+export const Praxis = () => {
     const { pathname } = useLocation();
     const [data, setData] = useState({ img: "", i: 0 });
 
@@ -64,7 +64,7 @@ export const Salon = () => {
             )}
             <section className={s.wrapperPage}>
                 <Container className={s.conteinerPages}>
-                    <h1>SALON</h1>
+                    <h1>PRAXIS</h1>
                     <hr />
                     <Row>
                         <Col md={6}>

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export const Footer = () => {
     return (
-        <Navbar bg="dark" variant="dark">
+        <Navbar bg="light">
             <Container>
                 <Navbar.Text>&copy; 2023</Navbar.Text>
 

@@ -40,7 +40,7 @@ export const Header = () => {
                         </Nav.Link>
 
                         <Nav.Link
-                            to="/salon"
+                            to="/praxis"
                             as={Link}
                             className="d-flex justify-content-center"
                         >

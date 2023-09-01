@@ -27,10 +27,14 @@ export const Home = () => {
                             Width="100%"
                             height="auto"
                         />
-
-                        <a href="tel:12345678" className={s.textStyleBtnLink}>
-                            TELEFONISCH TERMIN VEREINBAREN
-                        </a>
+                        <div className={s.heroBtn}>
+                            <a
+                                href="tel:12345678"
+                                className={s.textStyleBtnLink}
+                            >
+                                TELEFONISCH TERMIN VEREINBAREN
+                            </a>
+                        </div>
                     </div>
                 </Container>
             </section>
@@ -58,14 +62,14 @@ export const Home = () => {
                                 ipsum, dolor sit amet consectetur adipisicing
                                 elit. Ullam omnis eligendi."
                             </p>
-                            <Link to="/salon" className={s.textStyleBtnLink}>
+                            <Link to="/praxis" className={s.textStyleBtnLink}>
                                 ZUM PRAXIS
                             </Link>
                         </Col>
                         <Col lg={6}>
                             <img
                                 src={salonImg}
-                                alt="Salon"
+                                alt="PraxisC"
                                 Width="100%"
                                 height="auto"
                             />

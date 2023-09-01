@@ -3,7 +3,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { Home } from "./Pages/Home";
 import { About } from "./Pages/About";
-import { Salon } from "./Pages/Salon";
+import { Praxis } from "./Pages/Praxis";
 import { Service } from "./Pages/Service";
 import { Contacts } from "./Pages/Contacts";
 import { Daten } from "./Pages/Daten";
@@ -20,7 +20,7 @@ export default function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
-                <Route path="/salon" element={<Salon />} />
+                <Route path="/praxis" element={<Praxis />} />
                 <Route path="/service" element={<Service />} />
                 <Route path="/contacts" element={<Contacts />} />
                 <Route path="/impressum" element={<Daten teil="im" />} />

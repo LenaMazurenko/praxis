@@ -60,6 +60,9 @@
     padding-top: 50px;
     min-height: 100vh;
 }
+.heroBtn {
+    margin-top: 50px;
+}
 .textStyleBtnLink {
     background-color: transparent;
     border: 1px solid rgba(0, 0, 0, 0.55);

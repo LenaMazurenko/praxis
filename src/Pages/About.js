@@ -13,7 +13,7 @@ export const About = () => {
     return (
         <section className={s.wrapperPage}>
             <Container className={s.conteinerPages}>
-                <h1>ÜBER UNS</h1>
+                <h1>ÜBER MICH</h1>
                 <hr />
                 <div>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
