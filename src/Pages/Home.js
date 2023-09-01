@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import praxisName from "../Images/Logo-Marina-Wentland_2.png";
 import salonImg from "../Images/salon.jpg";
 import serviceImg from "../Images/service.jpg";
 
@@ -20,8 +21,12 @@ export const Home = () => {
             <section className={s.heroImg}>
                 <Container>
                     <div className={s.heroText}>
-                        <h1> Center Aestetik Medicine und Beauty</h1>
-                        <p>Dr. Marina Wentland</p>
+                        <img
+                            src={praxisName}
+                            alt="Praxis Name"
+                            Width="100%"
+                            height="auto"
+                        />
 
                         <a href="tel:12345678" className={s.textStyleBtnLink}>
                             TELEFONISCH TERMIN VEREINBAREN
@@ -34,9 +39,8 @@ export const Home = () => {
             <section className={s.losungText}>
                 <Container>
                     <p>
-                        "Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit.Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit."
+                        "Ihre Gesundheit und Schönheit zu bewahren- sanft,
+                        natürlich und ganzheitlich. Das ist meine Passion."
                     </p>
                 </Container>
             </section>
@@ -46,7 +50,7 @@ export const Home = () => {
                 <Container className="mb-4 pt-4">
                     <Row className="g-0">
                         <Col lg={6} className=" ps-4 pe-4 pt-4 pb-4">
-                            <h2>SALON</h2>
+                            <h2>PRAXIS</h2>
                             <hr />
                             <p>
                                 "Lorem ipsum, dolor sit amet consectetur
@@ -55,7 +59,7 @@ export const Home = () => {
                                 elit. Ullam omnis eligendi."
                             </p>
                             <Link to="/salon" className={s.textStyleBtnLink}>
-                                ZUM SALON
+                                ZUM PRAXIS
                             </Link>
                         </Col>
                         <Col lg={6}>
@@ -70,7 +74,7 @@ export const Home = () => {
 
                     <Row className="g-0">
                         <Col lg={6} className="ps-4 pt-4 pb-4 order-lg-2">
-                            <h2>SERVICE</h2>
+                            <h2>LEISTUNGEN</h2>
                             <hr />
                             <p>
                                 Lorem ipsum dolor sit amet consectetur
@@ -81,7 +85,7 @@ export const Home = () => {
                             </p>
 
                             <Link to="/service" className={s.textStyleBtnLink}>
-                                SERVICE
+                                LEISTUNGEN
                             </Link>
                         </Col>
                         <Col lg={6} className="order-lg-1">

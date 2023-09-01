@@ -13,7 +13,6 @@
     bottom: 0;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: rgba(0, 0, 0, 0.55);
 }
 .btn {
     background-color: transparent;
@@ -41,9 +40,11 @@
 .losungText {
     display: block;
     padding: 50px;
-    background-color: rgba(0, 0, 0, 0.55);
+    background-color: rgba(248, 249, 250);
+    color: rgba(84, 86, 85);
+    /* background-color: rgba(244, 175, 196);
+    color: rgba(149, 113, 125);*/
     text-align: center;
-    color: white;
     font-size: 30px;
     text-align: center;
     align-items: center;

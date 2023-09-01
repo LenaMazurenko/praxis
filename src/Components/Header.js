@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Nav, Navbar, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import logo from "../Images/logo.png";
+import logo from "../Images/Logo-Marina-Wentland_4.png";
 
 export const Header = () => {
     const [expanded, setExpanded] = useState(false);
@@ -10,8 +10,7 @@ export const Header = () => {
             expanded={expanded}
             collapseOnSelect
             expand="lg"
-            bg="dark"
-            variant="dark"
+            bg="light"
             fixed="top"
         >
             <Container>
@@ -19,7 +18,7 @@ export const Header = () => {
                     <img
                         src={logo}
                         width="auto"
-                        height="50"
+                        height="80"
                         class="d-inline-block align-top"
                         alt="Brand"
                     />
@@ -45,21 +44,21 @@ export const Header = () => {
                             as={Link}
                             className="d-flex justify-content-center"
                         >
-                            SALON
+                            PRAXIS
                         </Nav.Link>
                         <Nav.Link
                             to="/service"
                             as={Link}
                             className="d-flex justify-content-center"
                         >
-                            SERVICE
+                            LEISTUNGEN
                         </Nav.Link>
                         <Nav.Link
                             to="/about"
                             as={Link}
                             className="d-flex justify-content-center"
                         >
-                            ÜBER UNS
+                            ÜBER MICH
                         </Nav.Link>
                         <Nav.Link
                             to="/contacts"

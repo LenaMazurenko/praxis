@@ -12,9 +12,9 @@ export const Service = () => {
     return (
         <div className={s.wrapperPage}>
             <Container className={s.conteinerPages}>
-                <h1>SERVICE</h1>
+                <h1>LEISTUNGEN</h1>
                 <hr />
-                <div>Service bbbbbb bbbbbbbbbbbbbbb bbbbbbbbbbb</div>
+                <div>Leistungen bbbbbb bbbbbbbbbbbbbbb bbbbbbbbbbb</div>
                 <Table striped bordered hover>
                     <thead>
                         <tr>

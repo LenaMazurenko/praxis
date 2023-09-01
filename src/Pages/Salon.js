@@ -90,8 +90,8 @@ export const Salon = () => {
                     </h3>
                     <div className="d-flex justify-content-center mb-2 mt-4">
                         <button className={s.btn}>ALLE</button>
-                        <button className={s.btn}>SALON</button>
-                        <button className={s.btn}>SERVICE</button>
+                        <button className={s.btn}>PRAXIS</button>
+                        <button className={s.btn}>LEISTUNGEN</button>
                     </div>
                     <Container>
                         <ResponsiveMasonry
