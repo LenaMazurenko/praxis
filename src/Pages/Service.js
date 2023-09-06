@@ -12,113 +12,220 @@ export const Service = () => {
     return (
         <div className={s.wrapperPage}>
             <Container className={s.conteinerPages}>
-                <h1>LEISTUNGEN</h1>
-                <hr />
-                <div>Leistungen bbbbbb bbbbbbbbbbbbbbb bbbbbbbbbbb</div>
-                <Table striped bordered hover>
+                {/*<h1 className={s.headersText}>Leistungen & Priceliste</h1>
+                <h2 className={s.headersText}>Ich biete an:</h2>*/}
+                <h3 className={s.headersText_withIcon}>
+                    Ästhetische Behandlungen:
+                </h3>
+                <ul className={s.serviseList}>
+                    <li>
+                        -Injektionen mit Hyaluronsäure/ Kalziumhydroxylapatit
+                    </li>
+                    <li>
+                        -Ästhetische Mesotherapie, Biorevitalisierung,
+                        Redermalisation
+                    </li>
+                    <li>-Fadenlifting</li>
+                    <li>
+                        -Dermatologische Peeling :PRX-T33, PRX-T33 Lady, Hyalual
+                        Peels
+                    </li>
+                    <li>
+                        -Appatative Kosmetik: Microdermabrasion, Aquapeel,
+                        Microneedling
+                    </li>
+                    <li>
+                        -Anti Aging Gesichtsbehandlungen je nach Hautbedürfnis
+                    </li>
+                    <li>-Gesichtslympdrainage</li>
+                    <li>-Profhilo 5 Punkte Lifting</li>
+                    <li>-Prophilo</li>
+                </ul>
+                <h3 className={s.headersText_withIcon}>
+                    Body Gesichtsmodelierung:
+                </h3>
+                <ul className={s.serviseList}>
+                    <li>
+                        -Korrektur der Lippenkonturen und des Lippenvolumens
+                    </li>
+                    <li>-Augenfältchen, Tränensäcke</li>
+                    <li> -Wangenauffüllung</li>
+                    <li>-Korrektur der Mundregion und Mundwinkel</li>
+                    <li>-Korrektur der Nasolabialfalte</li>
+                    <li> -Kinn-und Kieferlinienstraffung</li>
+                    <li>-Ohrläppchen Verschönerung</li>
+                    <li> -Hände- ,Hals- und Dekolteeverjungung</li>
+                    <li>Lipolyse ( Fett-Weg-Spritze) Gesicht und Körper</li>
+                    <li> Mesohair Behandlung beim Haarausfall</li>
+                </ul>
+
+                <h3 className={s.headersText_withIcon}> Naturheilkunde:</h3>
+                <ul className={s.serviseList}>
+                    <li>-Therapeutische Massage</li>
+                    <li> -Sportmassage</li>
+                    <li>-Aromaölmassage</li>
+                    <li>-Kopf-und Gesichtsmassage</li>
+                    <li>-Wirbelsäulentherapie nach Dorn und Breussmassage</li>
+                    <li>-Baunscheidtherapie</li>
+                    <li>-Schröpfen</li>
+                    <li>-Manuelle Therapie</li>
+                    <li>-Infusionen</li>
+                    <li>-Lympfdrainage</li>
+                    <li>-Kinesio Tape</li>
+                    <li> -Ultraschall</li>
+                    <li> -Wärmeanwendung(Rotlicht)</li>
+                </ul>
+
+                <h2 className={s.headersText}>
+                    Preisliste Naturheilkunde 2023
+                </h2>
+                {/*---1Table--- */}
+                <Table striped>
                     <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Leistungen</th>
-                            <th>Price</th>
-                        </tr>
+                        <b>???? Behandlungen</b>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>1</td>
+                            <td>Therapeutische Massage</td>
                             <td>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Illum, culpa.
+                                25 Min/35,-€ <br />
+                                55 Min/65,-€
                             </td>
-                            <td>35 </td>
                         </tr>
                         <tr>
-                            <td>2</td>
+                            <td>Sportmassage</td>
                             <td>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Illum, culpa.
+                                25 Min/35,-€ <br /> 55 Min/65,-€
                             </td>
-                            <td>35 </td>
                         </tr>
                         <tr>
-                            <td>3</td>
-                            <td>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Illum, culpa.
-                            </td>
-                            <td>35 </td>
+                            <td>Aromaölmassage</td>
+                            <td>55 Min/70,-€ </td>
                         </tr>
                         <tr>
-                            <td>4</td>
-                            <td>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Illum, culpa.
-                            </td>
-                            <td>35 </td>
+                            <td>Therapeutische Kopf-und Gesichtsmassage</td>
+                            <td>25 Min/35,-€ </td>
                         </tr>
                         <tr>
-                            <td>5</td>
-                            <td>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Illum, culpa.
-                            </td>
-                            <td>35 </td>
+                            <td>Manuelle Therapie</td>
+                            <td>30 Min/38,50€ </td>
                         </tr>
                         <tr>
-                            <td>6</td>
-                            <td>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Illum, culpa.
-                            </td>
-                            <td>35 </td>
-                        </tr>{" "}
-                        <tr>
-                            <td>7</td>
-                            <td>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Illum, culpa.
-                            </td>
-                            <td>35 </td>
+                            <td>Wirbelsäulentherapie nach Dorn und Breuss</td>
+                            <td>30min/38,50€ </td>
                         </tr>
                         <tr>
-                            <td>8</td>
-                            <td>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Illum, culpa.
-                            </td>
-                            <td>35 </td>
+                            <td>Baunscheidtherapie</td>
+                            <td>ab 20,-€/je nach Bereich </td>
                         </tr>
                         <tr>
-                            <td>9</td>
-                            <td>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Illum, culpa.
-                            </td>
-                            <td>35 </td>
+                            <td>Schröpfen, mit Schröpfkopfmassage</td>
+                            <td>30 Min/29,-€ </td>
                         </tr>
                         <tr>
-                            <td>10</td>
-                            <td>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Illum, culpa.
-                            </td>
-                            <td>35 </td>
+                            <td>Kinesio Tape</td>
+                            <td> 1 Bereich/15,-€</td>
                         </tr>
                         <tr>
-                            <td>11</td>
+                            <td>Lymphdräinage Tape</td>
                             <td>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Illum, culpa.
+                                Arm/22,-€ <br />
+                                Bein/28,-€
                             </td>
-                            <td>35 </td>
                         </tr>
                         <tr>
-                            <td>12</td>
+                            <td>Wärmeanwendung</td>
+                            <td>10 Min/5,-€</td>
+                        </tr>
+                        <tr>
+                            <td>Ultraschall</td>
+                            <td>10 Min/15,-€</td>
+                        </tr>
+                    </tbody>
+                </Table>
+
+                {/*---2Table--- */}
+                <Table striped>
+                    <thead>
+                        {" "}
+                        <b>Ästhetische Behandlungen:</b>
+                    </thead>
+                    <tbody>
+                        <tr>
                             <td>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Illum, culpa.
+                                Injektionen mit Hyaluronsäure/
+                                Kalziumhydroxylapatit
                             </td>
-                            <td>35 </td>
+                            <td>
+                                ab 200,-€ <br />
+                                /je nach Bereich und Präparat
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ästhetische Mesotherapie</td>
+                            <td>
+                                Gesicht/150,-€ (min 3 Sitzungen notwendig)
+                                <br />
+                                Gesicht und Hals/250,-€
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Biorevitalisierung: </td>
+                            <td>
+                                ab 180,-€ <br />
+                                /je nach Präparat
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Redermalisation</td>
+                            <td>
+                                Ab 180,-€ <br />
+                                /je nach Präparat
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Perfoskin Complex</td>
+                            <td>5ml/180,-€</td>
+                        </tr>
+                        <tr>
+                            <td>Fadenlifting</td>
+                            <td>ab 10,-€/pro Faden</td>
+                        </tr>
+                        <tr>
+                            <td>Dermatologischer Peeling</td>
+                            <td>
+                                PRX-T33/79,-€ +100,-€/Heimpflege einmalig <br />
+                                (5 Sitzungen notwendig) <br />
+                                PRX-T33 Lady/79,-€ +59,-€/Heimpflege <br />
+                                (3 Sitzungen notwendig) <br />
+                                Hyalual Peels/89,-€ (3 Sitzungen notwendig)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> Diamant Microdermabrasion</td>
+                            <td>99,-€</td>
+                        </tr>
+                        <tr>
+                            <td>Aquapeel</td>
+                            <td>99,-€</td>
+                        </tr>
+                        <tr>
+                            <td>Microneedling</td>
+                            <td>
+                                Gesicht 99,-€ <br />
+                                Gesicht und Hals/149,-€
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Anti Aging Gesichtsbehandlungen</td>
+                            <td>
+                                ab 69,-€ <br />
+                                /je nach Hautbedürfnis
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gesichtslympdrainage</td>
+                            <td>30 Min/35,-€ </td>
                         </tr>
                     </tbody>
                 </Table>

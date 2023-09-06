@@ -1,3 +1,29 @@
+.headersText {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    color: rgba(84, 86, 85);
+    font-weight: bold;
+}
+.headersText_withIcon {
+    display: inline-flex;
+    margin-top: 20px;
+    padding-top: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    color: rgba(84, 86, 85);
+    font-weight: bold;
+}
+.headersText_withIcon::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+
+    margin-top: 0;
+    background-image: url("../Images/squear2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/*------*/
 .heroImg {
     background-image: url("../Images/1.jpg");
     height: 800px;
@@ -14,36 +40,38 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.heroBtn {
+    margin-top: 50px;
+}
 .btn {
     background-color: transparent;
-    border: 1px solid rgba(0, 0, 0, 0.55);
+    border: 1px solid rgb(149, 113, 125);
+    border-radius: 5px;
     padding: 10px;
     margin-right: 10px;
-    color: rgba(0, 0, 0, 0.55);
+    color: rgb(149, 113, 125);
 }
 .btn:hover {
-    background-color: rgba(0, 0, 0, 0.55);
-    border: 1px solid rgba(0, 0, 0, 0.55);
-    padding: 10px;
-
-    color: white;
+    border: 2px solid rgb(149, 113, 125);
 }
 .btnClose {
     position: absolute;
-    top: 20px;
-    right: 10px;
+    top: 50px;
+    right: 5px;
     background-color: transparent;
     border: none;
     color: lightgray;
 }
 /*---------------------*/
 .losungText {
+    /* font-family: "Allura", cursive;*/
+    font-family: "Montserrat";
     display: block;
     padding: 50px;
     background-color: rgba(248, 249, 250);
-    color: rgba(84, 86, 85);
-    /* background-color: rgba(244, 175, 196);
-    color: rgba(149, 113, 125);*/
+    color: rgba(149, 113, 125);
+    /* color: rgba(84, 86, 85);*/
+
     text-align: center;
     font-size: 30px;
     text-align: center;
@@ -51,32 +79,36 @@
 }
 
 .wrapperPage {
-    background-image: url("../Images//fon2.jpg");
-    background-position: center;
+    background-color: rgba(251, 226, 229);
+    background-image: url("../Images//bg01.png");
+    background-position: right bottom;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
+
+    font-family: "Quicksand", sans-serif;
+    font-size: 18px;
+    color: rgba(84, 86, 85);
 }
 .conteinerPages {
     padding-top: 50px;
     min-height: 100vh;
 }
-.heroBtn {
-    margin-top: 50px;
-}
+
 .textStyleBtnLink {
     background-color: transparent;
-    border: 1px solid rgba(0, 0, 0, 0.55);
+    border: 1px solid rgb(149, 113, 125);
+    border-radius: 5px;
     padding: 10px;
     margin-right: 10px;
-    color: rgba(0, 0, 0, 0.55);
+    color: rgb(149, 113, 125);
     text-decoration: none;
     white-space: nowrap;
 }
 .textStyleBtnLink:hover {
-    background-color: rgba(0, 0, 0, 0.55);
-    border: 1px solid rgba(0, 0, 0, 0.55);
-    padding: 10px;
-    color: white;
+    /* background-color: rgb(149,113,125);*/
+    border: 2px solid rgb(149, 113, 125);
+
+    color: rgb(149, 113, 125);
 }
 
 /*---Salon---*/
@@ -108,4 +140,12 @@
     width: auto;
     max-width: 90%;
     max-height: 90%;
+}
+
+/*---Service---*/
+.serviseList {
+    margin-left: 50px;
+}
+.serviseList li {
+    margin-bottom: 10px;
 }

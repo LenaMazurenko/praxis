@@ -29,7 +29,7 @@ export const Home = () => {
                         />
                         <div className={s.heroBtn}>
                             <a
-                                href="tel:12345678"
+                                href="tel:+4915127504549"
                                 className={s.textStyleBtnLink}
                             >
                                 TELEFONISCH TERMIN VEREINBAREN
@@ -43,8 +43,9 @@ export const Home = () => {
             <section className={s.losungText}>
                 <Container>
                     <p>
-                        "Ihre Gesundheit und Schönheit zu bewahren- sanft,
-                        natürlich und ganzheitlich. Das ist meine Passion."
+                        <b>"Ihre Gesundheit und Schönheit zu bewahren</b> <br />
+                        sanft, natürlich und ganzheitlich - das ist meine
+                        Passion."
                     </p>
                 </Container>
             </section>
@@ -54,7 +55,7 @@ export const Home = () => {
                 <Container className="mb-4 pt-4">
                     <Row className="g-0">
                         <Col lg={6} className=" ps-4 pe-4 pt-4 pb-4">
-                            <h2>PRAXIS</h2>
+                            <h2 className={s.headersText}>Praxis</h2>
                             <hr />
                             <p>
                                 "Lorem ipsum, dolor sit amet consectetur
@@ -78,7 +79,7 @@ export const Home = () => {
 
                     <Row className="g-0">
                         <Col lg={6} className="ps-4 pt-4 pb-4 order-lg-2">
-                            <h2>LEISTUNGEN</h2>
+                            <h2 className={s.headersText}>Leistungen</h2>
                             <hr />
                             <p>
                                 Lorem ipsum dolor sit amet consectetur
@@ -105,16 +106,25 @@ export const Home = () => {
                     <hr />
                     <div className="row mt-4 pt-4 justify-content-center">
                         <div className="col-sm-4">
-                            <h3>ADRESSE</h3>
-                            <p>Strasse 5</p>
-                            <p>38100 Braunschweig</p>
-                            <p>Tel: 0531 00 00 00 00</p>
+                            <h3 className={s.headersText}>Kontakt</h3>
+                            <ul>
+                                <li>Marina Wentland</li>
+                                <li>Praxis für Naturheilkunde und Ästhetik</li>
+                                <li>-</li>
+                                <li>Mitgaustraße 18 </li>
+                                <li>38106 Braunschweig Nord</li>
+                                <li>-</li>
+                                <li>Tel: 0151 275 045 49</li>
+                            </ul>
                         </div>
                         <div className="col-sm-4">
-                            <h3>ÖFFNUNGSZEITEN</h3>
-                            <p>Montag - Freitag</p>
-                            <p>09:00 - 18:00</p>
-                            <p>Samstags nach Terminvergabe</p>
+                            <h3 className={s.headersText}>Öffnungszeiten</h3>
+                            <ul>
+                                <li>Montag - Freitag:</li>
+                                <li>10:00 - 18:00 Uhr</li>
+                                <li>-</li>
+                                <li>Termine nach Vereinbarung</li>
+                            </ul>
                         </div>
                     </div>
                 </Container>

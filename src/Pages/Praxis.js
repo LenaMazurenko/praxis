@@ -64,9 +64,9 @@ export const Praxis = () => {
             )}
             <section className={s.wrapperPage}>
                 <Container className={s.conteinerPages}>
-                    <h1>PRAXIS</h1>
-                    <hr />
-                    <Row>
+                    {/*   <h1>PRAXIS</h1>*/}
+
+                    <Row className="mt-4">
                         <Col md={6}>
                             Lorem ipsum dolor sit amet consectetur, adipisicing
                             elit. Perspiciatis veritatis vitae, pariatur quos
@@ -85,13 +85,11 @@ export const Praxis = () => {
                         </Col>
                     </Row>
                     <hr />
-                    <h3 className="d-flex justify-content-center">
-                        BILDERGALERIE
-                    </h3>
+                    <h3 className={s.headersText}>Bildergalerie</h3>
                     <div className="d-flex justify-content-center mb-2 mt-4">
-                        <button className={s.btn}>ALLE</button>
-                        <button className={s.btn}>PRAXIS</button>
-                        <button className={s.btn}>LEISTUNGEN</button>
+                        <button className={s.btn}>Alle</button>
+                        <button className={s.btn}>Praxis</button>
+                        <button className={s.btn}>Leistungen</button>
                     </div>
                     <Container>
                         <ResponsiveMasonry
