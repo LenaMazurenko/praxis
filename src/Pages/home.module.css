@@ -114,6 +114,12 @@
     font-size: 18px;
     color: rgba(84, 86, 85);
 }
+.wrapperPage2 {
+    background-color: rgba(251, 226, 229);
+    font-family: "Quicksand", sans-serif;
+    font-size: 18px;
+    color: rgba(84, 86, 85);
+}
 .conteinerPages {
     padding-top: 50px;
     min-height: 100vh;

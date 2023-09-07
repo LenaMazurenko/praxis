@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Container, Image, Row, Col } from "react-bootstrap";
-import map from "../Images/Map.png";
+import map from "../Images/map.png";
 import s from "./home.module.css";
 
 export const Contacts = () => {
@@ -11,7 +11,7 @@ export const Contacts = () => {
         window.scrollTo(0, 0);
     }, [pathname]);
     return (
-        <section className={s.wrapperPage}>
+        <section className={s.wrapperPage2}>
             <Container className={s.conteinerPages}>
                 <h1 className={`${s.headersText} ${s.zentredText}`}>
                     Sie finden uns hier

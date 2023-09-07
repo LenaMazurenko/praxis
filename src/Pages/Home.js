@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import praxisName from "../Images/Logo-Marina-Wentland_2.png";
+import praxisName from "../Images/logo3.png";
 import salonImg from "../Images/salon.jpg";
 import serviceImg from "../Images/service3.jpeg";
 

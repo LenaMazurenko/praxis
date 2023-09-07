@@ -16,7 +16,26 @@ export const Service = () => {
                     Leistungen & Priceliste
                 </h1>
                 <hr />
-                <h2 className={s.headersText}>Ich biete an:</h2>
+                {/*<h2 className={s.headersText}>Ich biete an:</h2>*/}
+
+                {/*------ */}
+                <h3 className={s.headersText_withIcon}> Naturheilkunde:</h3>
+                <ul className={s.serviseList}>
+                    <li>-Therapeutische Massage</li>
+                    <li> -Sportmassage</li>
+                    <li>-Aromaölmassage</li>
+                    <li>-Kopf-und Gesichtsmassage</li>
+                    <li>-Wirbelsäulentherapie nach Dorn und Breussmassage</li>
+                    <li>-Baunscheidtherapie</li>
+                    <li>-Schröpfen</li>
+                    <li>-Manuelle Therapie</li>
+                    <li>-Infusionen</li>
+                    <li>-  Tape</li>
+                    <li> -Ultraschall</li>
+                    <li> -Wärmeanwendung(Rotlicht)</li>
+                </ul>
+
+                {/*------ */}
                 <h3 className={s.headersText_withIcon}>
                     Ästhetische Behandlungen:
                 </h3>
@@ -44,9 +63,9 @@ export const Service = () => {
                     <li>-Profhilo 5 Punkte Lifting</li>
                     <li>-Prophilo</li>
                 </ul>
-                <h3 className={s.headersText_withIcon}>
-                    Body Gesichtsmodelierung:
-                </h3>
+
+                {/*------ */}
+                <h3 className={s.headersText_withIcon}>Gesichtsmodelierung:</h3>
                 <ul className={s.serviseList}>
                     <li>
                         -Korrektur der Lippenkonturen und des Lippenvolumens
@@ -58,36 +77,16 @@ export const Service = () => {
                     <li> -Kinn-und Kieferlinienstraffung</li>
                     <li>-Ohrläppchen Verschönerung</li>
                     <li> -Hände- ,Hals- und Dekolteeverjungung</li>
-                    <li>Lipolyse ( Fett-Weg-Spritze) Gesicht und Körper</li>
-                    <li> Mesohair Behandlung beim Haarausfall</li>
-                </ul>
-
-                <h3 className={s.headersText_withIcon}> Naturheilkunde:</h3>
-                <ul className={s.serviseList}>
-                    <li>-Therapeutische Massage</li>
-                    <li> -Sportmassage</li>
-                    <li>-Aromaölmassage</li>
-                    <li>-Kopf-und Gesichtsmassage</li>
-                    <li>-Wirbelsäulentherapie nach Dorn und Breussmassage</li>
-                    <li>-Baunscheidtherapie</li>
-                    <li>-Schröpfen</li>
-                    <li>-Manuelle Therapie</li>
-                    <li>-Infusionen</li>
-                    <li>-Lympfdrainage</li>
-                    <li>-Kinesio Tape</li>
-                    <li> -Ultraschall</li>
-                    <li> -Wärmeanwendung(Rotlicht)</li>
+                    <li>-Lipolyse ( Fett-Weg-Spritze) Gesicht und Körper</li>
+                    <li>-Mesohair Behandlung beim Haarausfall</li>
                 </ul>
 
                 <hr />
                 <h2 className={`${s.headersText} ${s.zentredText}`}>
-                    Preisliste Naturheilkunde 2023
+                    Preisliste Naturheilkunde
                 </h2>
                 {/*---1Table--- */}
                 <Table striped>
-                    <thead>
-                        <b>???? Behandlungen</b>
-                    </thead>
                     <tbody>
                         <tr>
                             <td>Therapeutische Massage</td>
@@ -149,10 +148,10 @@ export const Service = () => {
                 </Table>
 
                 {/*---2Table--- */}
+                <h2 className={`${s.headersText} ${s.zentredText}`}>
+                    Preisliste Ästhetische Behandlungen
+                </h2>
                 <Table striped>
-                    <thead>
-                        <b>Ästhetische Behandlungen:</b>
-                    </thead>
                     <tbody>
                         <tr>
                             <td>

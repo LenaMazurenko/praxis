@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Nav, Navbar, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import logo from "../Images/Logo-Marina-Wentland_4.png";
+import logo from "../Images/logo2.png";
 
 export const Header = () => {
     const [expanded, setExpanded] = useState(false);

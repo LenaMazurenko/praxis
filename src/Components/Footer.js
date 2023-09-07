@@ -16,9 +16,6 @@ export const Footer = () => {
                         <Nav.Link to="/datenschutz" as={Link}>
                             Datenschutz
                         </Nav.Link>
-                        <Nav.Link to="/agb" as={Link}>
-                            AGB
-                        </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
