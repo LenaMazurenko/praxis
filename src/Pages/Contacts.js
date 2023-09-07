@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Container, Image, Row, Col } from "react-bootstrap";
-import map from "../Images/map.png";
+import map from "../Images/Map.png";
 import s from "./home.module.css";
 
 export const Contacts = () => {
