@@ -5,7 +5,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import praxisName from "../Images/Logo-Marina-Wentland_2.png";
 import salonImg from "../Images/salon.jpg";
-import serviceImg from "../Images/service.jpg";
+import serviceImg from "../Images/service3.jpeg";
 
 import s from "./home.module.css";
 
@@ -50,7 +50,7 @@ export const Home = () => {
                 </Container>
             </section>
 
-            {/* Salon & Service & Adress section*/}
+            {/* Salon & Service section*/}
             <section className={s.wrapperPage}>
                 <Container className="mb-4 pt-4">
                     <Row className="g-0">
@@ -102,11 +102,15 @@ export const Home = () => {
                             />
                         </Col>
                     </Row>
+                </Container>
+            </section>
 
-                    <hr />
+            {/* Adress section*/}
+            <section>
+                <Container>
                     <div className="row mt-4 pt-4 justify-content-center">
                         <div className="col-sm-4">
-                            <h3 className={s.headersText}>Kontakt</h3>
+                            <h3 className={s.headersText_withIcon2}>Kontakt</h3>
                             <ul>
                                 <li>Marina Wentland</li>
                                 <li>Praxis für Naturheilkunde und Ästhetik</li>
@@ -114,11 +118,20 @@ export const Home = () => {
                                 <li>Mitgaustraße 18 </li>
                                 <li>38106 Braunschweig Nord</li>
                                 <li>-</li>
-                                <li>Tel: 0151 275 045 49</li>
+                                <li>
+                                    {" "}
+                                    <b>Tel:</b> +49151 275 045 49
+                                </li>
+                                <li>
+                                    {" "}
+                                    <b>E-mail: </b> info@praxis-wentland.de
+                                </li>
                             </ul>
                         </div>
                         <div className="col-sm-4">
-                            <h3 className={s.headersText}>Öffnungszeiten</h3>
+                            <h3 className={s.headersText_withIcon2}>
+                                Öffnungszeiten
+                            </h3>
                             <ul>
                                 <li>Montag - Freitag:</li>
                                 <li>10:00 - 18:00 Uhr</li>

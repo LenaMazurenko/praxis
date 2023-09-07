@@ -13,7 +13,9 @@ export const Contacts = () => {
     return (
         <section className={s.wrapperPage}>
             <Container className={s.conteinerPages}>
-                <h1>KONTAKTS</h1>
+                <h1 className={`${s.headersText} ${s.zentredText}`}>
+                    Sie finden uns hier
+                </h1>
                 <hr />
 
                 <Row>
@@ -22,36 +24,40 @@ export const Contacts = () => {
                     </Col>
 
                     <Col xs={12} xl={6}>
-                        <Row xs={1} md={3} xl={2} xxl={2} className="mt-4">
+                        <Row xs={1} md={2} xl={2} xxl={2} className="mt-4">
                             <Col>
-                                <h3>ADRESSE</h3>
-                                <p>Strasse 5</p>
-                                <p>38100 Braunschweig</p>
-                                <hr />
-                                <p>
-                                    <span> &#9743; </span>
-                                    <a href="tel:+14251234563">
-                                        +49-1520-000-00-00
-                                    </a>
-                                </p>
-                                <p>
-                                    <span>&#128231; </span>
-                                    <a href="mailto:example@mail.ru">
-                                        example@mail.ru
-                                    </a>
-                                </p>
+                                <h3 className={s.headersText_withIcon}>
+                                    Kontakt
+                                </h3>
+                                <ul>
+                                    <li>Marina Wentland</li>
+                                    <li>
+                                        Praxis für Naturheilkunde und Ästhetik
+                                    </li>
+                                    <li>-</li>
+                                    <li>Mitgaustraße 18 </li>
+                                    <li>38106 Braunschweig Nord</li>
+                                    <li>-</li>
+                                    <li>
+                                        {" "}
+                                        <b>Tel.:</b> 0151 275 045 49
+                                    </li>
+                                    <li>
+                                        {" "}
+                                        <b>E-Mail:</b> marina@gmail.com
+                                    </li>
+                                </ul>{" "}
                             </Col>
                             <Col>
-                                <h3>ÖFFNUNGSZEITEN</h3>
-                                <p>Montag - Freitag</p>
-                                <p>09:00 - 18:00</p>
-                                <p>Samstags nach Terminvergabe</p>
-                            </Col>
-                            <Col>
-                                <h3>QUICK LINKS</h3>
-                                <p>Impressum</p>
-                                <p>Datenschutz</p>
-                                <p>AGB</p>
+                                <h3 className={s.headersText_withIcon}>
+                                    Öffnungszeiten
+                                </h3>
+                                <ul>
+                                    <li>Montag - Freitag:</li>
+                                    <li>10:00 - 18:00 Uhr</li>
+                                    <li>-</li>
+                                    <li>Termine nach Vereinbarung</li>
+                                </ul>
                             </Col>
                         </Row>
                     </Col>

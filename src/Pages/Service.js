@@ -12,8 +12,11 @@ export const Service = () => {
     return (
         <div className={s.wrapperPage}>
             <Container className={s.conteinerPages}>
-                {/*<h1 className={s.headersText}>Leistungen & Priceliste</h1>
-                <h2 className={s.headersText}>Ich biete an:</h2>*/}
+                <h1 className={`${s.headersText} ${s.zentredText}`}>
+                    Leistungen & Priceliste
+                </h1>
+                <hr />
+                <h2 className={s.headersText}>Ich biete an:</h2>
                 <h3 className={s.headersText_withIcon}>
                     Ästhetische Behandlungen:
                 </h3>
@@ -76,7 +79,8 @@ export const Service = () => {
                     <li> -Wärmeanwendung(Rotlicht)</li>
                 </ul>
 
-                <h2 className={s.headersText}>
+                <hr />
+                <h2 className={`${s.headersText} ${s.zentredText}`}>
                     Preisliste Naturheilkunde 2023
                 </h2>
                 {/*---1Table--- */}
@@ -147,7 +151,6 @@ export const Service = () => {
                 {/*---2Table--- */}
                 <Table striped>
                     <thead>
-                        {" "}
                         <b>Ästhetische Behandlungen:</b>
                     </thead>
                     <tbody>
@@ -226,6 +229,32 @@ export const Service = () => {
                         <tr>
                             <td>Gesichtslympdrainage</td>
                             <td>30 Min/35,-€ </td>
+                        </tr>
+                        <tr>
+                            <td>Sculpture Gesichtsmassage</td>
+                            <td>30 Min 35,-€</td>
+                        </tr>
+                        <tr>
+                            <td>Profhilo 5 Punkte Lifting</td>
+                            <td>200,-€</td>
+                        </tr>
+                        <tr>
+                            <td>Prophilo Body</td>
+                            <td>299,-€</td>
+                        </tr>
+                        <tr>
+                            <td>Lipolyse ( Fett-Weg-Spritze)</td>
+                            <td>
+                                Gesicht und Körper <br /> /1ml 5,-€
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Mesohair Behandlung beim Haarausfall</td>
+                            <td>120,-€</td>
+                        </tr>
+                        <tr>
+                            <td>Toxin freier Botox Ersatz</td>
+                            <td>ab 100,-€</td>
                         </tr>
                     </tbody>
                 </Table>

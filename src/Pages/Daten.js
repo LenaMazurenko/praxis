@@ -16,13 +16,18 @@ export const Daten = (prop) => {
             {prop.teil === "im" && (
                 <div className={s.wrapperPage}>
                     <Container className={s.conteinerPages}>
-                        <h1>Impressum</h1>
+                        <h1 className={`${s.headersText} ${s.zentredText}`}>
+                            Impressum
+                        </h1>
                         <hr />
                         <p>
-                            Naturheilpraxis Wentland Straße 1 77777 Braunschweig
+                            Marina Wentland <br />
+                            Praxis für Naturheilkunde und Ästhetik <br />{" "}
+                            Mitgaustraße 18 <br /> 38106 Braunschweig Nord
                         </p>
                         <p>E-mail: info@studiobeuty.de</p>
-                        <p>Tel.: +49 176 238 837 29</p>
+                        <p>Tel.: +49 151 275 045 49</p>
+                        <p>www.praxis-wentland.de</p>
                         <p>Inhaltlich verantwortlich gemäß §6 MDstV:</p>
                         <p>
                             Marina Wentland als Heilpraktikerin für
@@ -48,7 +53,9 @@ export const Daten = (prop) => {
             {prop.teil === "ds" && (
                 <div className={s.wrapperPage}>
                     <Container className={s.conteinerPages}>
-                        <h1>Datenschutz</h1>
+                        <h1 className={`${s.headersText} ${s.zentredText}`}>
+                            Datenschutz
+                        </h1>
                         <hr />
 
                         <p>
@@ -82,7 +89,9 @@ export const Daten = (prop) => {
             {prop.teil === "agb" && (
                 <div className={s.wrapperPage}>
                     <Container className={s.conteinerPages}>
-                        <h1>AGB</h1>
+                        <h1 className={`${s.headersText} ${s.zentredText}`}>
+                            AGB
+                        </h1>
                         <hr />
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing
