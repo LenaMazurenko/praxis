@@ -16,11 +16,11 @@ export const Home = () => {
     }, [pathname]);
 
     return (
-        <>
+        <div className={s.home}>
             {/* Hero section */}
-            <section className={s.heroImg}>
+            <section className={s.heroBg}>
                 <Container>
-                    <div className={s.heroText}>
+                    <div className={s.heroLogo}>
                         <img
                             src={praxisName}
                             alt="Praxis Name"
@@ -51,7 +51,7 @@ export const Home = () => {
             </section>
 
             {/* Salon & Service section*/}
-            <section className={s.wrapperPage}>
+            <section className={s.wrapperPagec}>
                 <Container className="mb-4 pt-4">
                     <Row className="g-0">
                         <Col lg={6} className=" ps-4 pe-4 pt-4 pb-4">
@@ -106,7 +106,7 @@ export const Home = () => {
             </section>
 
             {/* Adress section*/}
-            <section>
+            <section className={s.sectionContacts}>
                 <Container>
                     <div className="row mt-4 pt-4 justify-content-center">
                         <div className="col-sm-4">
@@ -142,6 +142,6 @@ export const Home = () => {
                     </div>
                 </Container>
             </section>
-        </>
+        </div>
     );
 };
