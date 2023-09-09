@@ -51,7 +51,7 @@ export const Home = () => {
             </section>
 
             {/* Salon & Service section*/}
-            <section className={s.wrapperPagec}>
+            <section className={s.wrapperPage}>
                 <Container className="mb-4 pt-4">
                     <Row className="g-0">
                         <Col lg={6} className=" ps-4 pe-4 pt-4 pb-4">
