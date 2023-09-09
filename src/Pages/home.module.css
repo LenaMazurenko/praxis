@@ -78,6 +78,7 @@
 }
 .btn:hover {
     border: 2px solid rgb(149, 113, 125);
+    transition: 0.5s;
 }
 .btnClose {
     position: absolute;
@@ -124,7 +125,14 @@
     padding-top: 50px;
     min-height: 100vh;
 }
-
+.textStyleLink {
+    color: rgba(84, 86, 85);
+    text-decoration: none;
+}
+.textStyleLink:hover {
+    color: rgba(166, 172, 172);
+    transition: 0.5s;
+}
 .textStyleBtnLink {
     background-color: transparent;
     border: 1px solid rgb(149, 113, 125);
@@ -136,10 +144,9 @@
     white-space: nowrap;
 }
 .textStyleBtnLink:hover {
-    /* background-color: rgb(149,113,125);*/
     border: 2px solid rgb(149, 113, 125);
-
     color: rgb(149, 113, 125);
+    transition: 0.5s;
 }
 
 /*---Salon---*/
@@ -179,4 +186,34 @@
 }
 .serviseList li {
     margin-bottom: 10px;
+}
+
+/*-----Kontakts----*/
+
+.socialLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.socialLinksItem {
+    margin-right: 10px;
+}
+.iconInstagram {
+    width: 32px;
+    height: 32px;
+    fill: rgb(165, 56, 168);
+}
+.iconInstagram:hover {
+    fill: rgba(165, 56, 168, 0.5);
+    transition: 0.5s;
+}
+.iconWhatsapp {
+    width: 32px;
+    height: 32px;
+    fill: rgb(26, 223, 59);
+}
+.iconWhatsapp:hover {
+    fill: rgba(88, 190, 105, 0.5);
+    transition: 0.5s;
 }
