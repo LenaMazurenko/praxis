@@ -46,6 +46,17 @@ export const Home = () => {
                 </Container>
             </section>
 
+            {/* Losung/About section. */}
+            <section className={s.losung}>
+                <Container>
+                    <p>
+                        <b>"Ihre Gesundheit und Schönheit zu bewahren</b> <br />
+                        sanft, natürlich und ganzheitlich - das ist meine
+                        Passion."
+                    </p>
+                </Container>
+            </section>
+
             {/* Salon & Service section*/}
             <section className={s.background1}>
                 <Container className={s.conteinerSection}>
