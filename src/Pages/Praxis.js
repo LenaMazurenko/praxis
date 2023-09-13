@@ -60,9 +60,15 @@ export const Praxis = () => {
     };
 
     return (
-        <>
+        <div className={`${s.wrapperPage} ${s.conteinerPage}`}>
             {data.img && (
-                <div className={s.bgGaleryPopup}>
+                <div
+                    className={
+                        data.img
+                            ? `${s.bgGaleryPopupActive}`
+                            : `${s.bgGaleryPopup}`
+                    }
+                >
                     <button
                         className={s.btnClose}
                         onClick={() => {
@@ -78,8 +84,8 @@ export const Praxis = () => {
                     />
                 </div>
             )}
-            <section className={s.wrapperPage}>
-                <Container className={s.conteinerPages}>
+            <section className={s.background2}>
+                <Container className={s.conteinerSection}>
                     <h1 className={`${s.headersText} ${s.zentredText}`}>
                         Praxis
                     </h1>
@@ -100,21 +106,26 @@ export const Praxis = () => {
                                 alt="Salon"
                                 Width="100%"
                                 height="auto"
+                                className={s.imgShadow}
                             />
                         </Col>
                     </Row>
-                    <hr />
+                </Container>
+            </section>
+
+            <section className={s.background3}>
+                <Container className={s.conteinerSection}>
                     <h3 className={`${s.headersText} ${s.zentredText}`}>
                         Bildergalerie
                     </h3>
-                    <div className="d-flex justify-content-center mb-2 mt-4">
+                    <div className={s.btnGaleryBlock}>
                         <button
                             className={s.btn}
                             onClick={() => {
                                 setCurrentArray(images);
                             }}
                         >
-                            Alle
+                            ALLE
                         </button>
                         <button
                             className={s.btn}
@@ -122,7 +133,7 @@ export const Praxis = () => {
                                 setCurrentArray(imagesSalon);
                             }}
                         >
-                            Praxis
+                            PRAXIS
                         </button>
                         <button
                             className={s.btn}
@@ -130,7 +141,7 @@ export const Praxis = () => {
                                 setCurrentArray(imagesService);
                             }}
                         >
-                            Leistungen
+                            LEISTUNGEN
                         </button>
                     </div>
                     <Container>
@@ -156,6 +167,6 @@ export const Praxis = () => {
                     </Container>
                 </Container>
             </section>
-        </>
+        </div>
     );
 };

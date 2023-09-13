@@ -12,10 +12,10 @@ export const Daten = (prop) => {
     }, [pathname]);
 
     return (
-        <>
+        <div className={`${s.wrapperPage} ${s.conteinerPage}`}>
             {prop.teil === "im" && (
-                <div className={s.wrapperPage}>
-                    <Container className={s.conteinerPages}>
+                <section className={s.background2}>
+                    <Container className={s.conteinerSection}>
                         <h1 className={`${s.headersText} ${s.zentredText}`}>
                             Impressum
                         </h1>
@@ -102,11 +102,11 @@ export const Daten = (prop) => {
                             und Daten diskret und streng vertraulich behandelt.
                         </p>
                     </Container>
-                </div>
+                </section>
             )}
             {prop.teil === "ds" && (
-                <div className={s.wrapperPage}>
-                    <Container className={s.conteinerPages}>
+                <section className={s.background2}>
+                    <Container className={s.conteinerSection}>
                         <h1 className={`${s.headersText} ${s.zentredText}`}>
                             Datenschutzerklärung
                         </h1>
@@ -374,8 +374,8 @@ export const Daten = (prop) => {
                             E-Mail: marina@gmail.com
                         </p>
                     </Container>
-                </div>
+                </section>
             )}
-        </>
+        </div>
     );
 };

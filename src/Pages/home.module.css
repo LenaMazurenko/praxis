@@ -1,13 +1,29 @@
-.home {
+.wrapperPage {
     font-family: "Quicksand", sans-serif;
     font-size: 18px;
     color: rgb(44, 46, 53);
+    margin-top: 50px;
 }
 .zentredText {
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
+.horisontalLinie {
+    display: block;
+    position: absolute;
+
+    height: 10px;
+    width: 100%;
+    top: 105px;
+    background: rgb(244, 175, 196);
+    background: linear-gradient(
+        90deg,
+        rgba(244, 175, 196, 1) 0%,
+        rgba(226, 223, 223, 1) 100%
+    );
+}
+/*----Headers texts style-------*/
 .headersText {
     font-family: "Montserrat", sans-serif;
     font-size: 30px;
@@ -50,100 +66,89 @@
     background-repeat: no-repeat;
 }
 
-/*------*/
-
+/*---Hero---*/
 .heroBg {
-    height: 800px;
+    width: 100%;
+    height: auto;
+    min-height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(
+            to right,
+            rgba(244, 175, 196, 0.7),
+            rgba(84, 86, 85, 0.5)
+        ),
+        url("../Images/service2.jpeg");
 }
-
-.heroBg::before {
-    content: "";
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-    background: url("../Images/service2.jpeg") center / cover no-repeat;
-    filter: blur(5px);
-}
-
 .heroLogo {
     text-align: center;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    opacity: 0;
+    scale: 0;
+}
+.heroLogoShow {
+    text-align: center;
+    opacity: 1;
+    scale: 1;
+    transition: scale 2s ease-in-out 200ms, opacity 2s ease-in-out 200ms;
+}
+.heroLogoImg {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
 }
 .heroBtn {
     margin-top: 50px;
 }
-.btn {
-    background-color: transparent;
-    border: 1px solid rgb(149, 113, 125);
-    border-radius: 5px;
-    padding: 10px;
-    margin-right: 10px;
-    color: rgb(149, 113, 125);
-}
-.btn:hover {
-    border: 2px solid rgb(149, 113, 125);
-}
-.btnClose {
-    position: absolute;
-    top: 50px;
-    right: 5px;
-    background-color: transparent;
-    border: none;
-    color: lightgray;
-}
+
 /*---------------------*/
-.losungText {
+.losung {
     /* font-family: "Allura", cursive;*/
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     display: block;
     padding: 50px;
-    background-color: rgba(248, 249, 250);
     color: rgb(44, 46, 53);
-    /* color: rgba(84, 86, 85);*/
 
     text-align: center;
     font-size: 30px;
-    text-align: center;
     align-items: center;
 }
 
-.wrapperPage {
+/*-----Section-----*/
+.conteinerPage {
+    /*  padding-top: 50px;*/
+    min-height: calc(100vh - 165px);
+}
+.conteinerSection {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.background1 {
     background-color: rgba(251, 226, 229);
     background-image: url("../Images//bg01.png");
     background-position: right bottom;
     background-repeat: no-repeat;
     background-size: 100%;
-
-    font-family: "Quicksand", sans-serif;
-    font-size: 18px;
-    color: rgb(44, 46, 53);
 }
-.wrapperPage2 {
+.background2 {
     background-color: rgba(251, 226, 229);
-    font-family: "Quicksand", sans-serif;
-    font-size: 18px;
-    color: rgb(44, 46, 53);
 }
-.conteinerPages {
-    padding-top: 50px;
-    min-height: 100vh;
+.background3 {
+    background-color: #fff;
 }
 
+/*----Buttons und Links -----*/
 .textStyleLink {
-    color: rgba(84, 86, 85);
-    text-decoration: none;
+    color: rgb(149, 113, 125);
 }
 .textStyleLink:hover {
-    color: rgba(166, 172, 172);
-    transition: 0.5s;
+    color: rgb(149, 113, 125);
+    font-weight: 700;
 }
 .textStyleBtnLink {
+    box-sizing: border-box;
     background-color: transparent;
     border: 1px solid rgb(149, 113, 125);
     border-radius: 5px;
@@ -154,8 +159,22 @@
     white-space: nowrap;
 }
 .textStyleBtnLink:hover {
-    border: 2px solid rgb(149, 113, 125);
     color: rgb(149, 113, 125);
+    border: 3px solid rgb(149, 113, 125);
+    font-weight: 700;
+}
+
+.btn {
+    background-color: transparent;
+    border: 1px solid rgb(149, 113, 125);
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px;
+    color: rgb(149, 113, 125);
+}
+.btn:hover {
+    border: 3px solid rgb(149, 113, 125);
+    font-weight: 700;
 }
 
 /*---Galery---*/
@@ -175,20 +194,48 @@
 .bgGaleryPopup {
     width: 100%;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.8);
     position: fixed;
     display: flex;
+    top: 0;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    z-index: 1000;
+    z-index: 3000;
+    opacity: 0;
+    scale: 0;
+}
+.bgGaleryPopupActive {
+    scale: 1;
+    transition: scale 2s ease-in-out 0.5s, opacity 2s ease-in-out 0.5s;
 }
 .imgGaleryPopup {
     width: auto;
     max-width: 90%;
     max-height: 90%;
 }
-
+.btnGaleryBlock {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    padding: 10px;
+}
+.btnClose {
+    position: absolute;
+    top: 20px;
+    right: 8px;
+    background-color: transparent;
+    color: rgb(149, 113, 125);
+    font-weight: 700;
+    border: none;
+}
+.btnClose:hover {
+    font-size: 18px;
+}
+.imgShadow {
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+}
 /*---Service---*/
 .serviseList {
     margin-left: 50px;
@@ -198,10 +245,6 @@
 }
 
 /*-----Kontakts----*/
-.sectionContacts {
-    background-color: rgba(248, 249, 250);
-    margin-top: -25px;
-}
 .socialLinks {
     display: flex;
     flex-direction: row;
@@ -214,16 +257,44 @@
 .iconInstagram {
     width: 32px;
     height: 32px;
-    fill: rgb(165, 56, 168);
+    fill: rgba(84, 86, 85);
 }
 .iconInstagram:hover {
-    fill: rgba(84, 86, 85);
+    fill: rgb(224, 75, 230);
 }
 .iconWhatsapp {
     width: 32px;
     height: 32px;
-    fill: rgb(26, 223, 59);
+    fill: rgba(84, 86, 85);
 }
 .iconWhatsapp:hover {
-    fill: rgba(84, 86, 85);
+    fill: rgb(26, 223, 59);
+}
+/*-----Uber mich----*/
+.btnSertificate {
+    border: none;
+    color: rgb(149, 113, 125);
+    background: transparent;
+    text-decoration: underline;
+}
+.btnSertificate:hover {
+    font-weight: 700;
+}
+
+/*Test background with overlau*/
+.a {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(
+            to right,
+            rgba(244, 175, 196, 0.7),
+            rgba(84, 86, 85, 0.5)
+        ),
+        url("../Images/salon.jpg");
 }

@@ -1,31 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import praxisName from "../Images/logo3.png";
+import hero from "../Images/logo3.png";
 import salonImg from "../Images/salon.jpg";
 import serviceImg from "../Images/service3.jpeg";
+import Icons from "./sprite.svg";
 
 import s from "./home.module.css";
 
 export const Home = () => {
+    const [show, setShow] = useState(false);
     const { pathname } = useLocation();
+    useEffect(() => {
+        setShow(true);
+    }, []);
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [pathname]);
 
     return (
-        <div className={s.home}>
+        <div className={s.wrapperPage}>
             {/* Hero section */}
             <section className={s.heroBg}>
                 <Container>
-                    <div className={s.heroLogo}>
+                    <div
+                        className={show ? `${s.heroLogoShow}` : `${s.heroLogo}`}
+                    >
                         <img
-                            src={praxisName}
-                            alt="Praxis Name"
-                            Width="100%"
-                            height="auto"
+                            className={s.heroLogoImg}
+                            src={hero}
+                            alt="Praxis"
                         />
                         <div className={s.heroBtn}>
                             <a
@@ -39,20 +46,9 @@ export const Home = () => {
                 </Container>
             </section>
 
-            {/* Losung/About section. */}
-            <section className={s.losungText}>
-                <Container>
-                    <p>
-                        <b>"Ihre Gesundheit und Schönheit zu bewahren</b> <br />
-                        sanft, natürlich und ganzheitlich - das ist meine
-                        Passion."
-                    </p>
-                </Container>
-            </section>
-
             {/* Salon & Service section*/}
-            <section className={s.wrapperPage}>
-                <Container className="mb-4 pt-4">
+            <section className={s.background1}>
+                <Container className={s.conteinerSection}>
                     <Row className="g-0">
                         <Col lg={6} className=" ps-4 pe-4 pt-4 pb-4">
                             <h2 className={s.headersText}>Praxis</h2>
@@ -73,6 +69,7 @@ export const Home = () => {
                                 alt="PraxisC"
                                 Width="100%"
                                 height="auto"
+                                className={s.imgShadow}
                             />
                         </Col>
                     </Row>
@@ -99,6 +96,7 @@ export const Home = () => {
                                 alt="Service"
                                 Width="100%"
                                 height="auto"
+                                className={s.imgShadow}
                             />
                         </Col>
                     </Row>
@@ -106,8 +104,8 @@ export const Home = () => {
             </section>
 
             {/* Adress section*/}
-            <section className={s.sectionContacts}>
-                <Container>
+            <section className={s.background3}>
+                <Container className={s.conteinerSection}>
                     <div className="row mt-4 pt-4 justify-content-center">
                         <div className="col-sm-4">
                             <h3 className={s.headersText_withIcon2}>Kontakt</h3>
@@ -119,12 +117,49 @@ export const Home = () => {
                                 <li>38106 Braunschweig Nord</li>
                                 <li>-</li>
                                 <li>
-                                    {" "}
-                                    <b>Tel:</b> +49151 275 045 49
+                                    <b>Tel.:</b>{" "}
+                                    <a
+                                        href="tel:+4915127504549"
+                                        className={s.textStyleLink}
+                                    >
+                                        0151 275 045 49
+                                    </a>
                                 </li>
                                 <li>
-                                    {" "}
-                                    <b>E-mail: </b> info@praxis-wentland.de
+                                    <b>E-Mail: </b>
+                                    <a
+                                        href="mailto: info@praxis-wentland.de"
+                                        className={s.textStyleLink}
+                                    >
+                                        info@praxis-wentland.de
+                                    </a>
+                                </li>
+                                <li>-</li>
+
+                                <li>
+                                    <div className={s.socialLinks}>
+                                        <a
+                                            href="https://www.instagram.com/"
+                                            className={s.socialLinksItem}
+                                        >
+                                            <svg className={s.iconInstagram}>
+                                                <use
+                                                    href={Icons + "#instagram"}
+                                                ></use>
+                                            </svg>
+                                        </a>
+
+                                        <a
+                                            href="tel:+4915127504549"
+                                            className={s.socialLinksItem}
+                                        >
+                                            <svg className={s.iconWhatsapp}>
+                                                <use
+                                                    href={Icons + "#whatsapp"}
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
