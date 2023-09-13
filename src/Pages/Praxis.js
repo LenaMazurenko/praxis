@@ -62,13 +62,7 @@ export const Praxis = () => {
     return (
         <div className={`${s.wrapperPage} ${s.conteinerPage}`}>
             {data.img && (
-                <div
-                    className={
-                        data.img
-                            ? `${s.bgGaleryPopupActive}`
-                            : `${s.bgGaleryPopup}`
-                    }
-                >
+                <div className={s.bgGaleryPopup}>
                     <button
                         className={s.btnClose}
                         onClick={() => {
@@ -144,27 +138,26 @@ export const Praxis = () => {
                             LEISTUNGEN
                         </button>
                     </div>
-                    <Container>
-                        <ResponsiveMasonry
-                            columnsCountBreakPoints={{ 350: 1, 768: 2, 992: 3 }}
-                        >
-                            <Masonry gutter="10px">
-                                {currentArray.map((image, i) => (
-                                    <div
-                                        className={s.imgInGaleryBlock}
-                                        onClick={() => viewImg(image, i)}
-                                    >
-                                        <img
-                                            key={i}
-                                            src={image}
-                                            alt="Galery"
-                                            className={s.imgInGalery}
-                                        />
-                                    </div>
-                                ))}
-                            </Masonry>
-                        </ResponsiveMasonry>
-                    </Container>
+
+                    <ResponsiveMasonry
+                        columnsCountBreakPoints={{ 350: 1, 768: 2, 992: 3 }}
+                    >
+                        <Masonry gutter="10px">
+                            {currentArray.map((image, i) => (
+                                <div
+                                    className={s.imgInGaleryBlock}
+                                    onClick={() => viewImg(image, i)}
+                                >
+                                    <img
+                                        key={i}
+                                        src={image}
+                                        alt="Galery"
+                                        className={s.imgInGalery}
+                                    />
+                                </div>
+                            ))}
+                        </Masonry>
+                    </ResponsiveMasonry>
                 </Container>
             </section>
         </div>

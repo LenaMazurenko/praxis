@@ -147,10 +147,10 @@
     color: rgb(149, 113, 125);
     font-weight: 700;
 }
-.textStyleBtnLink {
-    box-sizing: border-box;
+.btn {
     background-color: transparent;
-    border: 1px solid rgb(149, 113, 125);
+    border: none;
+    outline: 1px solid rgb(149, 113, 125);
     border-radius: 5px;
     padding: 10px;
     margin-right: 10px;
@@ -158,25 +158,35 @@
     text-decoration: none;
     white-space: nowrap;
 }
-.textStyleBtnLink:hover {
+.btn:hover,
+.btn:focus {
     color: rgb(149, 113, 125);
-    border: 3px solid rgb(149, 113, 125);
+    outline: 2px solid rgb(149, 113, 125);
     font-weight: 700;
 }
-
-.btn {
+.btn:active {
     background-color: transparent;
-    border: 1px solid rgb(149, 113, 125);
+    border: none;
+    outline: 2px solid rgb(149, 113, 125);
     border-radius: 5px;
     padding: 10px;
     margin-right: 10px;
     color: rgb(149, 113, 125);
-}
-.btn:hover {
-    border: 3px solid rgb(149, 113, 125);
     font-weight: 700;
 }
-
+/* сброс браузерных стилей для фокуса */
+.btn::-moz-focus-inner {
+    border: none;
+}
+.btnSertificate {
+    border: none;
+    color: rgb(149, 113, 125);
+    background: transparent;
+    text-decoration: underline;
+}
+.btnSertificate:hover {
+    font-weight: 700;
+}
 /*---Galery---*/
 .imgInGaleryBlock {
     overflow: hidden;
@@ -202,8 +212,6 @@
     align-items: center;
     overflow: hidden;
     z-index: 3000;
-    opacity: 0;
-    scale: 0;
 }
 .bgGaleryPopupActive {
     scale: 1;
@@ -217,8 +225,6 @@
 .btnGaleryBlock {
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
-    margin-top: 20px;
     padding: 10px;
 }
 .btnClose {
@@ -271,15 +277,6 @@
     fill: rgb(26, 223, 59);
 }
 /*-----Uber mich----*/
-.btnSertificate {
-    border: none;
-    color: rgb(149, 113, 125);
-    background: transparent;
-    text-decoration: underline;
-}
-.btnSertificate:hover {
-    font-weight: 700;
-}
 
 /*Test background with overlau*/
 .a {

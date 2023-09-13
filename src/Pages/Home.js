@@ -35,10 +35,7 @@ export const Home = () => {
                             alt="Praxis"
                         />
                         <div className={s.heroBtn}>
-                            <a
-                                href="tel:+4915127504549"
-                                className={s.textStyleBtnLink}
-                            >
+                            <a href="tel:+4915127504549" className={s.btn}>
                                 TELEFONISCH TERMIN VEREINBAREN
                             </a>
                         </div>
@@ -70,7 +67,7 @@ export const Home = () => {
                                 ipsum, dolor sit amet consectetur adipisicing
                                 elit. Ullam omnis eligendi."
                             </p>
-                            <Link to="/praxis" className={s.textStyleBtnLink}>
+                            <Link to="/praxis" className={s.btn}>
                                 ZUM PRAXIS
                             </Link>
                         </Col>
@@ -97,7 +94,7 @@ export const Home = () => {
                                 porro deleniti, odio, aut fugiat esse.
                             </p>
 
-                            <Link to="/service" className={s.textStyleBtnLink}>
+                            <Link to="/service" className={s.btn}>
                                 LEISTUNGEN
                             </Link>
                         </Col>
