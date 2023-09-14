@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import hero from "../Images/logo3.png";
 import salonImg from "../Images/salon.jpg";
 import serviceImg from "../Images/service3.jpeg";
+import arztImg from "../Images/service4.jpeg";
 import Icons from "./sprite.svg";
 
 import s from "./home.module.css";
@@ -47,9 +48,9 @@ export const Home = () => {
             <section className={s.losung}>
                 <Container>
                     <p>
-                        <b>"Ihre Gesundheit und Schönheit zu bewahren</b> <br />
+                        <b>Ihre Gesundheit und Schönheit zu bewahren</b> <br />
                         sanft, natürlich und ganzheitlich - das ist meine
-                        Passion."
+                        Passion.
                     </p>
                 </Container>
             </section>
@@ -68,7 +69,7 @@ export const Home = () => {
                                 elit. Ullam omnis eligendi."
                             </p>
                             <Link to="/praxis" className={s.btn}>
-                                ZUM PRAXIS
+                                PRAXIS...
                             </Link>
                         </Col>
                         <Col lg={6}>
@@ -95,13 +96,39 @@ export const Home = () => {
                             </p>
 
                             <Link to="/service" className={s.btn}>
-                                LEISTUNGEN
+                                LEISTUNGEN...
                             </Link>
                         </Col>
                         <Col lg={6} className="order-lg-1">
                             <img
                                 src={serviceImg}
                                 alt="Service"
+                                Width="100%"
+                                height="auto"
+                                className={s.imgShadow}
+                            />
+                        </Col>
+                    </Row>
+
+                    <Row className="g-0">
+                        <Col lg={6} className=" ps-4 pe-4 pt-4 pb-4">
+                            <h2 className={s.headersText}> Über mich</h2>
+                            <hr />
+                            <p>
+                                Herzlich willkommen auf meiner Seite der Praxis.{" "}
+                                <br />
+                                Mein Name ist Marina Wentland, ich bin Diplom
+                                Physiotherapeutin, Heilpraktikerin und staatlich
+                                anerkannte Kosmetikerin.
+                            </p>
+                            <Link to="/praxis" className={s.btn}>
+                                ÜBER MICH...
+                            </Link>
+                        </Col>
+                        <Col lg={6}>
+                            <img
+                                src={arztImg}
+                                alt="Arztin"
                                 Width="100%"
                                 height="auto"
                                 className={s.imgShadow}
@@ -116,7 +143,7 @@ export const Home = () => {
                 <Container className={s.conteinerSection}>
                     <div className="row mt-4 pt-4 justify-content-center">
                         <div className="col-sm-4">
-                            <h3 className={s.headersText_withIcon2}>Kontakt</h3>
+                            <h3 className={s.headersText_withIcon}>Kontakt</h3>
                             <ul>
                                 <li>Marina Wentland</li>
                                 <li>Praxis für Naturheilkunde und Ästhetik</li>
@@ -172,7 +199,7 @@ export const Home = () => {
                             </ul>
                         </div>
                         <div className="col-sm-4">
-                            <h3 className={s.headersText_withIcon2}>
+                            <h3 className={s.headersText_withIcon}>
                                 Öffnungszeiten
                             </h3>
                             <ul>

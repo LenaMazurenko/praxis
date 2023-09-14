@@ -11,7 +11,7 @@ export const Service = () => {
     }, [pathname]);
     return (
         <div className={`${s.wrapperPage} ${s.conteinerPage}`}>
-            <section className={s.background2}>
+            <section className={s.background1}>
                 <Container className={s.conteinerSection}>
                     <h1 className={`${s.headersText} ${s.zentredText}`}>
                         Leistungen & Priceliste

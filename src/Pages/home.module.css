@@ -11,15 +11,17 @@
 }
 .horisontalLinie {
     display: block;
-    position: absolute;
+    position: fixed;
 
     height: 10px;
     width: 100%;
     top: 105px;
+    z-index: 1000;
     background: rgb(244, 175, 196);
     background: linear-gradient(
         90deg,
-        rgba(244, 175, 196, 1) 0%,
+        rgba(244, 175, 196) 0%,
+        rgba(251, 226, 229, 1) 50%,
         rgba(226, 223, 223, 1) 100%
     );
 }
@@ -39,26 +41,8 @@
 }
 .headersText_withIcon::before {
     content: "";
-    width: 50px;
-    height: 50px;
-
-    margin-top: 0;
-    background-image: url("../Images/squear2.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-.headersText_withIcon2 {
-    display: inline-flex;
-    margin-top: 20px;
-    padding-top: 10px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 30px;
-    color: rgb(44, 46, 53);
-}
-.headersText_withIcon2::before {
-    content: "";
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 
     margin-top: 0;
     background-image: url("../Images/squear.png");
@@ -101,9 +85,18 @@
 }
 .heroBtn {
     margin-top: 50px;
+    scale: 1;
+    transition: scale 1s ease-in-out;
+    font-weight: 700;
+}
+
+.heroBtn:hover {
+    scale: 1.1;
+    transition: scale 1s ease-in-out;
 }
 
 /*---------------------*/
+
 .losung {
     /* font-family: "Allura", cursive;*/
     font-family: "Montserrat", sans-serif;
@@ -115,7 +108,17 @@
     font-size: 30px;
     align-items: center;
 }
+.losung::before,
+.losung::after {
+    content: "";
+    width: 40px;
+    height: 40px;
 
+    margin-top: 0;
+    background-image: url("../Images/squear.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 /*-----Section-----*/
 .conteinerPage {
     /*  padding-top: 50px;*/
@@ -126,11 +129,11 @@
     padding-bottom: 20px;
 }
 .background1 {
-    background-color: rgba(251, 226, 229);
-    background-image: url("../Images//bg01.png");
-    background-position: right bottom;
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background: linear-gradient(
+        to right,
+        rgba(244, 175, 196, 0.7),
+        rgba(84, 86, 85, 0.5)
+    );
 }
 .background2 {
     background-color: rgba(251, 226, 229);

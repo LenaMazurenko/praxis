@@ -14,7 +14,7 @@ export const Daten = (prop) => {
     return (
         <div className={`${s.wrapperPage} ${s.conteinerPage}`}>
             {prop.teil === "im" && (
-                <section className={s.background2}>
+                <section className={s.background1}>
                     <Container className={s.conteinerSection}>
                         <h1 className={`${s.headersText} ${s.zentredText}`}>
                             Impressum
@@ -105,7 +105,7 @@ export const Daten = (prop) => {
                 </section>
             )}
             {prop.teil === "ds" && (
-                <section className={s.background2}>
+                <section className={s.background1}>
                     <Container className={s.conteinerSection}>
                         <h1 className={`${s.headersText} ${s.zentredText}`}>
                             Datenschutzerklärung

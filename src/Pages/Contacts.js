@@ -12,7 +12,7 @@ export const Contacts = () => {
         window.scrollTo(0, 0);
     }, [pathname]);
     return (
-        <div className={`${s.wrapperPage} ${s.conteinerPage} ${s.background2}`}>
+        <div className={`${s.wrapperPage} ${s.conteinerPage} ${s.background1}`}>
             <section>
                 <Container className={s.conteinerSection}>
                     <h1 className={`${s.headersText} ${s.zentredText}`}>

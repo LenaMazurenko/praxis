@@ -60,7 +60,7 @@ export const Praxis = () => {
     };
 
     return (
-        <div className={`${s.wrapperPage} ${s.conteinerPage}`}>
+        <div className={`${s.wrapperPage} ${s.conteinerPage} ${s.background1}`}>
             {data.img && (
                 <div className={s.bgGaleryPopup}>
                     <button
@@ -78,7 +78,7 @@ export const Praxis = () => {
                     />
                 </div>
             )}
-            <section className={s.background2}>
+            <section>
                 <Container className={s.conteinerSection}>
                     <h1 className={`${s.headersText} ${s.zentredText}`}>
                         Praxis
@@ -107,7 +107,7 @@ export const Praxis = () => {
                 </Container>
             </section>
 
-            <section className={s.background3}>
+            <section>
                 <Container className={s.conteinerSection}>
                     <h3 className={`${s.headersText} ${s.zentredText}`}>
                         Bildergalerie
