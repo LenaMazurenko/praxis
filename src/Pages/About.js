@@ -2,16 +2,32 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import s from "./home.module.css";
 import arzt from "../Images/3.jpg";
 import sertificate1 from "../Images/diploms/Heilpraktikererlaubnis.jpg";
 import sertificate2 from "../Images/diploms/BA_Medizinalfachberufe.jpg";
-//import sertificate3 from "../Images/diploms/Urkunde_Kosmetikerin.jpg";
-//import sertificate4 from "../Images/diploms/Urkunde_Physiotherapie.jpg";
+import sertificate3 from "../Images/diploms/Urkunde_Kosmetikerin.jpg";
+import sertificate4 from "../Images/diploms/Urkunde Physiotherapie.jpg";
+
+const imagesArray1 = [sertificate1, sertificate2, sertificate3, sertificate4];
+const imagesArray2 = [
+    sertificate1,
+    sertificate2,
+    sertificate3,
+    sertificate4,
+    sertificate1,
+    sertificate2,
+    sertificate3,
+    sertificate4,
+];
 
 export const About = () => {
     const [currentImg, setCurrentImg] = useState("");
+    const [currenArray, setCurrentArray] = useState(imagesArray1);
+
     const { pathname } = useLocation();
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [pathname]);
@@ -126,6 +142,45 @@ export const About = () => {
                             </div>
                         </Col>
                     </Row>
+                </Container>
+            </section>
+
+            {/*------Diplome und Sertificate----------- */}
+            <hr />
+
+            <section>
+                <Container className={s.conteinerSection}>
+                    <h1 className={`${s.headersText} ${s.zentredText}`}>
+                        Meine Diplome und Sertifikate
+                    </h1>
+                    <ResponsiveMasonry
+                        columnsCountBreakPoints={{ 350: 1, 768: 2, 992: 3 }}
+                    >
+                        <Masonry gutter="10px">
+                            {currenArray.map((image, i) => (
+                                <div
+                                    className={s.imgInGaleryBlock}
+                                    onClick={() => setCurrentImg(image)}
+                                >
+                                    <img
+                                        key={i}
+                                        src={image}
+                                        alt="Sertigicate"
+                                        className={s.imgSertificate}
+                                    />
+                                </div>
+                            ))}
+                        </Masonry>
+                    </ResponsiveMasonry>
+
+                    <button
+                        className={s.btn}
+                        onClick={() => {
+                            setCurrentArray(imagesArray2);
+                        }}
+                    >
+                        All Setrifikaten...
+                    </button>
                 </Container>
             </section>
         </div>

@@ -204,6 +204,11 @@
 .imgInGalery:hover {
     transform: scale(1.35);
 }
+.imgSertificate {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
 .bgGaleryPopup {
     width: 100%;
     height: 100vh;
