@@ -65,7 +65,7 @@
             rgba(244, 175, 196, 0.7),
             rgba(84, 86, 85, 0.5)
         ),
-        url("../Images/service2.jpeg");
+        url("../Images/service2.jpg");
 }
 .heroLogo {
     text-align: center;
@@ -157,6 +157,7 @@
     border-radius: 5px;
     padding: 10px;
     margin-right: 10px;
+    margin-bottom: 10px;
     color: rgb(149, 113, 125);
     text-decoration: none;
     white-space: nowrap;
@@ -234,6 +235,7 @@
     display: flex;
     justify-content: center;
     padding: 10px;
+    flex-wrap: wrap;
 }
 .btnClose {
     position: absolute;

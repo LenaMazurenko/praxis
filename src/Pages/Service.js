@@ -66,7 +66,7 @@ export const Service = () => {
                         </li>
                         <li>-Gesichtslympdrainage</li>
                         <li>-Profhilo 5 Punkte Lifting</li>
-                        <li>-Prophilo</li>
+                        <li>-Prophilo Body</li>
                     </ul>
 
                     {/*------ */}
@@ -255,9 +255,7 @@ export const Service = () => {
                             </tr>
                             <tr>
                                 <td>Lipolyse ( Fett-Weg-Spritze)</td>
-                                <td>
-                                    Gesicht und Körper <br /> /1ml 5,-€
-                                </td>
+                                <td>Gesicht und Körper/1ml 5,-€</td>
                             </tr>
                             <tr>
                                 <td>Mesohair Behandlung beim Haarausfall</td>
