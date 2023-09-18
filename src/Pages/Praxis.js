@@ -87,11 +87,17 @@ export const Praxis = () => {
 
                     <Row className="mt-4">
                         <Col md={6}>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing
-                            elit. Perspiciatis veritatis vitae, pariatur quos
-                            iusto dolor minus quaerat magni? Aut exercitationem
-                            architecto dolorum velit corporis repellat vitae
-                            sapiente esse pariatur dolore.
+                            <div className={s.textFormat}>
+                                <p>
+                                    Moderne, neueingerichtete Praxis im
+                                    Neubaugebiet Braunschweig-Nord. Die Praxis
+                                    ist sehr gut mit dem Auto aus allen
+                                    Richtungen zu erreichen und bitet
+                                    ausreichend Parkmöglichkeiten an. In
+                                    unmittelbare Nähe befindet sich eine
+                                    Bushaltestelle der Linie 426.
+                                </p>
+                            </div>
                         </Col>
 
                         <Col md={6}>
@@ -104,6 +110,7 @@ export const Praxis = () => {
                             />
                         </Col>
                     </Row>
+                    <hr />
                 </Container>
             </section>
 

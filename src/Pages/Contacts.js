@@ -70,7 +70,7 @@ export const Contacts = () => {
                                         <li>
                                             <div className={s.socialLinks}>
                                                 <a
-                                                    href="https://www.instagram.com/"
+                                                    href="https://instagram.com/praxismw?igshid=MzMyNGUyNmU2YQ=="
                                                     className={
                                                         s.socialLinksItem
                                                     }
@@ -90,7 +90,7 @@ export const Contacts = () => {
                                                 </a>
 
                                                 <a
-                                                    href="tel:+4915127504549"
+                                                    href="https://api.whatsapp.com/send?phone=+4915127504549"
                                                     className={
                                                         s.socialLinksItem
                                                     }

@@ -9,6 +9,9 @@
     justify-content: center;
     margin-top: 20px;
 }
+.textFormat {
+    text-indent: 15px;
+}
 .horisontalLinie {
     display: block;
     position: fixed;
@@ -119,6 +122,14 @@
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+/*----------------*/
+.textBlockHome {
+    padding: 40px 20px 0;
+    @media screen and (max-width: 420px) {
+        padding: 40px 0 0;
+    }
+}
 /*-----Section-----*/
 .conteinerPage {
     /*  padding-top: 50px;*/
@@ -144,6 +155,7 @@
 
 /*----Buttons und Links -----*/
 .textStyleLink {
+    white-space: nowrap;
     color: rgb(149, 113, 125);
 }
 .textStyleLink:hover {
@@ -191,6 +203,7 @@
 .btnSertificate:hover {
     font-weight: 700;
 }
+
 /*---Galery---*/
 .imgInGaleryBlock {
     overflow: hidden;
