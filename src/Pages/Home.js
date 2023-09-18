@@ -4,9 +4,9 @@ import { useLocation } from "react-router-dom";
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import hero from "../Images/logo3.png";
-import salonImg from "../Images/salon.jpg";
-import serviceImg from "../Images/service4.jpeg";
-import arztImg from "../Images/service3.jpeg";
+import praxisImg from "../Images/praxis2.jpg";
+import serviceImg from "../Images/service4.jpg";
+import arztImg from "../Images/service3.jpg";
 import Icons from "./sprite.svg";
 
 import s from "./home.module.css";
@@ -84,6 +84,7 @@ export const Home = () => {
                                 Width="100%"
                                 height="auto"
                                 className={s.imgShadow}
+                                loading="lazy"
                             />
                         </Col>
                     </Row>
@@ -119,6 +120,7 @@ export const Home = () => {
                                 Width="100%"
                                 height="auto"
                                 className={s.imgShadow}
+                                loading="lazy"
                             />
                         </Col>
                     </Row>
@@ -144,11 +146,12 @@ export const Home = () => {
                         </Col>
                         <Col lg={6}>
                             <img
-                                src={salonImg}
+                                src={praxisImg}
                                 alt="PraxisC"
                                 Width="100%"
                                 height="auto"
                                 className={s.imgShadow}
+                                loading="lazy"
                             />
                         </Col>
                     </Row>

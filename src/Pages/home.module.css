@@ -18,7 +18,7 @@
 
     height: 10px;
     width: 100%;
-    top: 105px;
+    top: 100px;
     z-index: 1000;
     background: rgb(244, 175, 196);
     background: linear-gradient(
@@ -300,21 +300,3 @@
     fill: rgb(26, 223, 59);
 }
 /*-----Uber mich----*/
-
-/*Test background with overlau*/
-.a {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    background-position: center;
-    background-size: cover;
-    background-image: linear-gradient(
-            to right,
-            rgba(244, 175, 196, 0.7),
-            rgba(84, 86, 85, 0.5)
-        ),
-        url("../Images/salon.jpg");
-}

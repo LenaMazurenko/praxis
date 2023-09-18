@@ -66,7 +66,7 @@ export const Service = () => {
                         </li>
                         <li>-Gesichtslympdrainage</li>
                         <li>-Profhilo 5 Punkte Lifting</li>
-                        <li>-Prophilo Body</li>
+                        <li>-Profhilo Body</li>
                     </ul>
 
                     {/*------ */}
@@ -250,7 +250,7 @@ export const Service = () => {
                                 <td>200,-€</td>
                             </tr>
                             <tr>
-                                <td>Prophilo Body</td>
+                                <td>Profhilo Body</td>
                                 <td>299,-€</td>
                             </tr>
                             <tr>

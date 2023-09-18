@@ -3,41 +3,67 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
-import salon from "../Images/salon.jpg";
-import salon2 from "../Images/salon2.jpg";
-import salon3 from "../Images/salon3.jpg";
-import salon4 from "../Images/salon4.jpg";
-import salon5 from "../Images/salon5.jpg";
-import salon6 from "../Images/salon6.jpg";
-import service from "../Images/service.jpg";
-import service2 from "../Images/service2.jpeg";
-import service3 from "../Images/service3.jpeg";
-import service4 from "../Images/service4.jpeg";
-import service5 from "../Images/service5.jpeg";
-import service6 from "../Images/service6.jpeg";
-import service7 from "../Images/service7.jpeg";
+import praxis1 from "../Images/praxis1.jpg";
+import praxis2 from "../Images/praxis2.jpg";
+import praxis3 from "../Images/praxis3.jpg";
+import praxis4 from "../Images/praxis4.jpg";
+import praxis5 from "../Images/praxis5.jpg";
+import praxis6 from "../Images/praxis6.jpg";
+import praxis7 from "../Images/praxis7.jpg";
+import praxis8 from "../Images/praxis8.jpg";
+import praxis9 from "../Images/praxis9.jpg";
+import praxis10 from "../Images/praxis10.jpg";
+import praxis11 from "../Images/praxis11.jpg";
+import praxis12 from "../Images/praxis12.jpg";
+import praxis13 from "../Images/praxis13.jpg";
+import praxis14 from "../Images/praxis14.jpg";
+import service2 from "../Images/service2.jpg";
+import service3 from "../Images/service3.jpg";
+import service4 from "../Images/service4.jpg";
+import service5 from "../Images/service5.jpg";
+import service6 from "../Images/service6.jpg";
+import service7 from "../Images/service7.jpg";
 import s from "./home.module.css";
 
 const images = [
-    salon,
-    salon2,
-    salon3,
-    salon4,
-    salon5,
-    salon6,
-    salon2,
-    service,
+    praxis1,
+    praxis2,
+    praxis3,
+    praxis4,
+    praxis5,
+    praxis6,
+    praxis7,
+    praxis8,
+    praxis9,
+    praxis10,
+    praxis11,
+    praxis12,
+    praxis13,
+    praxis14,
     service2,
     service3,
     service4,
     service5,
     service6,
     service7,
-    salon,
 ];
-const imagesSalon = [salon, salon2, salon3, salon4, salon5, salon6, salon2];
+const imagesPraxis = [
+    praxis1,
+    praxis2,
+    praxis3,
+    praxis4,
+    praxis5,
+    praxis6,
+    praxis7,
+    praxis8,
+    praxis9,
+    praxis10,
+    praxis11,
+    praxis12,
+    praxis13,
+    praxis14,
+];
 const imagesService = [
-    service,
     service2,
     service3,
     service4,
@@ -102,8 +128,8 @@ export const Praxis = () => {
 
                         <Col md={6}>
                             <img
-                                src={salon}
-                                alt="Salon"
+                                src={praxis2}
+                                alt="Praxis"
                                 Width="100%"
                                 height="auto"
                                 className={s.imgShadow}
@@ -131,7 +157,7 @@ export const Praxis = () => {
                         <button
                             className={s.btn}
                             onClick={() => {
-                                setCurrentArray(imagesSalon);
+                                setCurrentArray(imagesPraxis);
                             }}
                         >
                             PRAXIS
@@ -160,6 +186,7 @@ export const Praxis = () => {
                                         src={image}
                                         alt="Galery"
                                         className={s.imgInGalery}
+                                        loading="lazy"
                                     />
                                 </div>
                             ))}

@@ -20,7 +20,7 @@ export const Header = () => {
                         <img
                             src={logo}
                             width="auto"
-                            height="80"
+                            height="75"
                             class="d-inline-block align-top"
                             alt="Brand"
                         />
