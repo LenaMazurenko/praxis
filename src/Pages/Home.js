@@ -36,7 +36,14 @@ export const Home = () => {
                             alt="Praxis"
                         />
                         <div className={s.heroBtn}>
-                            <a href="tel:+4915127504549" className={s.btn}>
+                            <a
+                                href="tel:+4915127504549"
+                                className={s.btn}
+                                style={{
+                                    color: "#545655",
+                                    outline: "1px solid rgb(84, 86, 85)",
+                                }}
+                            >
                                 TELEFONISCH TERMIN VEREINBAREN
                             </a>
                         </div>
@@ -90,7 +97,7 @@ export const Home = () => {
                     </Row>
 
                     <Row className="g-0">
-                        <Col lg={6} className="ps-4 pt-4 pb-4 order-lg-2">
+                        <Col lg={6} className="ps-4 pe-4 pt-4 pb-4 order-lg-2">
                             <div className={s.textBlockHome}>
                                 <h2 className={s.headersText}>Leistungen</h2>
                                 <hr />
@@ -98,12 +105,12 @@ export const Home = () => {
                                     <p>
                                         Unsere Angebot umfasst eine breite
                                         Palette Therapien für Ihr Wohlbefinden
-                                        wie Klassische-und
-                                        Sportmassage,Lympfdrainage, Schröpfen,
-                                        Kinesio Tape, Wirbelsäulen Therapie.
-                                        Vielfältige Optionen für kosmetische und
-                                        ästhetische Behandlungen:
-                                        Microdermabrasion,Aqua-Peel,Microneedling,Mesotherapie,
+                                        wie Klassische-und Sportmassage,
+                                        Lympfdrainage, Schröpfen, Kinesio Tape,
+                                        Wirbelsäulen Therapie. Vielfältige
+                                        Optionen für kosmetische und ästhetische
+                                        Behandlungen: Microdermabrasion,
+                                        Aqua-Peel, Microneedling, Mesotherapie,
                                         Biorevitalisierung und Unterspritzungen.
                                     </p>
                                 </div>

@@ -48,14 +48,15 @@ export const About = () => {
                         Herzlich willkommen
                     </h1>
                     <hr />
-                    <p>
-                        Mein Name ist Marina Wentland, ich bin Diplom
-                        Physiotherapeutin, Heilpraktikerin und staatlich
-                        anerkannte Kosmetikerin. Herzlich willkommen auf meiner
-                        Seite der Praxis.
-                    </p>
+                    <div className={s.textFormat}>
+                        <p>
+                            Mein Name ist Marina Wentland, ich bin Diplom
+                            Physiotherapeutin, Heilpraktikerin und staatlich
+                            anerkannte Kosmetikerin. Herzlich willkommen auf
+                            meiner Seite der Praxis.
+                        </p>
 
-                    {/*    <Row className="mt-4">
+                        {/*    <Row className="mt-4">
                          <Col md={6} className="mb-4">
                             <img
                                 src={arzt}
@@ -70,45 +71,48 @@ export const About = () => {
                    
                         <Col md={6}> 
                             <div> */}
-                    <p>
-                        Während meiner beruflichen Laufbahn habe ich mehrere
-                        Jahre in meinem erlernten Beruf als Physiotherapeutin
-                        gearbeitet.
-                    </p>
-                    <p>
-                        {" "}
-                        Die Schwerpunkte meiner Arbeit lagen bei
-                        Sportphysiotherapie, Rehasport sowie Erkrankungen des
-                        Bewegungsapparates. Dabei war und ist meine Priorität,
-                        mich ständig weiter zu bilden und mein Wissen auf dem
-                        neusten Stand zu halten. So habe ich Weiterbildungen in
-                        manuellen Lymphdrainage, Krankengymnastik am Gerät,
-                        Wirbelsäulentherapie nach Dorn und Sportphysiotherapie
-                        absolviert. Anschließend folgte der Bachelor Studiengang
-                        für Medizinalfachberufe an der Diploma Hochschule
-                        Nordhessen.
-                    </p>
-                    <p>
-                        {" "}
-                        Gesundheitssport, Wellness und Kosmetik waren schon
-                        immer ein wichtiger Teil meines Lifestyles. Der Spaß
-                        daran hat mich dazu bewegt weitere Berufsrichtungen zu
-                        erlernen. Dabei habe ich die Ausbildung zur staatlich
-                        anerkannten Kosmetikerin und zur Heilpraktikerin in
-                        Freiburg absolviert. Um meinen Kunden ganzheitliche
-                        Beratung zu bieten, folgten zahlreiche Seminare für
-                        ästhetische Medizin und Naturheilkunde.
-                    </p>
-                    <p>
-                        In meiner Praxis arbeite ich ausschließlich mit
-                        hochwertigen Produkten und lege sehr viel Wert auf ein
-                        natürliches Behandlungsergebnis.
-                    </p>
-                    <p>
-                        Ich freue mich Sie persönlich in meiner Praxis zu
-                        begrüßen, <br />
-                        Eure Marina Wentland
-                    </p>
+                        <p>
+                            Während meiner beruflichen Laufbahn habe ich mehrere
+                            Jahre in meinem erlernten Beruf als
+                            Physiotherapeutin gearbeitet.
+                        </p>
+                        <p>
+                            {" "}
+                            Die Schwerpunkte meiner Arbeit lagen bei
+                            Sportphysiotherapie, Rehasport sowie Erkrankungen
+                            des Bewegungsapparates. Dabei war und ist meine
+                            Priorität, mich ständig weiter zu bilden und mein
+                            Wissen auf dem neusten Stand zu halten. So habe ich
+                            Weiterbildungen in manuellen Lymphdrainage,
+                            Krankengymnastik am Gerät, Wirbelsäulentherapie nach
+                            Dorn und Sportphysiotherapie absolviert.
+                            Anschließend folgte der Bachelor Studiengang für
+                            Medizinalfachberufe an der Diploma Hochschule
+                            Nordhessen.
+                        </p>
+                        <p>
+                            {" "}
+                            Gesundheitssport, Wellness und Kosmetik waren schon
+                            immer ein wichtiger Teil meines Lifestyles. Der Spaß
+                            daran hat mich dazu bewegt weitere Berufsrichtungen
+                            zu erlernen. Dabei habe ich die Ausbildung zur
+                            staatlich anerkannten Kosmetikerin und zur
+                            Heilpraktikerin in Freiburg absolviert. Um meinen
+                            Kunden ganzheitliche Beratung zu bieten, folgten
+                            zahlreiche Seminare für ästhetische Medizin und
+                            Naturheilkunde.
+                        </p>
+                        <p>
+                            In meiner Praxis arbeite ich ausschließlich mit
+                            hochwertigen Produkten und lege sehr viel Wert auf
+                            ein natürliches Behandlungsergebnis.
+                        </p>
+                        <p>
+                            Ich freue mich Sie persönlich in meiner Praxis zu
+                            begrüßen, <br />
+                            Eure Marina Wentland
+                        </p>
+                    </div>
                     {/*}   </div>
                         </Col>
         </Row>

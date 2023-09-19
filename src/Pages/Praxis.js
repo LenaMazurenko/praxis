@@ -82,20 +82,40 @@ export const Praxis = () => {
     }, [pathname]);
 
     const viewImg = (img, i) => {
+        console.log(img);
         setData({ img, i });
     };
 
+    const imgAction = (action) => {
+        let i = data.i;
+        if (action === "next-img") {
+            setData({ img: currentArray[i + 1], i: i + 1 });
+        }
+        if (action === "previous-img") {
+            setData({ img: currentArray[i - 1], i: i - 1 });
+        }
+        if (!action) {
+            setData({ img: "", i: 0 });
+        }
+    };
     return (
         <div className={`${s.wrapperPage} ${s.conteinerPage} ${s.background1}`}>
             {data.img && (
                 <div className={s.bgGaleryPopup}>
+                    <button className={s.btnClose} onClick={() => imgAction()}>
+                        &#x2716;
+                    </button>
                     <button
-                        className={s.btnClose}
-                        onClick={() => {
-                            setData({ img: "", i: 0 });
-                        }}
+                        className={`${s.btnClose} ${s.btnLeft} `}
+                        onClick={() => imgAction("previous-img")}
                     >
-                        X
+                        &#x2190;
+                    </button>
+                    <button
+                        className={`${s.btnClose} ${s.btnRight} `}
+                        onClick={() => imgAction("next-img")}
+                    >
+                        &#x2192;
                     </button>
                     <img
                         src={data.img}
@@ -179,7 +199,9 @@ export const Praxis = () => {
                             {currentArray.map((image, i) => (
                                 <div
                                     className={s.imgInGaleryBlock}
-                                    onClick={() => viewImg(image, i)}
+                                    onClick={() => {
+                                        viewImg(image, i);
+                                    }}
                                 >
                                     <img
                                         key={i}
