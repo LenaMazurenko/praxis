@@ -52,8 +52,8 @@ export const About = () => {
                         <p>
                             Mein Name ist Marina Wentland, ich bin Diplom
                             Physiotherapeutin, Heilpraktikerin und staatlich
-                            anerkannte Kosmetikerin. Herzlich willkommen auf
-                            meiner Seite der Praxis.
+                            anerkannte Kosmetikerin. Herzlich willkommen auf der
+                            Seite meiner Praxis.
                         </p>
 
                         {/*    <Row className="mt-4">

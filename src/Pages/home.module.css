@@ -1,8 +1,11 @@
 .wrapperPage {
     font-family: "Quicksand", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     color: rgb(44, 46, 53);
     margin-top: 50px;
+    @media screen and (max-width: 400px) {
+        font-size: 14px;
+    }
 }
 .zentredText {
     display: flex;
@@ -12,6 +15,10 @@
 .textFormat {
     text-indent: 15px;
 }
+.textNoWrapp {
+    white-space: nowrap;
+}
+
 .horisontalLinie {
     display: block;
     position: fixed;
@@ -33,6 +40,9 @@
     font-family: "Montserrat", sans-serif;
     font-size: 30px;
     color: rgb(44, 46, 53);
+    @media screen and (max-width: 400px) {
+        font-size: 25px;
+    }
 }
 .headersText_withIcon {
     display: inline-flex;
@@ -41,6 +51,9 @@
     font-family: "Montserrat", sans-serif;
     font-size: 30px;
     color: rgb(44, 46, 53);
+    @media screen and (max-width: 400px) {
+        font-size: 25px;
+    }
 }
 .headersText_withIcon::before {
     content: "";
@@ -55,10 +68,12 @@
 
 /*---Hero---*/
 .heroBg {
-    width: 100%;
-    height: auto;
-    min-height: 800px;
     display: flex;
+    width: 100%;
+    min-width: none;
+    height: auto;
+    min-height: calc(100vh - 100px);
+
     justify-content: center;
     align-items: center;
     background-position: center;
@@ -110,23 +125,15 @@
     text-align: center;
     font-size: 30px;
     align-items: center;
-}
-.losung::before,
-.losung::after {
-    content: "";
-    width: 40px;
-    height: 40px;
-
-    margin-top: 0;
-    background-image: url("../Images/squear.png");
-    background-size: contain;
-    background-repeat: no-repeat;
+    @media screen and (max-width: 400px) {
+        font-size: 25px;
+    }
 }
 
 /*----------------*/
 .textBlockHome {
     padding: 40px 20px 0;
-    @media screen and (max-width: 420px) {
+    @media screen and (max-width: 400px) {
         padding: 40px 0 0;
     }
 }

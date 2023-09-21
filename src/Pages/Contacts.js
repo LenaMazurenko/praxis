@@ -25,7 +25,7 @@ export const Contacts = () => {
                             <Image src={map} alt="" fluid />
                         </Col>
 
-                        <Col xs={12} xl={6}>
+                        <Col xs={12} xl={6} className=" ps-4 pe-4">
                             <Row xs={1} md={2} xl={2} xxl={2} className="mt-4">
                                 <Col>
                                     <h3 className={s.headersText_withIcon}>

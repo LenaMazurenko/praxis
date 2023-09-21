@@ -38,10 +38,10 @@ export const Daten = (prop) => {
                             17.02.1939. Die Erlaubnis wurde durch Gesundheitsamt
                             Hannover erteilt.
                         </p>
-                        <p>-Befreit von der Umsatzsteuer nach § 4 UStG</p>
-                        <p>-Aufsichtsbehörde Gesundheitsamt Braunschweig</p>
+                        <p>- Befreit von der Umsatzsteuer nach § 4 UStG</p>
+                        <p>- Aufsichtsbehörde Gesundheitsamt Braunschweig</p>
                         <p>
-                            -Wir unterliegen der Schweigepflicht nach § 203
+                            - Wir unterliegen der Schweigepflicht nach § 203
                             StGB.
                         </p>
                         <p>
@@ -60,7 +60,10 @@ export const Daten = (prop) => {
                             Zeitpunkt der Kenntnis einer konkreten
                             Rechtsverletzung möglich. Bei Bekanntwerden von
                             entsprechenden Rechtsverletzungen werden wir diese
-                            Inhalte umgehend entfernen. <br />
+                            Inhalte umgehend entfernen.
+                        </p>
+                        <br />
+                        <p>
                             Haftung für Links <br />
                             Unser Angebot enthält Links zu externen Webseiten
                             Dritter, auf deren Inhalte wir keinen Einfluss
@@ -370,8 +373,8 @@ export const Daten = (prop) => {
                             Praxis für Naturheilkunde und Ästhetik <br />
                             Mitgaustraße 18 <br />
                             38106 Braunschweig Nord <br />
-                            Tel.: 0151 275 045 49 <br />
-                            E-Mail: marina@gmail.com
+                            Tel.: +49151 275 045 49 <br />
+                            E-Mail: info@praxis-wentland.de
                         </p>
                     </Container>
                 </section>

@@ -72,7 +72,7 @@ export const Home = () => {
                                 <hr />
                                 <div className={s.textFormat}>
                                     <p>
-                                        Herzlich willkommen auf meiner Seite der
+                                        Herzlich willkommen auf der Seite meiner
                                         Praxis. Mein Name ist Marina Wentland,
                                         ich bin Diplom Physiotherapeutin,
                                         Heilpraktikerin und staatlich anerkannte
@@ -103,7 +103,7 @@ export const Home = () => {
                                 <hr />
                                 <div className={s.textFormat}>
                                     <p>
-                                        Unsere Angebot umfasst eine breite
+                                        Unsere Angebote umfassen eine breite
                                         Palette Therapien für Ihr Wohlbefinden
                                         wie Klassische-und Sportmassage,
                                         Lympfdrainage, Schröpfen, Kinesio Tape,
@@ -142,7 +142,7 @@ export const Home = () => {
                                         Moderne, neueingerichtete Praxis im
                                         Neubaugebiet Braunschweig-Nord. Die
                                         Praxis ist sehr gut mit dem Auto aus
-                                        allen Richtungen zu erreichen und bitet
+                                        allen Richtungen zu erreichen und bietet
                                         ausreichend Parkmöglichkeiten an.
                                     </p>
                                 </div>
