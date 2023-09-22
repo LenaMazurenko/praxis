@@ -19,10 +19,9 @@ export const Header = () => {
                     <Navbar.Brand href="/">
                         <img
                             src={logo}
-                            width="auto"
-                            height="75"
-                            class="d-inline-block align-top"
+                            class="d-flex align-top"
                             alt="Brand"
+                            className={s.logoHeader}
                         />
                     </Navbar.Brand>
 

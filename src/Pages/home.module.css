@@ -35,6 +35,11 @@
         rgba(226, 223, 223, 1) 100%
     );
 }
+.logoHeader {
+    display: flex;
+    width: auto;
+    height: 75px;
+}
 /*----Headers texts style-------*/
 .headersText {
     font-family: "Montserrat", sans-serif;

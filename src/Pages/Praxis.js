@@ -103,7 +103,7 @@ export const Praxis = () => {
             {data.img && (
                 <div className={s.bgGaleryPopup}>
                     <button className={s.btnClose} onClick={() => imgAction()}>
-                        &#x2716;
+                        X
                     </button>
                     <button
                         className={`${s.btnClose} ${s.btnLeft} `}
@@ -135,11 +135,11 @@ export const Praxis = () => {
                         <Col md={6}>
                             <div className={s.textFormat}>
                                 <p>
-                                    Moderne, neueingerichtete Praxis im
-                                    Neubaugebiet Braunschweig-Nord. Die Praxis
-                                    ist sehr gut mit dem Auto aus allen
-                                    Richtungen zu erreichen und bitet
-                                    ausreichend Parkmöglichkeiten an. In
+                                    Meine moderne und neueingerichtete Praxis
+                                    liegt im Neubaugebiet Braunschweig-Nord. Die
+                                    Praxis ist sehr gut mit dem Auto aus allen
+                                    Richtungen zu erreichen und bietet
+                                    ausreichend Parkmöglichkeiten. In
                                     unmittelbare Nähe befindet sich eine
                                     Bushaltestelle der Linie 426.
                                 </p>

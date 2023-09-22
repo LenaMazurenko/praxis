@@ -73,8 +73,8 @@ export const Home = () => {
                                 <div className={s.textFormat}>
                                     <p>
                                         Herzlich willkommen auf der Seite meiner
-                                        Praxis. Mein Name ist Marina Wentland,
-                                        ich bin Diplom Physiotherapeutin,
+                                        Praxis. Mein Name ist Marina Wentland.
+                                        Ich bin Diplom Physiotherapeutin,
                                         Heilpraktikerin und staatlich anerkannte
                                         Kosmetikerin.
                                     </p>
@@ -139,11 +139,12 @@ export const Home = () => {
                                 <hr />
                                 <div className={s.textFormat}>
                                     <p>
-                                        Moderne, neueingerichtete Praxis im
-                                        Neubaugebiet Braunschweig-Nord. Die
-                                        Praxis ist sehr gut mit dem Auto aus
-                                        allen Richtungen zu erreichen und bietet
-                                        ausreichend Parkmöglichkeiten an.
+                                        Meine moderne und neueingerichtete
+                                        Praxis liegt im Neubaugebiet
+                                        Braunschweig-Nord. Die Praxis ist sehr
+                                        gut mit dem Auto aus allen Richtungen zu
+                                        erreichen und bietet ausreichend
+                                        Parkmöglichkeiten.
                                     </p>
                                 </div>
                                 <Link to="/praxis" className={s.btn}>

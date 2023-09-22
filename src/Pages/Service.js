@@ -33,9 +33,9 @@ export const Service = () => {
                         <li>- Schröpfen</li>
                         <li>- Manuelle Therapie</li>
                         <li>- Infusionen</li>
-                        <li>- Tape</li>
+                        <li>- Kinesiotherapie Tape</li>
                         <li>- Ultraschall</li>
-                        <li>- Wärmeanwendung(Rotlicht)</li>
+                        <li>- Wärmeanwendung (Rotlicht)</li>
                     </ul>
 
                     {/*------ */}
@@ -61,10 +61,10 @@ export const Service = () => {
                             Microneedling
                         </li>
                         <li>
-                            - Anti Aging Gesichtsbehandlungen je nach
+                            - Anti-Aging Gesichtsbehandlungen je nach
                             Hautbedürfnis
                         </li>
-                        <li>- Gesichtslympdrainage</li>
+                        <li>- Gesichtslymphdrainage</li>
                         <li>- Profhilo 5 Punkte Lifting</li>
                         <li>- Profhilo Body</li>
                     </ul>
@@ -88,7 +88,7 @@ export const Service = () => {
                         <li>
                             - Lipolyse (Fett-Weg-Spritze) Gesicht und Körper
                         </li>
-                        <li>- Mesohair Behandlung beim Haarausfall</li>
+                        <li>- Mesohair-Behandlung beim Haarausfall</li>
                     </ul>
 
                     <hr />
@@ -98,7 +98,7 @@ export const Service = () => {
                             Preisliste Naturheilkunde
                         </h2>
                         {/*---1Table--- */}
-                        <Table striped>
+                        <Table striped hover>
                             <tbody>
                                 <tr>
                                     <td>Therapeutische Massage</td>
@@ -151,10 +151,14 @@ export const Service = () => {
                                 <tr>
                                     <td>Baunscheidtherapie</td>
                                     <td>je nach Bereich </td>
-                                    <td>ab 20,-€</td>
+                                    <td>
+                                        <span className={s.textNoWrapp}>
+                                            ab 20,-€
+                                        </span>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>Schröpfen (mit Schröpfkopfmassage)</td>
+                                    <td>Schröpfen (mit Schröpfglassmassage)</td>
                                     <td>30 Min</td>
                                     <td>29,-€</td>
                                 </tr>
@@ -190,11 +194,11 @@ export const Service = () => {
                     </div>
 
                     {/*---2Table--- */}
-                    <div style={{ marginTop: "60px", overflow: "hidden" }}>
+                    <div style={{ marginTop: "60px", overflow: "auto" }}>
                         <h2 className={`${s.headersText} ${s.zentredText}`}>
                             Preisliste Ästhetische Behandlungen
                         </h2>
-                        <Table striped>
+                        <Table striped hover responsive>
                             <tbody>
                                 <tr>
                                     <td>
@@ -219,7 +223,7 @@ export const Service = () => {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Biorevitalisierung: </td>
+                                    <td>Biorevitalisierung </td>
                                     <td>je nach Präparat</td>
                                     <td> ab 180,-€</td>
                                 </tr>
@@ -282,12 +286,12 @@ export const Service = () => {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Anti Aging Gesichtsbehandlungen</td>
+                                    <td>Anti-Aging Gesichtsbehandlungen</td>
                                     <td>je nach Hautbedürfnis</td>
                                     <td>ab 69,-€ </td>
                                 </tr>
                                 <tr>
-                                    <td>Gesichtslympdrainage</td>
+                                    <td>Gesichtslymphdrainage</td>
                                     <td>30 Min</td>
                                     <td>35,-€</td>
                                 </tr>
@@ -316,7 +320,7 @@ export const Service = () => {
                                 </tr>
                                 <tr>
                                     <td>
-                                        Mesohair Behandlung beim Haarausfall
+                                        Mesohair-Behandlung beim Haarausfall
                                     </td>
                                     <td></td>
                                     <td>120,-€</td>

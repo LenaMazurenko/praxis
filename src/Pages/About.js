@@ -50,7 +50,7 @@ export const About = () => {
                     <hr />
                     <div className={s.textFormat}>
                         <p>
-                            Mein Name ist Marina Wentland, ich bin Diplom
+                            Mein Name ist Marina Wentland. Ich bin Diplom
                             Physiotherapeutin, Heilpraktikerin und staatlich
                             anerkannte Kosmetikerin. Herzlich willkommen auf der
                             Seite meiner Praxis.
@@ -94,8 +94,8 @@ export const About = () => {
                             {" "}
                             Gesundheitssport, Wellness und Kosmetik waren schon
                             immer ein wichtiger Teil meines Lifestyles. Der Spaß
-                            daran hat mich dazu bewegt weitere Berufsrichtungen
-                            zu erlernen. Dabei habe ich die Ausbildung zur
+                            daran hat mich bewegt, weitere Berufsrichtungen zu
+                            erlernen. Dabei habe ich die Ausbildung zur
                             staatlich anerkannten Kosmetikerin und zur
                             Heilpraktikerin in Freiburg absolviert. Um meinen
                             Kunden ganzheitliche Beratung zu bieten, folgten
@@ -126,7 +126,7 @@ export const About = () => {
             <section>
                 <Container className={s.conteinerSection}>
                     <h1 className={`${s.headersText} ${s.zentredText}`}>
-                        Meine Diplome und Sertifikate
+                        Meine Diplome und Zertifikate
                     </h1>
                     <div className={s.btnGaleryBlock}>
                         <button
