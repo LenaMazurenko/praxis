@@ -14,7 +14,7 @@ export const Service = () => {
             <section className={s.background1}>
                 <Container className={s.conteinerSection}>
                     <h1 className={`${s.headersText} ${s.zentredText}`}>
-                        Leistungen & Priceliste
+                        Leistungen & Preisliste
                     </h1>
                     <hr />
                     {/*<h2 className={s.headersText}>Ich biete an:</h2>*/}
@@ -33,7 +33,7 @@ export const Service = () => {
                         <li>- Schröpfen</li>
                         <li>- Manuelle Therapie</li>
                         <li>- Infusionen</li>
-                        <li>- Kinesiotherapie Tape</li>
+                        <li>- Kinesio Tape</li>
                         <li>- Ultraschall</li>
                         <li>- Wärmeanwendung (Rotlicht)</li>
                     </ul>
