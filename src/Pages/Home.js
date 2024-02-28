@@ -184,10 +184,13 @@ export const Home = () => {
             {/* Reviews section*/}
             <section className={s.background3}>
                 <Container className={s.conteinerSection}>
-                    <h1 className={`${s.headersText} ${s.zentredText}`}>
-                        Bewertungen von Kunden
-                    </h1>
-                    <hr />
+                    <div className={s.losung}>
+                        <Container>
+                            <p>
+                                „ <b>Ein guter Ruf</b> ist wertvoller als Gold“
+                            </p>
+                        </Container>
+                    </div>
 
                     {/*Reviews Slider*/}
                     <Swiper

@@ -123,6 +123,7 @@
 .losung {
     /* font-family: "Allura", cursive;*/
     font-family: "Montserrat", sans-serif;
+    font-style: italic;
     display: block;
     padding: 50px;
     color: rgb(44, 46, 53);
