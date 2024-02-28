@@ -62,6 +62,18 @@ export const Home = () => {
                                 TELEFONISCH TERMIN VEREINBAREN
                             </a>
                         </div>
+                        <div className={s.heroBtn}>
+                            <a
+                                href="https://api.whatsapp.com/send?phone=+4915127504549"
+                                className={s.btn}
+                                style={{
+                                    color: "#545655",
+                                    outline: "1px solid rgb(84, 86, 85)",
+                                }}
+                            >
+                                WHATSAPP
+                            </a>
+                        </div>
                     </div>
                 </Container>
             </section>
