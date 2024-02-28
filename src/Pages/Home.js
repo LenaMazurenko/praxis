@@ -3,12 +3,27 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 import hero from "../Images/logo3.png";
 import praxisImg from "../Images/praxis2.jpg";
 import serviceImg from "../Images/service4.jpg";
 import arztImg from "../Images/service3.jpg";
 import Icons from "./sprite.svg";
 
+import rev1 from "../Images/rev1.png";
+import rev2 from "../Images/rev2.png";
+import rev3 from "../Images/rev3.png";
+import rev4 from "../Images/rev4.png";
+import rev5 from "../Images/rev5.png";
+import rev6 from "../Images/rev6.png";
+import rev7 from "../Images/rev7.png";
+import stars from "../Images/stars.png";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 import s from "./home.module.css";
 
 export const Home = () => {
@@ -166,8 +181,291 @@ export const Home = () => {
                 </Container>
             </section>
 
-            {/* Adress section*/}
+            {/* Reviews section*/}
             <section className={s.background3}>
+                <Container className={s.conteinerSection}>
+                    <h1 className={`${s.headersText} ${s.zentredText}`}>
+                        Bewertungen von Kunden
+                    </h1>
+                    <hr />
+
+                    {/*Reviews Slider*/}
+                    <Swiper
+                        modules={[Navigation, Pagination, Scrollbar, A11y]}
+                        spaceBetween={10}
+                        slidesPerView={1}
+                        breakpoints={{
+                            0: {
+                                slidesPerView: 1,
+                            },
+                            700: {
+                                slidesPerView: 2,
+                            },
+                            1000: { slidesPerView: 3 },
+                        }}
+                        pagination={{ clickable: true }}
+                        onSwiper={(swiper) => console.log(swiper)}
+                        onSlideChange={() => console.log("slide change")}
+                    >
+                        <SwiperSlide>
+                            <div className={s.cardReview}>
+                                <div className={s.cardHeader}>
+                                    <img
+                                        src={rev7}
+                                        alt="Klients Foto"
+                                        Width="40px"
+                                        height="40px"
+                                        loading="lazy"
+                                    />
+                                    <div>
+                                        <p>Helen Mazurenko</p>
+                                    </div>
+                                </div>
+                                <p className={s.cardText}>
+                                    Vielen Dank für den tollen Service. Qualität
+                                    auf höchstem Niveau. Professionelle
+                                    Anwendung, erfahrene und typgerechte
+                                    Beratung. Ich kann die Praxis jedem ans Herz
+                                    legen.
+                                </p>
+                                <div className={s.starsImg}>
+                                    <img
+                                        src={stars}
+                                        width="100px"
+                                        height="auto"
+                                        alt="Stars"
+                                        loading="lazy"
+                                    />
+                                </div>
+                                <div className={s.cardDate}>
+                                    <p>28.02.2024</p>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className={s.cardReview}>
+                                <div className={s.cardHeader}>
+                                    <img
+                                        src={rev3}
+                                        alt="Klients Foto"
+                                        Width="40px"
+                                        height="40px"
+                                        loading="lazy"
+                                    />
+                                    <div>
+                                        <p>Sandra Stolze</p>
+                                    </div>
+                                </div>
+                                <p className={s.cardText}>
+                                    Ich bin auf die Praxis von Frau Wentland
+                                    durch einen Flyer aufmerksam geworden und
+                                    gehe seither alle 14 Tage zur Massage. Die
+                                    Praxis ist schön eingerichtet, ich habe mich
+                                    direkt wohlgefühlt. Frau Wentland selbst ist
+                                    freundlich, sehr kompetent und gibt rundum
+                                    eine gute Beratung. Die Massagen sind sehr
+                                    gut (sonst würde ich ja nicht immer wieder
+                                    hingehen 😏). Und auch das
+                                    Preis-Leistungs-Verhältnis ist absolut
+                                    passend. Ich kann sie zu 100%
+                                    weiterempfehlen. 👍
+                                </p>
+                                <div className={s.starsImg}>
+                                    <img
+                                        src={stars}
+                                        width="100px"
+                                        height="auto"
+                                        alt="Stars"
+                                        loading="lazy"
+                                    />
+                                </div>
+                                <div className={s.cardDate}>
+                                    <p>25.02.2024</p>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className={s.cardReview}>
+                                <div className={s.cardHeader}>
+                                    <img
+                                        src={rev2}
+                                        alt="Klients Foto"
+                                        Width="40px"
+                                        height="40px"
+                                        loading="lazy"
+                                    />
+                                    <div>
+                                        <p>Katarzyna Majorczyk-Norek</p>
+                                    </div>
+                                </div>
+
+                                <p className={s.cardText}>
+                                    Marina ist sehr freundlich und hilfsbereit.
+                                    Frau Wentland hat sich bei jeder Behandlung
+                                    sehr viel Zeit genommen für mich. Ich kann
+                                    Frau Wentland zu 100% weiter empfehlen.
+                                </p>
+                                <div className={s.starsImg}>
+                                    <img
+                                        src={stars}
+                                        width="100px"
+                                        height="auto"
+                                        alt="Stars"
+                                        loading="lazy"
+                                    />
+                                </div>
+                                <div className={s.cardDate}>
+                                    <p>08.02.2024</p>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className={s.cardReview}>
+                                <div className={s.cardHeader}>
+                                    <img
+                                        src={rev6}
+                                        alt="Klients Foto"
+                                        Width="40px"
+                                        height="40px"
+                                        loading="lazy"
+                                    />
+                                    <div>
+                                        <p>Nicole Haenisch</p>
+                                    </div>
+                                </div>
+
+                                <p className={s.cardText}>
+                                    Sehr professionell!!! Einfach
+                                    empfehlenswert!!!!
+                                </p>
+                                <div className={s.starsImg}>
+                                    <img
+                                        src={stars}
+                                        width="100px"
+                                        height="auto"
+                                        alt="Stars"
+                                        loading="lazy"
+                                    />
+                                </div>
+                                <div className={s.cardDate}>
+                                    <p>26.01.2024</p>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className={s.cardReview}>
+                                <div className={s.cardHeader}>
+                                    <img
+                                        src={rev1}
+                                        alt="Klients Foto"
+                                        Width="40px"
+                                        height="40px"
+                                        loading="lazy"
+                                    />
+                                    <div>
+                                        <p>Marina Fischer</p>
+                                    </div>
+                                </div>
+                                <p className={s.cardText}>
+                                    Fachkompetente Beratung, sehr freundliche
+                                    und hygienische Atmosphäre. Frau Wendland
+                                    nimmt sich Zeit alle Fragen zu beantworten
+                                    und stellt einen individuellen
+                                    Behandlugsplan auf. Freue mich auf mein
+                                    nächsten Termin.
+                                </p>
+                                <div className={s.starsImg}>
+                                    <img
+                                        src={stars}
+                                        width="100px"
+                                        height="auto"
+                                        alt="Stars"
+                                        loading="lazy"
+                                    />
+                                </div>
+                                <div className={s.cardDate}>
+                                    <p>26.01.2024</p>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+
+                        <SwiperSlide>
+                            <div className={s.cardReview}>
+                                <div className={s.cardHeader}>
+                                    <img
+                                        src={rev4}
+                                        alt="Klients Foto"
+                                        Width="40px"
+                                        height="40px"
+                                        loading="lazy"
+                                    />
+                                    <div>
+                                        <p>Annie Adiprasito</p>
+                                    </div>
+                                </div>
+                                <p className={s.cardText}>
+                                    Eine sehr sympathische Praxis mit
+                                    kompetenter Beratung und Behandlung
+                                </p>
+                                <div className={s.starsImg}>
+                                    <img
+                                        src={stars}
+                                        width="100px"
+                                        height="auto"
+                                        alt="Stars"
+                                        loading="lazy"
+                                    />
+                                </div>
+                                <div className={s.cardDate}>
+                                    <p>28.01.2024</p>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className={s.cardReview}>
+                                <div className={s.cardHeader}>
+                                    <img
+                                        src={rev5}
+                                        alt="Klients Foto"
+                                        Width="40px"
+                                        height="40px"
+                                        loading="lazy"
+                                    />
+                                    <div>
+                                        <p>Ina Brocke</p>
+                                    </div>
+                                </div>
+                                <p className={s.cardText}>
+                                    Ich war in den neuen Räumlichkeiten "Praxis
+                                    für Naturheilkunde und Ästhetik" welche sehr
+                                    schön und ansprechend eingerichtet sind.
+                                    Dazu zeichnet sich die Praxis über
+                                    professionelle Anwendungen, fachliche
+                                    Kompetenz, Kundenfreundlichkeit und
+                                    typgerechte Beratung aus. Nach jeder
+                                    Behandlung mit natürlich tollen Ergebnis
+                                    kann ich nur sagen - wow. Rundum perfekt und
+                                    absolut empfehlenswert.
+                                </p>
+                                <div className={s.starsImg}>
+                                    <img
+                                        src={stars}
+                                        width="100px"
+                                        height="auto"
+                                        alt="Stars"
+                                        loading="lazy"
+                                    />
+                                </div>
+                                <div className={s.cardDate}>
+                                    <p>28.01.2024</p>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                    </Swiper>
+                </Container>
+            </section>
+            {/* Adress section*/}
+            <section className={s.background1}>
                 <Container className={s.conteinerSection}>
                     <Row className="g-0 mr-auto p-4">
                         <Col lg={6}>

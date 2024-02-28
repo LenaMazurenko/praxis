@@ -329,3 +329,30 @@
     fill: rgb(26, 223, 59);
 }
 /*-----Uber mich----*/
+
+/*-----------Reviews---------*/
+.cardReview {
+    height: 500;
+
+    border: 1px solid rgb(244, 175, 196, 0.7);
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.cardHeader {
+    margin: 20px auto;
+    text-align: center;
+    font-weight: 700;
+}
+.cardText {
+    font-style: oblique;
+}
+.starsImg {
+    text-align: center;
+}
+.cardDate {
+    font-style: italic;
+    font-weight: 700;
+    margin-top: 50px;
+}
