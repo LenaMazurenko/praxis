@@ -5,6 +5,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+
 import hero from "../Images/logo3.png";
 import praxisImg from "../Images/praxis2.jpg";
 import serviceImg from "../Images/service4.jpg";
@@ -77,7 +78,6 @@ export const Home = () => {
                     </div>
                 </Container>
             </section>
-
             {/* Losung/About section. */}
             <section className={s.losung}>
                 <Container>
@@ -88,7 +88,6 @@ export const Home = () => {
                     </p>
                 </Container>
             </section>
-
             {/* Salon & Service & About section*/}
             <section className={s.background1}>
                 <Container className={s.conteinerSection}>
@@ -192,7 +191,6 @@ export const Home = () => {
                     </Row>
                 </Container>
             </section>
-
             {/* Reviews section*/}
             <section className={s.background3}>
                 <Container className={s.conteinerSection}>
