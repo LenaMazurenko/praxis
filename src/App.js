@@ -7,6 +7,7 @@ import { Home } from "./Pages/Home";
 import { About } from "./Pages/About";
 import { Praxis } from "./Pages/Praxis";
 import { Service } from "./Pages/Service";
+import { Price } from "./Pages/Price";
 import { Contacts } from "./Pages/Contacts";
 import { Daten } from "./Pages/Daten";
 import { Header } from "./Components/Header";
@@ -25,6 +26,7 @@ export default function App() {
                 <Route path="/about" element={<About />} />
                 <Route path="/praxis" element={<Praxis />} />
                 <Route path="/service" element={<Service />} />
+                <Route path="/price" element={<Price />} />
                 <Route path="/contacts" element={<Contacts />} />
                 <Route path="/impressum" element={<Daten teil="im" />} />
                 <Route path="/agb" element={<Daten teil="agb" />} />

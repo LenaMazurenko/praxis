@@ -60,6 +60,13 @@ export const Header = () => {
                                 LEISTUNGEN
                             </Nav.Link>
                             <Nav.Link
+                                to="/price"
+                                as={Link}
+                                className="d-flex justify-content-center"
+                            >
+                                PREISLISTE
+                            </Nav.Link>
+                            <Nav.Link
                                 to="/about"
                                 as={Link}
                                 className="d-flex justify-content-center"
