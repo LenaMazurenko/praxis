@@ -18,6 +18,7 @@ export const Price = () => {
                             Preisliste Naturheilkunde
                         </h1>
                         <hr />
+
                         {/*---1Table--- */}
                         <Table striped hover>
                             <tbody>
@@ -59,7 +60,7 @@ export const Price = () => {
                                 <tr>
                                     <td>Manuelle Therapie</td>
                                     <td>30 Min</td>
-                                    <td>38,50€ </td>
+                                    <td>39,-€ </td>
                                 </tr>
                                 <tr>
                                     <td>
@@ -67,7 +68,7 @@ export const Price = () => {
                                         Breuss
                                     </td>
                                     <td>30 Min</td>
-                                    <td>38,50€</td>
+                                    <td>39,-€</td>
                                 </tr>
                                 <tr>
                                     <td>Baunscheidtherapie</td>
@@ -110,6 +111,16 @@ export const Price = () => {
                                     <td>10 Min</td>
                                     <td>15,-€</td>
                                 </tr>
+                                <tr>
+                                    <td>Vit-C Infusion</td>
+                                    <td></td>
+                                    <td>39,-€</td>
+                                </tr>
+                                <tr>
+                                    <td>Beatydrip-Aminosäure Infusion</td>
+                                    <td></td>
+                                    <td>89,-€</td>
+                                </tr>
                             </tbody>
                         </Table>
                     </div>
@@ -118,7 +129,7 @@ export const Price = () => {
 
                     <div style={{ marginTop: "60px", overflow: "auto" }}>
                         <h2 className={`${s.headersText} ${s.zentredText}`}>
-                            Preisliste Ästhetische Behandlungen
+                            Preisliste Kosmetische und Ästhetische Behandlungen
                         </h2>
                         <hr />
                         <Table striped hover responsive>
@@ -126,7 +137,7 @@ export const Price = () => {
                                 <tr>
                                     <td>
                                         Injektionen mit Hyaluronsäure/
-                                        Kalziumhydroxylapatit
+                                        Polymilchsäure
                                     </td>
 
                                     <td>je nach Bereich und Präparat</td>
@@ -141,19 +152,19 @@ export const Price = () => {
                                         Gesicht und Hals
                                     </td>
                                     <td>
-                                        150,-€ <br />
-                                        250,-€
+                                        ab 89,-€ <br />
+                                        ab 99,-€
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Biorevitalisierung </td>
                                     <td>je nach Präparat</td>
-                                    <td> ab 180,-€</td>
+                                    <td> ab 150,-€</td>
                                 </tr>
                                 <tr>
                                     <td>Redermalisation</td>
                                     <td>je nach Präparat</td>
-                                    <td> ab 180,-€</td>
+                                    <td> ab 150,-€</td>
                                 </tr>
                                 <tr>
                                     <td>Perfoskin Complex</td>
@@ -162,7 +173,7 @@ export const Price = () => {
                                 </tr>
                                 <tr>
                                     <td>Fadenlifting</td>
-                                    <td>pro Faden</td>
+                                    <td>pro PDO-Faden</td>
                                     <td>ab 10,-€</td>
                                 </tr>
                                 <tr>
@@ -204,24 +215,35 @@ export const Price = () => {
                                         Gesicht und Hals
                                     </td>
                                     <td>
-                                        99,-€ <br />
-                                        149,-€
+                                        ab 99,-€ <br />
+                                        ab 149,-€
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Anti-Aging Gesichtsbehandlungen</td>
+                                    <td>Kosmetische Gesichtsbehandlungen</td>
                                     <td>je nach Hautbedürfnis</td>
                                     <td>ab 69,-€ </td>
                                 </tr>
                                 <tr>
-                                    <td>Gesichtslymphdrainage</td>
-                                    <td>30 Min</td>
-                                    <td>35,-€</td>
+                                    <td>Augenbrauen färben</td>
+                                    <td></td>
+                                    <td>10,-€ </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Wimpern färben</td>
+                                    <td></td>
+                                    <td>10,-€</td>
                                 </tr>
                                 <tr>
                                     <td>Sculpture Gesichtsmassage</td>
                                     <td>30 Min</td>
                                     <td>35,-€</td>
+                                </tr>
+                                <tr>
+                                    <td>Jalupro 7 Punkte Lifting</td>
+                                    <td></td>
+                                    <td>180,-€</td>
                                 </tr>
                                 <tr>
                                     <td>Profhilo 5 Punkte Lifting</td>
@@ -246,7 +268,7 @@ export const Price = () => {
                                         Mesohair-Behandlung beim Haarausfall
                                     </td>
                                     <td></td>
-                                    <td>120,-€</td>
+                                    <td> ab 120,-€</td>
                                 </tr>
                                 <tr>
                                     <td>Toxin freier Botox Ersatz</td>

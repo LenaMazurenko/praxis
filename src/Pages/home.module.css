@@ -304,6 +304,9 @@
 .serviseList li {
     margin-bottom: 10px;
 }
+.serviseListItem {
+    margin-bottom: 30px;
+}
 
 /*-----Kontakts----*/
 .socialLinks {
