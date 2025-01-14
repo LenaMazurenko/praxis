@@ -19,6 +19,14 @@ import rev4 from "../Images/rev4.png";
 import rev5 from "../Images/rev5.png";
 import rev6 from "../Images/rev6.png";
 import rev7 from "../Images/rev7.png";
+import rev8 from "../Images/rev8.png";
+import rev9 from "../Images/rev9.png";
+import rev10 from "../Images/rev10.png";
+import rev11 from "../Images/rev11.png";
+import rev12 from "../Images/rev12.png";
+import rev13 from "../Images/rev13.png";
+import rev14 from "../Images/rev14.png";
+import rev15 from "../Images/rev15.png";
 import stars from "../Images/stars.png";
 
 import "swiper/css";
@@ -206,7 +214,7 @@ export const Home = () => {
                     <Swiper
                         modules={[Navigation, Pagination, Scrollbar, A11y]}
                         spaceBetween={10}
-                        slidesPerView={1}
+                        slidesPerView={3}
                         breakpoints={{
                             0: {
                                 slidesPerView: 1,
@@ -220,6 +228,313 @@ export const Home = () => {
                         onSwiper={(swiper) => console.log(swiper)}
                         onSlideChange={() => console.log("slide change")}
                     >
+                        <SwiperSlide>
+                            <div className={s.cardReview}>
+                                <div className={s.cardHeader}>
+                                    <img
+                                        src={rev15}
+                                        alt="Klients Foto"
+                                        Width="40px"
+                                        height="40px"
+                                        loading="lazy"
+                                    />
+                                    <div>
+                                        <p>Tati E</p>
+                                    </div>
+                                </div>
+                                <p className={s.cardText}>
+                                    Ich kann Fr Wentland einfach nur
+                                    weiterempfehlen, super hilfsbereit, sehr
+                                    schnell einen Termin bekommen. Sie hat mich
+                                    super beraten und aufgeklärt. Hat bei meiner
+                                    Mutter sofort einen Bandscheiben Vorfall
+                                    entdeckt, was die Hausärztin nicht gesehen
+                                    hat. Wir sind mega begeistert und sehr
+                                    zufrieden.
+                                </p>
+                                <div className={s.starsImg}>
+                                    <img
+                                        src={stars}
+                                        width="100px"
+                                        height="auto"
+                                        alt="Stars"
+                                        loading="lazy"
+                                    />
+                                </div>
+                                <div className={s.cardDate}>
+                                    <p>10.11.2024</p>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className={s.cardReview}>
+                                <div className={s.cardHeader}>
+                                    <img
+                                        src={rev14}
+                                        alt="Klients Foto"
+                                        Width="40px"
+                                        height="40px"
+                                        loading="lazy"
+                                    />
+                                    <div>
+                                        <p>Sandra Litz-Dams</p>
+                                    </div>
+                                </div>
+                                <p className={s.cardText}>
+                                    Die Praxis von Frau Wentland ist sehr modern
+                                    und gemütlich. Sie hat mir ausführlich
+                                    erklärt, welche Behandlung ich erhalten
+                                    werde und wie sie funktioniert. Sie ist eine
+                                    kompetente Fachkraft, die liebt, was sie
+                                    tut, und das macht den Unterschied, wenn man
+                                    mit Menschen arbeitet. Die Organisation und
+                                    die Sauberkeit des Ortes waren sehr
+                                    offensichtlich.
+                                </p>
+                                <div className={s.starsImg}>
+                                    <img
+                                        src={stars}
+                                        width="100px"
+                                        height="auto"
+                                        alt="Stars"
+                                        loading="lazy"
+                                    />
+                                </div>
+                                <div className={s.cardDate}>
+                                    <p>21.11.2024</p>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className={s.cardReview}>
+                                <div className={s.cardHeader}>
+                                    <img
+                                        src={rev12}
+                                        alt="Klients Foto"
+                                        Width="40px"
+                                        height="40px"
+                                        loading="lazy"
+                                    />
+                                    <div>
+                                        <p>Jan</p>
+                                    </div>
+                                </div>
+                                <p className={s.cardText}>
+                                    Ich bin hier zur Mesotherapie für die Haare
+                                    und zu 100% begeistert. Besonders gefällt
+                                    mir die kompetente und immer ehrliche
+                                    Beratung sowie die professionelle
+                                    Behandlung. Dazu gibts tolle Gespräche in
+                                    einer Praxis mit Wohlfühlcharakter. Absolute
+                                    Weiterempfehlung 👍🏼
+                                </p>
+                                <div className={s.starsImg}>
+                                    <img
+                                        src={stars}
+                                        width="100px"
+                                        height="auto"
+                                        alt="Stars"
+                                        loading="lazy"
+                                    />
+                                </div>
+                                <div className={s.cardDate}>
+                                    <p>25.11.2024</p>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className={s.cardReview}>
+                                <div className={s.cardHeader}>
+                                    <img
+                                        src={rev13}
+                                        alt="Klients Foto"
+                                        Width="40px"
+                                        height="40px"
+                                        loading="lazy"
+                                    />
+                                    <div>
+                                        <p>Olesja Rempel</p>
+                                    </div>
+                                </div>
+                                <p className={s.cardText}>
+                                    Ich habe Frau Wentland glücklicherweise in
+                                    der Nachbarschaft. Sie überzeugt durch
+                                    authentische und ehrliche Beratungen und
+                                    ausgewählte Behandlungsempfehlungen. Ich
+                                    fühle mich bei ihr sehr gut aufgehoben und
+                                    freue mich auf zukünftige Termine.
+                                    Inzwischen habe ich auch meine Familie bei
+                                    ihr eingeschrieben, sodass meine Mutter,
+                                    Grossmutter und Schwester von Frau Wentland
+                                    zu voller Zufriedenheit behandelt werden.
+                                </p>
+                                <div className={s.starsImg}>
+                                    <img
+                                        src={stars}
+                                        width="100px"
+                                        height="auto"
+                                        alt="Stars"
+                                        loading="lazy"
+                                    />
+                                </div>
+                                <div className={s.cardDate}>
+                                    <p>05.10.2024</p>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className={s.cardReview}>
+                                <div className={s.cardHeader}>
+                                    <img
+                                        src={rev11}
+                                        alt="Klients Foto"
+                                        Width="40px"
+                                        height="40px"
+                                        loading="lazy"
+                                    />
+                                    <div>
+                                        <p>Christian Ehlers</p>
+                                    </div>
+                                </div>
+                                <p className={s.cardText}>
+                                    Sehr ausführliche und Kompetente Beratung.
+                                    Ich bin mit einem Rückenleiden gekommen und
+                                    nach 6 Behandlungen schmerzfrei gegangen.
+                                    Ich kann die Praxis wärmstens empfehlen.
+                                    👍👍👍
+                                </p>
+                                <div className={s.starsImg}>
+                                    <img
+                                        src={stars}
+                                        width="100px"
+                                        height="auto"
+                                        alt="Stars"
+                                        loading="lazy"
+                                    />
+                                </div>
+                                <div className={s.cardDate}>
+                                    <p>08.10.2024</p>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className={s.cardReview}>
+                                <div className={s.cardHeader}>
+                                    <img
+                                        src={rev10}
+                                        alt="Klients Foto"
+                                        Width="40px"
+                                        height="40px"
+                                        loading="lazy"
+                                    />
+                                    <div>
+                                        <p>Richard</p>
+                                    </div>
+                                </div>
+                                <p className={s.cardText}>
+                                    Ich bin bei Marina zur Meso-Therapie und bin
+                                    nach den bisherigen 5 Behandlungen total
+                                    begeistert + modern und chic eingerichtete
+                                    Praxis und Räumlichkeiten + Marina ist sehr
+                                    professionell, arbeitet wunderbar sauber und
+                                    erfreulich sanft: wer schon einmal Meso-
+                                    oder PRP-Therapien auf der Kopfhaut bekommen
+                                    hat, weiß wie das normalerweise schmerzen
+                                    kann + immer gut gelaunt und für coole
+                                    Gespräche aufgelegt + erste positive Effekte
+                                    sind auch zu sehen, sodass ich am Ball
+                                    bleiben werde Marina's Angebots- und
+                                    Produkt-Portfolio ist sehr groß: ich kann
+                                    ihre Praxis für alle, männlich und weiblich,
+                                    nur wärmstens empfehlen.
+                                </p>
+                                <div className={s.starsImg}>
+                                    <img
+                                        src={stars}
+                                        width="100px"
+                                        height="auto"
+                                        alt="Stars"
+                                        loading="lazy"
+                                    />
+                                </div>
+                                <div className={s.cardDate}>
+                                    <p>10.10.2024</p>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className={s.cardReview}>
+                                <div className={s.cardHeader}>
+                                    <img
+                                        src={rev9}
+                                        alt="Klients Foto"
+                                        Width="40px"
+                                        height="40px"
+                                        loading="lazy"
+                                    />
+                                    <div>
+                                        <p>J. Zaa.</p>
+                                    </div>
+                                </div>
+                                <p className={s.cardText}>
+                                    Die Einrichtung das Ambiente und natürlich
+                                    Marina einfach wunderbar. Sie weiß genau was
+                                    zu tun ist und bietet immer eine perfekte
+                                    Beratung an. Meine Kosmetikerin des
+                                    Vertrauens!!!
+                                </p>
+                                <div className={s.starsImg}>
+                                    <img
+                                        src={stars}
+                                        width="100px"
+                                        height="auto"
+                                        alt="Stars"
+                                        loading="lazy"
+                                    />
+                                </div>
+                                <div className={s.cardDate}>
+                                    <p>15.10.2024</p>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className={s.cardReview}>
+                                <div className={s.cardHeader}>
+                                    <img
+                                        src={rev8}
+                                        alt="Klients Foto"
+                                        Width="40px"
+                                        height="40px"
+                                        loading="lazy"
+                                    />
+                                    <div>
+                                        <p>Oxana Ibe</p>
+                                    </div>
+                                </div>
+                                <p className={s.cardText}>
+                                    Ich war bereits mehrmals in der Praxis, topp
+                                    Beratung und super viele
+                                    Anwendungsmöglichkeiten. Frau Wentland ist
+                                    super freundlich, locker und professionell.
+                                    Ich habe kosmetische Behandlungen und
+                                    ästhetisch Mesotherapie sowie Falten
+                                    unterspritzungen gemacht ,sehe super
+                                    Ergebnisse und komme bestimmt wieder.
+                                </p>
+                                <div className={s.starsImg}>
+                                    <img
+                                        src={stars}
+                                        width="100px"
+                                        height="auto"
+                                        alt="Stars"
+                                        loading="lazy"
+                                    />
+                                </div>
+                                <div className={s.cardDate}>
+                                    <p>20.09.2024</p>
+                                </div>
+                            </div>
+                        </SwiperSlide>
                         <SwiperSlide>
                             <div className={s.cardReview}>
                                 <div className={s.cardHeader}>

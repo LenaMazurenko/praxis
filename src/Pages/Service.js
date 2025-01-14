@@ -108,7 +108,7 @@ export const Service = () => {
                 "PRX-T33, Hyalual, Green Peel - Je nach Bedarf und Hautzustand: entfernt abgestorbene Hautzellen für ein frisches und strahlendes Aussehen",
         },
         {
-            title: "Appatative Kosmetik: Microdermabrasion, Aquapeel, Microneedling",
+            title: "Apparative Kosmetik: Microdermabrasion, Aquapeel, Microneedling",
             content:
                 "Microdermabrasion ist effektive Methode zur Hauterneuerung, entfernt abgestorbene Hautzellen und verbessert das Hautbild sowie die Hautstruktur. Aqua Peel ist sanfte Reinigung, Peeling und Pflege mit nährenden Substanzen für ein frisches und strahlendes Hautbild. Microneedling regt die Kollagenproduktion an, verbessert das Hautbild und reduziert Falten sowie Pigmentflecken",
         },
