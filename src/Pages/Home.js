@@ -9,7 +9,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import hero from "../Images/logo3.png";
 import praxisImg from "../Images/praxis2.jpg";
 import serviceImg from "../Images/service4.jpg";
-import arztImg from "../Images/service3.jpg";
+import arztImg from "../Images/arztin2.jpg";
 import Icons from "./sprite.svg";
 
 import rev1 from "../Images/rev1.png";
@@ -45,6 +45,28 @@ export const Home = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [pathname]);
+
+    const [activeIndex, setActiveIndex] = useState(null);
+    const toggleItem = (index) => {
+        setActiveIndex(activeIndex === index ? null : index);
+    };
+    const items = [
+        {
+            title: "Wie lange dauert eine Behandlung?",
+            content:
+                "Wir planen für den Erstkontakt 60min ein. Die Dauer eines Folgetermins wird dann zusammen mit Ihnen besprochen.",
+        },
+        {
+            title: "Was muss ich vor und nach einer osteopathischen Behandlung beachten?",
+            content:
+                "Bitte wählen Sie Ihren Termin, so dass Sie möglichst entspannt ankommen und wenn möglich nicht zu viele Termine im Anschluss wahrnehmen müssen. Trinken Sie viel Wasser, wenig Alkohol und bewegen Sie sich ohne Überanstrengung oder gönnen sich Ruhe. Die Behandlung ist nicht mit dem Verlassen der Praxis beendet, sie fängt da erst an. Ihr Körper wird auf die Behandlungsreize noch einige Zeit reagieren. Erstverschlimmerungen sind sehr selten, zeigen sich bestenfalls in Form eines Muskelkaters. Sollten Beschwerden verstärkt auftreten und länger als 2 Tage andauern, bitten wir Sie, sich mit uns in Verbindung zu setzten. ",
+        },
+        {
+            title: "Was muss ich bei Terminabsagen / Verschiebungen beachten?",
+            content:
+                "Wir bitten darum, wenn Sie einen Termin nicht wahrnehmen können, dass Sie diesen so früh wie möglich absagen. Bei Absagen innerhalb der 24 Stundenfrist werden wir uns bemühen einen Ersatz zu finden, ist dieses nicht möglich, müssen wir den Termin leider in Rechnung stellen. In der Regel haben wir immer Patienten auf unserer Warteliste, die sich freuen, wenn ein Termin vorverlegt werden kann. ",
+        },
+    ];
 
     return (
         <div className={s.wrapperPage}>
@@ -225,8 +247,6 @@ export const Home = () => {
                             1000: { slidesPerView: 3 },
                         }}
                         pagination={{ clickable: true }}
-                        onSwiper={(swiper) => console.log(swiper)}
-                        onSlideChange={() => console.log("slide change")}
                     >
                         <SwiperSlide>
                             <div className={s.cardReview}>
@@ -792,8 +812,42 @@ export const Home = () => {
                     </Swiper>
                 </Container>
             </section>
-            {/* Adress section*/}
+
+            {/* Häufige Fragen section*/}
             <section className={s.background1}>
+                <Container className={s.conteinerSection}>
+                    <h2 className={`${s.headersText} ${s.zentredText}`}>
+                        {" "}
+                        Häufige Fragen{" "}
+                    </h2>
+                    <div className="mt-4">
+                        {items.map((item, index) => (
+                            <div key={index} className="p-2">
+                                <div
+                                    className="d-flex justify-content-between align-items-center"
+                                    onClick={() => toggleItem(index)}
+                                    style={{ cursor: "pointer" }}
+                                >
+                                    {" "}
+                                    {item.title}
+                                    <span className="p-2">
+                                        {activeIndex === index ? "−" : "+"}
+                                    </span>
+                                </div>
+                                {activeIndex === index && (
+                                    <div className="m-2">
+                                        <small>{item.content}</small>
+                                    </div>
+                                )}
+                                <hr />
+                            </div>
+                        ))}
+                    </div>
+                </Container>
+            </section>
+
+            {/* Adress section*/}
+            <section className={s.background3}>
                 <Container className={s.conteinerSection}>
                     <Row className="g-0 mr-auto p-4">
                         <Col lg={6}>

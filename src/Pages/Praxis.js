@@ -23,6 +23,16 @@ import service4 from "../Images/service4.jpg";
 import service5 from "../Images/service5.jpg";
 import service6 from "../Images/service6.jpg";
 import service7 from "../Images/service7.jpg";
+import service8 from "../Images/service8.jpg";
+import service9 from "../Images/service9.jpg";
+import service10 from "../Images/service10.jpg";
+import service11 from "../Images/service11.jpg";
+import service12 from "../Images/service12.jpg";
+import service13 from "../Images/service13.jpg";
+import service14 from "../Images/service14.jpg";
+import service15 from "../Images/service15.jpg";
+import service16 from "../Images/service16.jpg";
+
 import s from "./home.module.css";
 
 const images = [
@@ -46,6 +56,15 @@ const images = [
     service5,
     service6,
     service7,
+    service8,
+    service9,
+    service10,
+    service11,
+    service12,
+    service13,
+    service14,
+    service15,
+    service16,
 ];
 const imagesPraxis = [
     praxis1,
@@ -70,6 +89,15 @@ const imagesService = [
     service5,
     service6,
     service7,
+    service8,
+    service9,
+    service10,
+    service11,
+    service12,
+    service13,
+    service14,
+    service15,
+    service16,
 ];
 
 export const Praxis = () => {

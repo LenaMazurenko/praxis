@@ -193,7 +193,7 @@ export const Service = () => {
                                     style={{ cursor: "pointer" }}
                                 >
                                     <span className="p-2">
-                                        {activeIndexOne === index ? "−" : "+"}
+                                        {activeIndexOne === index ? "-" : "+"}
                                     </span>
                                     {item.title}
                                 </div>
