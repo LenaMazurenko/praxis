@@ -257,14 +257,6 @@ export const Price = () => {
                                 </tr>
                                 <tr>
                                     <td>
-                                        Lipolyse (Fett-Weg-Spritze) <br />
-                                        Gesicht und Körper{" "}
-                                    </td>
-                                    <td>1ml</td>
-                                    <td>5,-€</td>
-                                </tr>
-                                <tr>
-                                    <td>
                                         Mesohair-Behandlung beim Haarausfall
                                     </td>
                                     <td></td>

@@ -32,6 +32,7 @@ import service13 from "../Images/service13.jpg";
 import service14 from "../Images/service14.jpg";
 import service15 from "../Images/service15.jpg";
 import service16 from "../Images/service16.jpg";
+import service17 from "../Images/service17.jpg";
 
 import s from "./home.module.css";
 
@@ -65,6 +66,7 @@ const images = [
     service14,
     service15,
     service16,
+    service17,
 ];
 const imagesPraxis = [
     praxis1,
@@ -98,6 +100,7 @@ const imagesService = [
     service14,
     service15,
     service16,
+    service17,
 ];
 
 export const Praxis = () => {

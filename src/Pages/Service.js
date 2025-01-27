@@ -32,7 +32,7 @@ export const Service = () => {
         {
             title: "Sportmassage",
             content:
-                "Speziell für Sportler entwickelt; kann vor und nach Wett- kämpfen angewendet werden",
+                "Speziell für Sportler entwickelt; kann vor und nach Wettkämpfen angewendet werden",
         },
         {
             title: "Rollen-Massage",
@@ -67,7 +67,7 @@ export const Service = () => {
         {
             title: "Schröpfen",
             content:
-                "Das Schröpfen und die einleitende Massage gegen die Durchblutung, den Stoffwechsel und die Sauerstoff- versorgung an",
+                "Das Schröpfen und die einleitende Massage regen die Durchblutung, den Stoffwechsel und die Sauerstoffversorgung an",
         },
         {
             title: "Manuelle Therapie",
@@ -162,10 +162,6 @@ export const Service = () => {
         },
         {
             title: "Hände-, Hals- und Dekolteeverjungung",
-            content: "",
-        },
-        {
-            title: "Lipolyse (Fett-Weg-Spritze) Gesicht und Körper",
             content: "",
         },
         {
