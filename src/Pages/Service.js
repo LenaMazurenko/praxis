@@ -183,21 +183,35 @@ export const Service = () => {
                     <h3 className={s.headersText_withIcon}> Naturheilkunde:</h3>
                     <div className={s.serviseList}>
                         {items_one.map((item, index) => (
-                            <div key={index} className="p-2">
+                            <div key={index} className={`${s.titleText} p-2`}>
                                 <div
                                     onClick={() => toggleItemOne(index)}
                                     style={{ cursor: "pointer" }}
                                 >
-                                    <span className="p-2">
-                                        {activeIndexOne === index ? "-" : "+"}
+                                    <span className="pe-2">
+                                        <span
+                                            className={`${s.icon} ${
+                                                activeIndexOne === index
+                                                    ? s.iconOpen
+                                                    : s.iconClosed
+                                            } `}
+                                        >
+                                            {activeIndexOne === index
+                                                ? "−"
+                                                : "+"}
+                                        </span>
                                     </span>
                                     {item.title}
                                 </div>
-                                {activeIndexOne === index && (
-                                    <div className="m-2">
-                                        <small>{item.content}</small>
-                                    </div>
-                                )}
+                                <div
+                                    className={`${s.content} ${
+                                        activeIndexOne === index
+                                            ? s.contentOpen
+                                            : s.contentClosed
+                                    }`}
+                                >
+                                    <small>{item.content}</small>
+                                </div>
                             </div>
                         ))}
                     </div>
@@ -208,21 +222,36 @@ export const Service = () => {
                     </h3>
                     <div className={s.serviseList}>
                         {items_two.map((item, index) => (
-                            <div key={index} className="p-2">
+                            <div key={index}>
                                 <div
+                                    className={`${s.titleText} p-2`}
                                     onClick={() => toggleItemTwo(index)}
                                     style={{ cursor: "pointer" }}
                                 >
-                                    <span className="p-2">
-                                        {activeIndexTwo === index ? "−" : "+"}
+                                    <span className="pe-2">
+                                        <span
+                                            className={`${s.icon} ${
+                                                activeIndexTwo === index
+                                                    ? s.iconOpen
+                                                    : s.iconClosed
+                                            } `}
+                                        >
+                                            {activeIndexTwo === index
+                                                ? "−"
+                                                : "+"}
+                                        </span>
                                     </span>
                                     {item.title}
                                 </div>
-                                {activeIndexTwo === index && (
-                                    <div className="m-2">
-                                        <small>{item.content}</small>
-                                    </div>
-                                )}
+                                <div
+                                    className={` ${s.content} ${
+                                        activeIndexTwo === index
+                                            ? s.contentOpen
+                                            : s.contentClosed
+                                    }`}
+                                >
+                                    <small>{item.content}</small>
+                                </div>
                             </div>
                         ))}
                     </div>
@@ -233,21 +262,36 @@ export const Service = () => {
                     </h3>
                     <div className={s.serviseList}>
                         {items_three.map((item, index) => (
-                            <div key={index} className="p-2">
+                            <div key={index}>
                                 <div
+                                    className={`${s.titleText} p-2`}
                                     onClick={() => toggleItemThree(index)}
                                     style={{ cursor: "pointer" }}
                                 >
-                                    <span className="p-2">
-                                        {activeIndexThree === index ? "−" : "+"}
+                                    <span className="pe-2">
+                                        <span
+                                            className={`${s.icon} ${
+                                                activeIndexThree === index
+                                                    ? s.iconOpen
+                                                    : s.iconClosed
+                                            } `}
+                                        >
+                                            {activeIndexThree === index
+                                                ? "−"
+                                                : "+"}
+                                        </span>
                                     </span>
                                     {item.title}
                                 </div>
-                                {activeIndexThree === index && (
-                                    <div className="m-2">
-                                        <small>{item.content}</small>
-                                    </div>
-                                )}
+                                <div
+                                    className={`${s.content} ${
+                                        activeIndexThree === index
+                                            ? s.contentOpen
+                                            : s.contentClosed
+                                    }`}
+                                >
+                                    <small>{item.content}</small>
+                                </div>
                             </div>
                         ))}
                     </div>

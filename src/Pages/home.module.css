@@ -338,13 +338,16 @@
 
 /*-----------Reviews---------*/
 .cardReview {
-    height: 500;
-
     border: 1px solid rgb(244, 175, 196, 0.7);
     border-radius: 5px;
     padding: 10px;
     margin-right: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.5s ease;
+}
+.cardReview:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 .cardHeader {
     margin: 20px auto;
@@ -361,4 +364,42 @@
     font-style: italic;
     font-weight: 700;
     margin-top: 50px;
+}
+
+/*styles for animatedFAQ*/
+.titleText:hover {
+    color: rgb(149, 113, 125);
+}
+
+/* Значок + и - */
+.icon {
+    font-size: 20px;
+    display: inline-block;
+    transition: transform 1s ease;
+}
+
+.iconOpen {
+    transform: rotate(180deg); /* Вращение значка при открытии */
+}
+
+.iconClosed {
+    transform: rotate(0deg); /* Состояние по умолчанию */
+}
+
+/* Контент с плавным открытием */
+.content {
+    overflow: hidden;
+    transition: max-height 1s ease, opacity 1s ease;
+    max-height: 0;
+    opacity: 0;
+}
+
+.contentOpen {
+    max-height: 200px; /* Подстройте под размер контента */
+    opacity: 1;
+}
+
+.contentClosed {
+    max-height: 0;
+    opacity: 0;
 }
