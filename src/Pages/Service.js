@@ -26,109 +26,270 @@ export const Service = () => {
     const items_one = [
         {
             title: "Therapeutische Massage",
-            content:
-                "Fördert die Durchblutung, lockert die Muskulatur und löst Verspannungen",
+            content: (
+                <p className="pt-2 ps-4">
+                    Fördert die Durchblutung, lockert die Muskulatur und löst
+                    Verspannungen
+                </p>
+            ),
         },
         {
             title: "Sportmassage",
-            content:
-                "Speziell für Sportler entwickelt; kann vor und nach Wettkämpfen angewendet werden",
+            content: (
+                <p className="pt-2 ps-4">
+                    Speziell für Sportler entwickelt; kann vor und nach
+                    Wettkämpfen angewendet werden
+                </p>
+            ),
         },
         {
             title: "Rollen-Massage",
-            content:
-                "Eine Massage mit Hilfe einer Rolle, um Verspannungen zu lösen und die Beweglichkeit zu verbessern",
+            content: (
+                <p className="pt-2 ps-4">
+                    Eine Massage mit Hilfe einer Rolle, um Verspannungen zu
+                    lösen und die Beweglichkeit zu verbessern
+                </p>
+            ),
         },
         {
             title: "Aromaölmassage",
-            content:
-                "Eine sanfte Massage mit ätherischen Ölen, die Entspannung und Wohlbefinden fördert und die Sinne stimuliert",
+            content: (
+                <p className="pt-2 ps-4">
+                    Eine sanfte Massage mit ätherischen Ölen, die Entspannung
+                    und Wohlbefinden fördert und die Sinne stimuliert
+                </p>
+            ),
         },
         {
             title: "Lymphdrainage",
-            content:
-                "Eine sanfte Massage, die den Abfluss von Lymph- flüssigkeit fördert und Schwellungen reduziert",
+            content: (
+                <p className="pt-2 ps-4">
+                    Eine sanfte Massage, die den Abfluss von Lymph- flüssigkeit
+                    fördert und Schwellungen reduziert
+                </p>
+            ),
         },
         {
             title: "Kopf- und Gesichtsmassage",
-            content:
-                "Wohltuende Gesichts- und Kopfmassage kann bei Migräneund Spannungskopfschmerzen angewendet werden",
-        },
-        {
-            title: "Wirbelsäulentherapie nach Dorn und Breussmassage",
-            content:
-                "Therapie nach Dorn-Breuss-Methode ist eine sanfte Wirbelsäulentherapie zur Korrektur von Fehlstellungen und zur Linderung von Rückenschmerzen",
+            content: (
+                <p className="pt-2 ps-4">
+                    Wohltuende Gesichts- und Kopfmassage kann bei Migräneund
+                    Spannungskopfschmerzen angewendet werden
+                </p>
+            ),
         },
         {
             title: "Baunscheidtherapie",
-            content:
-                "Eine naturheilkundliche Methode zur Stimulation des Immunsystems und zur Schmerzlinderung besteht darin, die Haut mit Nadeln und bestimmten Ölen zu reizen",
+            content: (
+                <p className="pt-2 ps-4">
+                    Eine naturheilkundliche Methode zur Stimulation des
+                    Immunsystems und zur Schmerzlinderung besteht darin, die
+                    Haut mit Nadeln und bestimmten Ölen zu reizen
+                </p>
+            ),
         },
         {
             title: "Schröpfen",
-            content:
-                "Das Schröpfen und die einleitende Massage regen die Durchblutung, den Stoffwechsel und die Sauerstoffversorgung an",
+            content: (
+                <p className="pt-2 ps-4">
+                    Das Schröpfen und die einleitende Massage regen die
+                    Durchblutung, den Stoffwechsel und die Sauerstoffversorgung
+                    an
+                </p>
+            ),
         },
         {
             title: "Manuelle Therapie",
-            content: "",
+            content: <p className="pt-2 ps-4"></p>,
         },
-        { title: "Infusionen", content: "" },
+        {
+            title: "Infusionen",
+            content: (
+                <p className="pt-2 ps-4">
+                    <span>-</span>{" "}
+                    <i>
+                        {" "}
+                        <u>Vit C Infusion:</u>
+                    </i>{" "}
+                    <br />
+                    Die wichtigste Eigenschaft von Vitamin C ist die Fähigkeit
+                    im Körper freie Radikale zu fangen und zu neutralisieren.
+                    Vit C ist sehr wichtig für das Immunsystem und unterstüzt
+                    die Entgiftung der Leber Darüber hinaus wird Vit C für
+                    Kollagenaufbau benötigt, was für Haut, Knochen, Sehnen und
+                    Blutgefäße wichtig ist. Auch Eisen wird in Verbindung mit
+                    Vit C besser in Dünndarm aufgenommen. Das beugt einen
+                    Eisenmangel vor.
+                    <br />
+                    <span>-</span>{" "}
+                    <i>
+                        {" "}
+                        <u>Beautydrip Aminisäure Infusion:</u>
+                    </i>{" "}
+                    <br />
+                    Ziel der Beauty drip Infusion ist das Auffüllen von
+                    Nährstoffspeichern und der Stärkung von körpereigenen
+                    Stoffwechselprozessen im präventiven Bereich. <br />
+                    Bestandteile der Infusion: <br />
+                    <span> *</span>Glycin: Zellschutz als Antioxidans, Anregung
+                    der Kollagensyntese, unterstützung der Entgiftungsvorgängen;{" "}
+                    <br />
+                    <span> *</span>L-Aginin: Verbesserung der Durchblutung,
+                    Verbesserung der Immunität; <br />
+                    <span>*</span>L-Prolin: auch Hauptbestandteil des Kollagens,
+                    unterstüzt heilungsprozess von Verletzungen und anderen
+                    Gewebsschädigungen; <br />
+                    <span>*</span>L-Lysin: Anregung der Kollagensyntese,
+                    gefäßkräftigende und gefäßschützende Effekte, Förderung des
+                    Immunsystems und der Wundheilung; <br />
+                    <span>*</span>Taurin: antioxidative Wirkung, Verbesserung
+                    der Haarstruktur, antientzündliche Wirkung; <br />
+                    <span>*</span>L-Metionin: Verbessert die Struktur von Haaren
+                    und Nägel; <br />
+                    <span>*</span>Biotin: wichtig für Haut, Haare und Nägel,
+                    wichtige Funktion in Metochondrien Soffwechsel; <br />
+                    <span>*</span>Elyktrolyt-Injektionslösung:
+                    Magnesium,Calzium, Kalium.
+                </p>
+            ),
+        },
         {
             title: "Kinesio Tape",
-            content:
-                "Das Anbringen von elastischen Bändern auf die Haut, um Muskeln und Gelenke zu unterstützen",
+            content: (
+                <p className="pt-2 ps-4">
+                    Das Anbringen von elastischen Bändern auf die Haut, um
+                    Muskeln und Gelenke zu unterstützen
+                </p>
+            ),
         },
 
-        { title: "Ultraschall", content: "" },
+        { title: "Ultraschall", content: <p className="pt-2 ps-4"></p> },
         {
             title: "Wärmeanwendung (Rotlicht)",
-            content: "",
+            content: <p className="pt-2 ps-4"></p>,
+        },
+        {
+            title: "Body Gen innovativer DNA-Test",
+            content: (
+                <p className="pt-2 ps-4">
+                    Gibt wertvolle Eisicht in deine Gesundheit, deinen
+                    Lebensstil und dein Wohlbefinden. Es werden die Biomarker
+                    getestet die tiefgreifende Einblicke in das Hautbild geben.
+                    Die wissenschaftlich fundirte Empfelungen werden auf jeden
+                    persönlich zugeschnitten. <br />
+                    <span>-</span>
+                    <i>
+                        {" "}
+                        <u>Beauty Face DNA Test: </u>{" "}
+                    </i>{" "}
+                    oxidativer Stress und Hautglykation Kollagenabbau,
+                    Hauthydration,UV Schutz und
+                    Enzundungsanfälligkeit,Hautalterung. <br />
+                    <span>-</span>
+                    <i>
+                        {" "}
+                        <u>DNA Body Test:</u>
+                    </i>{" "}
+                    Entzündungsfähigkeit, Cellulite, Krampfadern,
+                    Dehnungsstreifen, UV Schutz. <br />
+                    <span>-</span>
+                    <i>
+                        {" "}
+                        <u>Body Gen Blut Test: </u>{" "}
+                    </i>{" "}
+                    Vit A, Vit B12, Zink, Kupfer, Ferritin/Eisen. <br />
+                    <span>-</span>
+                    <i>
+                        <u>Anti Hairloss: </u>
+                    </i>{" "}
+                    Vitamim B12, Vitamin D, Vitamin A, Ferritin/ Eisen, Zink,
+                    Selen.
+                </p>
+            ),
         },
     ];
     const items_two = [
         {
             title: " Injektionen mit Hyaluronsäure/Polymilchsäure",
-            content:
-                "Durch eine Behandlung mit Hyaluronsäure kann eine natürlich wirkende Hautverjüngung erreicht, Volumen hergestellt und Feuchtigkeitsdepots aufgefüllt werden",
+            content: (
+                <p className="pt-2 ps-4">
+                    Durch eine Behandlung mit Hyaluronsäure kann eine natürlich
+                    wirkende Hautverjüngung erreicht, Volumen hergestellt und
+                    Feuchtigkeitsdepots aufgefüllt werden
+                </p>
+            ),
         },
         {
             title: "Ästhetische Mesotherapie, Biorevitalisierung",
-            content:
-                "Mesotherapie ist eine Behandlung mit besonderen Wirkstoffen, um die Haut zu regenerieren, zu straffen und mit Nährstoffen zu versorgen. Biorevitalisierung ist die Injektion von speziellen Präparaten, um die Haut- qualität zu verbessern, Feuchtigkeit zu spenden und das Hautbild zu verjüngen",
+            content: (
+                <p className="pt-2 ps-4">
+                    Mesotherapie ist eine Behandlung mit besonderen Wirkstoffen,
+                    um die Haut zu regenerieren, zu straffen und mit Nährstoffen
+                    zu versorgen. Biorevitalisierung ist die Injektion von
+                    speziellen Präparaten, um die Haut- qualität zu verbessern,
+                    Feuchtigkeit zu spenden und das Hautbild zu verjüngen
+                </p>
+            ),
         },
         {
             title: "Fadenlifting",
-            content:
-                "Eine Methode zur Straffung der Haut mit Hilfe von resorbierbaren Fäden, um ein jugendlicheres Erscheinungsbild zu erzielen",
+            content: (
+                <p className="pt-2 ps-4">
+                    Eine Methode zur Straffung der Haut mit Hilfe von
+                    resorbierbaren Fäden, um ein jugendlicheres Erscheinungsbild
+                    zu erzielen
+                </p>
+            ),
         },
         {
-            title: "Dermatologische Peeling: PRX-T33, PRX-T33 Lady, Hyalual Peels, Jalupro",
-            content:
-                "PRX-T33, Hyalual, Green Peel - Je nach Bedarf und Hautzustand: entfernt abgestorbene Hautzellen für ein frisches und strahlendes Aussehen",
+            title: "Dermatologische Peeling: PRX-T33, PRX-T33 Lady, Jalupro glowpeel",
+            content: (
+                <p className="pt-2 ps-4">
+                    PRX-T33, Hyalual, Green Peel - Je nach Bedarf und
+                    Hautzustand: entfernt abgestorbene Hautzellen für ein
+                    frisches und strahlendes Aussehen
+                </p>
+            ),
         },
         {
             title: "Apparative Kosmetik: Microdermabrasion, Aquapeel, Microneedling",
-            content:
-                "Microdermabrasion ist effektive Methode zur Hauterneuerung, entfernt abgestorbene Hautzellen und verbessert das Hautbild sowie die Hautstruktur. Aqua Peel ist sanfte Reinigung, Peeling und Pflege mit nährenden Substanzen für ein frisches und strahlendes Hautbild. Microneedling regt die Kollagenproduktion an, verbessert das Hautbild und reduziert Falten sowie Pigmentflecken",
+            content: (
+                <p className="pt-2 ps-4">
+                    Microdermabrasion ist effektive Methode zur Hauterneuerung,
+                    entfernt abgestorbene Hautzellen und verbessert das Hautbild
+                    sowie die Hautstruktur. Aqua Peel ist sanfte Reinigung,
+                    Peeling und Pflege mit nährenden Substanzen für ein frisches
+                    und strahlendes Hautbild. Microneedling regt die
+                    Kollagenproduktion an, verbessert das Hautbild und reduziert
+                    Falten sowie Pigmentflecken
+                </p>
+            ),
         },
         {
             title: "Kosmetische Gesichtsbehandlungen je nach Hautbedürfnis",
-            content:
-                "Eine umfassende Gesichtsbehandlung, die Reinigung, Peeling, Dampfanwendung, Ausreinigung, Massage und Maske umfasst",
+            content: (
+                <p className="pt-2 ps-4">
+                    Eine umfassende Gesichtsbehandlung, die Reinigung, Peeling,
+                    Dampfanwendung, Ausreinigung, Massage und Maske umfasst
+                </p>
+            ),
         },
         {
             title: "Gesichtslymphdrainage",
-            content:
-                "Eine sanfte Massage, die den Abfluss von Lymph- flüssigkeit fördert und Schwellungen reduziert",
+            content: (
+                <p className="pt-2 ps-4">
+                    Eine sanfte Massage, die den Abfluss von Lymph- flüssigkeit
+                    fördert und Schwellungen reduziert
+                </p>
+            ),
         },
         {
             title: "Profhilo/Jalupro Lifting",
-            content: "",
+            content: <p className="pt-2 ps-4"></p>,
         },
         {
             title: "Profhilo Body",
-            content: "",
+            content: <p className="pt-2 ps-4"></p>,
         },
     ];
     const items_three = [
@@ -183,8 +344,9 @@ export const Service = () => {
                     <h3 className={s.headersText_withIcon}> Naturheilkunde:</h3>
                     <div className={s.serviseList}>
                         {items_one.map((item, index) => (
-                            <div key={index} className={`${s.titleText} p-2`}>
+                            <div key={index}>
                                 <div
+                                    className={`${s.titleText} p-2`}
                                     onClick={() => toggleItemOne(index)}
                                     style={{ cursor: "pointer" }}
                                 >
@@ -210,7 +372,7 @@ export const Service = () => {
                                             : s.contentClosed
                                     }`}
                                 >
-                                    <small>{item.content}</small>
+                                    <p>{item.content}</p>
                                 </div>
                             </div>
                         ))}
@@ -250,7 +412,7 @@ export const Service = () => {
                                             : s.contentClosed
                                     }`}
                                 >
-                                    <small>{item.content}</small>
+                                    <p>{item.content}</p>
                                 </div>
                             </div>
                         ))}
@@ -290,7 +452,7 @@ export const Service = () => {
                                             : s.contentClosed
                                     }`}
                                 >
-                                    <small>{item.content}</small>
+                                    <p>{item.content}</p>
                                 </div>
                             </div>
                         ))}

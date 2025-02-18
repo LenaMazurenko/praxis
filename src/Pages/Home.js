@@ -54,7 +54,12 @@ export const Home = () => {
         {
             title: "Wie lange dauert eine Behandlung?",
             content:
-                "Ich plane für den Erstkontakt 60min ein. Die Dauer eines Folgetermins wird dann zusammen mit Ihnen besprochen.",
+                "Für den Erstkontakt sind 60 Minuten eingeplant. Die Dauer eines Folgetermins wird anschließend gemeinsam besprochen.",
+        },
+        {
+            title: "Wie viele Behandlungen sind notwendig?",
+            content:
+                "Der Anzahl der Behandlungen wird im persönlichen Gespräch fachlich bewertet und individuell abgestimmt. Grundsächlich werden bei Naturheilkunde, Physiotherapie bzw. ästhetischen Anwendungen mehrere Behandlungen empfohlen. Eine Serie von min 3-4 Behandlungen führt zu einem Ergebnis. ",
         },
         {
             title: "Was muss ich vor und nach einer osteopathischen Behandlung beachten?",
@@ -62,9 +67,14 @@ export const Home = () => {
                 "Bitte wählen Sie Ihren Termin, so dass Sie möglichst entspannt ankommen und wenn möglich nicht zu viele Termine im Anschluss wahrnehmen müssen. Trinken Sie viel Wasser, wenig Alkohol und bewegen Sie sich ohne Überanstrengung oder gönnen sich Ruhe. Die Behandlung ist nicht mit dem Verlassen der Praxis beendet, sie fängt da erst an. Ihr Körper wird auf die Behandlungsreize noch einige Zeit reagieren. Erstverschlimmerungen sind sehr selten, zeigen sich bestenfalls in Form eines Muskelkaters. Sollten Beschwerden verstärkt auftreten und länger als 2 Tage andauern, bitte ich Sie, sich mit mir in Verbindung zu setzten. ",
         },
         {
-            title: "Was muss ich bei Terminabsagen / Verschiebungen beachten?",
+            title: "Was muss ich bei Terminabsage/ -verschiebung beachten?",
             content:
-                "Ich bitte darum, wenn Sie einen Termin nicht wahrnehmen können, dass Sie diesen so früh wie möglich absagen. Bei Absagen innerhalb der 24 Stundenfrist werde ich mich bemühen einen Ersatz zu finden, ist dieses nicht möglich, müss ich den Termin leider in Rechnung stellen. In der Regel habe ich immer Patienten auf unserer Warteliste, die sich freuen, wenn ein Termin vorverlegt werden kann. ",
+                "Kann ein Termin nicht wahrgenommen werden, bitten wir diesen so früh wie möglich abzusagen. Bei Absage unter 24 Stunden müssen wir leider den Termin Ihnen in Rechnung stellen.",
+        },
+        {
+            title: "Gibt es Parkplätze in der Umgebung der Praxis?",
+            content:
+                "Kostenfreie Parkplätze sind ausreichend vorhanden. In der Lichtwerkallee sind 2 Praxisparkplätze vorhanden",
         },
     ];
 

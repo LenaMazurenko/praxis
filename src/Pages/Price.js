@@ -64,11 +64,20 @@ export const Price = () => {
                                 </tr>
                                 <tr>
                                     <td>
-                                        Wirbelsäulentherapie nach Dorn und
-                                        Breuss
+                                        Kurze therapeutische Massage + Schröpfen
                                     </td>
+                                    <td>45 Min</td>
+                                    <td>49,-€</td>
+                                </tr>
+                                <tr>
+                                    <td>Schröpfen mit Schröpfmassage</td>
+                                    <td>45 Min</td>
+                                    <td>35,-€</td>
+                                </tr>
+                                <tr>
+                                    <td>Schröpfen (mit Schröpfglassmassage)</td>
                                     <td>30 Min</td>
-                                    <td>39,-€</td>
+                                    <td>29,-€</td>
                                 </tr>
                                 <tr>
                                     <td>Baunscheidtherapie</td>
@@ -79,11 +88,7 @@ export const Price = () => {
                                         </span>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td>Schröpfen (mit Schröpfglassmassage)</td>
-                                    <td>30 Min</td>
-                                    <td>29,-€</td>
-                                </tr>
+
                                 <tr>
                                     <td>Kinesio Tape</td>
                                     <td>1 Bereich</td>
@@ -120,6 +125,31 @@ export const Price = () => {
                                     <td>Beatydrip-Aminosäure Infusion</td>
                                     <td></td>
                                     <td>89,-€</td>
+                                </tr>
+                                <tr>
+                                    <td>Body Gen DNA Test Face</td>
+                                    <td></td>
+                                    <td>139,-€</td>
+                                </tr>
+                                <tr>
+                                    <td>Body Gen DNA Test Body</td>
+                                    <td></td>
+                                    <td>139,-€</td>
+                                </tr>
+                                <tr>
+                                    <td>Body Gen Skin Check Bluttest</td>
+                                    <td></td>
+                                    <td>79,-€</td>
+                                </tr>
+                                <tr>
+                                    <td>Body Gen antihairloss Blut Test</td>
+                                    <td></td>
+                                    <td>119,-€</td>
+                                </tr>
+                                <tr>
+                                    <td>Body Gen Vitanin D Blut Test</td>
+                                    <td></td>
+                                    <td>39,-€</td>
                                 </tr>
                             </tbody>
                         </Table>
@@ -183,7 +213,7 @@ export const Price = () => {
                                         <br />
                                         PRX-T33 Lady <br />
                                         <br />
-                                        Hyalual Peels{" "}
+                                        Jalupro glowpeel
                                     </td>
                                     <td>
                                         79,-€ <br />
@@ -193,19 +223,19 @@ export const Price = () => {
                                         <br />
                                         79,-€ <br />
                                         (+59,-€ Heimpflege) <br />
-                                        89,-€
+                                        ab 89,-€
                                     </td>
                                     <td></td>
                                 </tr>
                                 <tr>
                                     <td> Diamant Microdermabrasion</td>
                                     <td></td>
-                                    <td>99,-€</td>
+                                    <td>ab 99,-€</td>
                                 </tr>
                                 <tr>
                                     <td>Aquapeel</td>
                                     <td></td>
-                                    <td>99,-€</td>
+                                    <td>ab 99,-€</td>
                                 </tr>
                                 <tr>
                                     <td>Microneedling</td>
@@ -225,20 +255,25 @@ export const Price = () => {
                                     <td>ab 69,-€ </td>
                                 </tr>
                                 <tr>
-                                    <td>Augenbrauen färben</td>
+                                    <td>
+                                        Augenbrauen färben (während der
+                                        Behandlung)
+                                    </td>
                                     <td></td>
                                     <td>10,-€ </td>
                                 </tr>
 
                                 <tr>
-                                    <td>Wimpern färben</td>
+                                    <td>
+                                        Wimpern färben (während der Behandlung)
+                                    </td>
                                     <td></td>
                                     <td>10,-€</td>
                                 </tr>
                                 <tr>
                                     <td>Sculpture Gesichtsmassage</td>
                                     <td>30 Min</td>
-                                    <td>35,-€</td>
+                                    <td>39,-€</td>
                                 </tr>
                                 <tr>
                                     <td>Jalupro 7 Punkte Lifting</td>
