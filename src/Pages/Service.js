@@ -73,7 +73,7 @@ export const Service = () => {
             title: "Kopf- und Gesichtsmassage",
             content: (
                 <p className="pt-2 ps-4">
-                    Wohltuende Gesichts- und Kopfmassage kann bei Migräneund
+                    Wohltuende Gesichts- und Kopfmassage kann bei Migräne und
                     Spannungskopfschmerzen angewendet werden
                 </p>
             ),
@@ -188,19 +188,19 @@ export const Service = () => {
                     <span>-</span>
                     <i>
                         {" "}
-                        <u>DNA Body Test:</u>
+                        <u>Body DNA Test:</u>
                     </i>{" "}
                     Entzündungsfähigkeit, Cellulite, Krampfadern,
                     Dehnungsstreifen, UV Schutz. <br />
                     <span>-</span>
                     <i>
                         {" "}
-                        <u>Body Gen Blut Test: </u>{" "}
+                        <u>Body Gen Bluttest: </u>{" "}
                     </i>{" "}
                     Vit A, Vit B12, Zink, Kupfer, Ferritin/Eisen. <br />
                     <span>-</span>
                     <i>
-                        <u>Anti Hairloss: </u>
+                        <u>Antihairloss Bluttest: </u>
                     </i>{" "}
                     Vitamim B12, Vitamin D, Vitamin A, Ferritin/ Eisen, Zink,
                     Selen.

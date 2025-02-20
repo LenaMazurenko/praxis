@@ -70,11 +70,6 @@ export const Price = () => {
                                     <td>49,-€</td>
                                 </tr>
                                 <tr>
-                                    <td>Schröpfen mit Schröpfmassage</td>
-                                    <td>45 Min</td>
-                                    <td>35,-€</td>
-                                </tr>
-                                <tr>
                                     <td>Schröpfen (mit Schröpfglassmassage)</td>
                                     <td>30 Min</td>
                                     <td>29,-€</td>
@@ -142,12 +137,12 @@ export const Price = () => {
                                     <td>79,-€</td>
                                 </tr>
                                 <tr>
-                                    <td>Body Gen antihairloss Blut Test</td>
+                                    <td>Body Gen antihairloss Bluttest</td>
                                     <td></td>
                                     <td>119,-€</td>
                                 </tr>
                                 <tr>
-                                    <td>Body Gen Vitanin D Blut Test</td>
+                                    <td>Body Gen Vitanin D Bluttest</td>
                                     <td></td>
                                     <td>39,-€</td>
                                 </tr>
