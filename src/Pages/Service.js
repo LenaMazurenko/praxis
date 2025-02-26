@@ -278,7 +278,7 @@ export const Service = () => {
             title: "Gesichtslymphdrainage",
             content: (
                 <p className="pt-2 ps-4">
-                    Eine sanfte Massage, die den Abfluss von Lymph- flüssigkeit
+                    Eine sanfte Massage, die den Abfluss von Lymphflüssigkeit
                     fördert und Schwellungen reduziert
                 </p>
             ),

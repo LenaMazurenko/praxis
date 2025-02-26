@@ -52,19 +52,9 @@ export const Home = () => {
     };
     const items = [
         {
-            title: "Wie lange dauert eine Behandlung?",
-            content:
-                "Für den Erstkontakt sind 60 Minuten eingeplant. Die Dauer eines Folgetermins wird anschließend gemeinsam besprochen.",
-        },
-        {
             title: "Wie viele Behandlungen sind notwendig?",
             content:
                 "Der Anzahl der Behandlungen wird im persönlichen Gespräch fachlich bewertet und individuell abgestimmt. Grundsächlich werden bei Naturheilkunde, Physiotherapie bzw. ästhetischen Anwendungen mehrere Behandlungen empfohlen. Eine Serie von min 3-4 Behandlungen führt zu einem Ergebnis. ",
-        },
-        {
-            title: "Was muss ich vor und nach einer osteopathischen Behandlung beachten?",
-            content:
-                "Bitte wählen Sie Ihren Termin, so dass Sie möglichst entspannt ankommen und wenn möglich nicht zu viele Termine im Anschluss wahrnehmen müssen. Trinken Sie viel Wasser, wenig Alkohol und bewegen Sie sich ohne Überanstrengung oder gönnen sich Ruhe. Die Behandlung ist nicht mit dem Verlassen der Praxis beendet, sie fängt da erst an. Ihr Körper wird auf die Behandlungsreize noch einige Zeit reagieren. Erstverschlimmerungen sind sehr selten, zeigen sich bestenfalls in Form eines Muskelkaters. Sollten Beschwerden verstärkt auftreten und länger als 2 Tage andauern, bitte ich Sie, sich mit mir in Verbindung zu setzten. ",
         },
         {
             title: "Was muss ich bei Terminabsage/ -verschiebung beachten?",
